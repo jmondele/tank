@@ -7,7 +7,7 @@ export default function HomePage() {
         <div className="relative aspect-video w-full overflow-hidden rounded-lg shadow">
           <video
             className="w-full h-full object-cover"
-            src="./public/tank_v.mp4"      // place your file at public/hero.mp4
+            src="/tank_v.mp4"      // place your file at public/hero.mp4
             autoPlay
             muted
             loop
