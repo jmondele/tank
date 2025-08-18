@@ -318,7 +318,7 @@ export default function Navbar() {
             font-size: 13px;
             padding: 6px 8px;
             border-radius: 4px;
-            background-color: rgba(255,255,255,0.05);
+            background-color: transparent;
           }
           
           .dropdown {
