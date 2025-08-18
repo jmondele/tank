@@ -140,7 +140,7 @@ export default function Navbar() {
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 600;
           font-size: 16px;
-          color: #ffffff;
+          color: #ffffff !important;
           background: none;
           border: 0;
           cursor: pointer;
@@ -271,21 +271,21 @@ export default function Navbar() {
 
         @media (max-width: 768px) {
           .inner {
-            padding: 12px 16px;
+            padding: 10px 16px;
           }
           
           .logo span {
-            display: none;
+            font-size: 16px;
           }
           
           .menu { 
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
           }
           
           .navLink,
           .linkBtn {
-            font-size: 14px;
+            font-size: 13px;
             padding: 4px 0;
           }
           
@@ -299,26 +299,37 @@ export default function Navbar() {
         @media (max-width: 480px) {
           .inner {
             flex-direction: column;
-            gap: 12px;
-            padding: 12px 16px;
+            gap: 8px;
+            padding: 8px 16px;
           }
           
           .logo {
             justify-self: center;
           }
           
+          .logo span {
+            font-size: 14px;
+          }
+          
           .menu { 
-            gap: 8px;
+            gap: 6px;
             justify-content: center;
             flex-wrap: wrap;
+            width: 100%;
+          }
+          
+          .menu li {
+            flex-shrink: 0;
           }
           
           .navLink,
           .linkBtn {
-            font-size: 13px;
-            padding: 6px 8px;
+            font-size: 12px;
+            padding: 4px 6px;
             border-radius: 4px;
             background-color: transparent;
+            white-space: nowrap;
+            color: #ffffff !important;
           }
           
           .dropdown {
@@ -329,7 +340,7 @@ export default function Navbar() {
           
           .dropdown :global(a) {
             padding: 8px 10px;
-            font-size: 14px;
+            font-size: 13px;
           }
         }
       `}</style>
