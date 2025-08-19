@@ -10,14 +10,10 @@ export default function API570() {
 
   // Photo gallery data - replace with your actual images
   const photos = [
-    { src: '/api570-1.jpg', alt: 'Piping Visual Inspection', fallback: true },
-    { src: '/api570-2.jpg', alt: 'Thickness Measurement Process', fallback: true },
-    { src: '/api570-3.jpg', alt: 'Corrosion Assessment', fallback: true },
-    { src: '/api570-4.jpg', alt: 'Weld Repair Operations', fallback: true },
-    { src: '/api570-5.jpg', alt: 'Piping System Evaluation', fallback: true },
-    { src: '/api570-6.jpg', alt: 'In-Service Inspection', fallback: true },
-    { src: '/api570-7.jpg', alt: 'Material Testing', fallback: true },
-    { src: '/api570-8.jpg', alt: 'Certified Inspector at Work', fallback: true }
+    { src: '/api570-1.jpg', alt: 'In-Service Inspection', fallback: false },
+    { src: '/api570-2.jpg', alt: 'In-Service Inspection', fallback: false },
+    { src: '/api570-3.jpg', alt: 'Certified Inspector at Work', fallback: false },
+    { src: '/api570-4.jpg', alt: 'Weld Repair Operations', fallback: false }
   ];
 
   // Autoplay functionality
@@ -56,10 +52,6 @@ export default function API570() {
       <main className="flex-1">
         {/* Photo Gallery Section */}
         <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
-          {/* Instructions for adding images */}
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-black/70 text-white px-4 py-2 rounded-lg text-sm">
-            💡 Add your API 570 piping inspection images
-          </div>
           
           <div 
             className="relative w-full h-full"
