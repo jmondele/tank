@@ -10,12 +10,12 @@ export default function NDT() {
 
   // Photo gallery data - replace with your actual images
   const photos = [
-    { src: '/ndt-1.jpg', alt: 'Ultrasonic Testing Process', fallback: true },
-    { src: '/ndt-2.jpg', alt: 'Radiographic Testing Setup', fallback: true },
-    { src: '/ndt-3.jpg', alt: 'Magnetic Particle Testing', fallback: true },
-    { src: '/ndt-4.jpg', alt: 'Liquid Penetrant Testing', fallback: true },
-    { src: '/ndt-5.jpg', alt: 'Visual Testing Inspection', fallback: true },
-    { src: '/ndt-6.jpg', alt: 'Weld Inspection Process', fallback: true },
+    { src: '/ndt-1.jpg', alt: 'Ultrasonic Testing Process', fallback: false },
+    { src: '/ndt-2.jpg', alt: 'Radiographic Testing Setup', fallback: false },
+    { src: '/ndt-3.jpg', alt: 'Magnetic Particle Testing', fallback: false },
+    { src: '/ndt-4.jpg', alt: 'Liquid Penetrant Testing', fallback: false },
+    { src: '/ndt-5.jpg', alt: 'Visual Testing Inspection', fallback: false },
+    { src: '/ndt-6.jpg', alt: 'Weld Inspection Process', fallback: false },
     { src: '/ndt-7.jpg', alt: 'Thickness Measurement', fallback: true },
     { src: '/ndt-8.jpg', alt: 'Certified NDT Inspector', fallback: true }
   ];
@@ -56,10 +56,7 @@ export default function NDT() {
       <main className="flex-1">
         {/* Photo Gallery Section */}
         <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
-          {/* Instructions for adding images */}
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-black/70 text-white px-4 py-2 rounded-lg text-sm">
-            💡 Add your NDT inspection images
-          </div>
+
           
           <div 
             className="relative w-full h-full"

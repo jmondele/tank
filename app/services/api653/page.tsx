@@ -55,10 +55,7 @@ export default function API653() {
       <main className="flex-1">
         {/* Photo Gallery Section */}
         <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
-          {/* Instructions for adding images (remove this when you add real images) */}
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-black/70 text-white px-4 py-2 rounded-lg text-sm">
-   
-          </div>
+
           
           <div 
             className="relative w-full h-full"

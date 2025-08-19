@@ -10,8 +10,8 @@ export default function API510() {
 
   // Photo gallery data - replace with your actual images
   const photos = [
-    { src: '/api510-1.jpg', alt: 'Pressure Vessel External Inspection', fallback: true },
-    { src: '/api510-2.jpg', alt: 'Internal Vessel Assessment', fallback: true },
+    { src: '/api510-1.jpg', alt: 'Pressure Vessel External Inspection', fallback: false },
+    { src: '/api510-2.jpg', alt: 'Internal Vessel Assessment', fallback: false },
     { src: '/api510-3.jpg', alt: 'Thickness Measurement Process', fallback: true },
     { src: '/api510-4.jpg', alt: 'Welding and Component Replacement', fallback: true },
     { src: '/api510-5.jpg', alt: 'On-Stream Inspection', fallback: true },
@@ -56,10 +56,7 @@ export default function API510() {
       <main className="flex-1">
         {/* Photo Gallery Section */}
         <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
-          {/* Instructions for adding images */}
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 z-10 bg-black/70 text-white px-4 py-2 rounded-lg text-sm">
-            💡 Add your API 510 pressure vessel inspection images
-          </div>
+
           
           <div 
             className="relative w-full h-full"

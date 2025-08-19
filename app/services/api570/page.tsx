@@ -11,9 +11,10 @@ export default function API570() {
   // Photo gallery data - replace with your actual images
   const photos = [
     { src: '/api570-1.jpg', alt: 'In-Service Inspection', fallback: false },
-    { src: '/api570-2.jpg', alt: 'In-Service Inspection', fallback: false },
+    { src: '/api570-5.jpg', alt: 'In-Service Inspection', fallback: false },
     { src: '/api570-3.jpg', alt: 'Certified Inspector at Work', fallback: false },
-    { src: '/api570-4.jpg', alt: 'Weld Repair Operations', fallback: false }
+    { src: '/api570-4.jpg', alt: 'Weld Repair Operations', fallback: false },
+    { src: '/api570-2.jpg', alt: 'In-Service Inspection', fallback: false },
   ];
 
   // Autoplay functionality
