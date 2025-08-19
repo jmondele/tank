@@ -398,21 +398,27 @@ export default function API510() {
         </section>
 
         {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
+        <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need API 510 Certified Pressure Vessel Inspection Services?
+              Need Professional NDT Services?
             </h2>
-            <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-              Our certified inspectors are ready to help ensure your pressure vessels meet all API 510 requirements for safety, compliance, and operational efficiency.
+            <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
+              Our certified NDT professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
+                className="bg-white text-teal-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+              >
                 Get Free Quote
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+              </a>
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Inquiry&body=Hello, I would like to speak with your NDT experts about our inspection needs. Please contact me at your earliest convenience."
+                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
+              >
                 Contact Our Experts
-              </button>
+              </a>
             </div>
           </div>
         </section>

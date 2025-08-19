@@ -15,7 +15,9 @@ export default function API653() {
     { src: '/api653-2.jpg', alt: 'Internal Tank Assessment', fallback: false },
     { src: '/api653-31.jpg', alt: 'Internal Tank Assessment', fallback: false },
     { src: '/api653-4.jpg', alt: 'Internal Tank Assessment', fallback: false },
-    { src: '/api653-5.jpg', alt: 'Internal Tank Assessment', fallback: false }
+    { src: '/api653-5.jpg', alt: 'Internal Tank Assessment', fallback: false },
+    { src: '/api653-6.jpg', alt: 'Internal Tank Assessment', fallback: false },
+    { src: '/api653-7.jpg', alt: 'Internal Tank Assessment', fallback: false }
   ];
 
   // Autoplay functionality
@@ -354,7 +356,7 @@ export default function API653() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">Regulatory Compliance</h3>
-                  <p className="text-slate-300">Ensures compliance with EPA, OSHA, state, and local regulations.</p>
+                  <p className="text-slate-300">Ensures compliance with  API, EPA, OSHA, state, and local regulations.</p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-colors duration-300">
@@ -392,22 +394,28 @@ export default function API653() {
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800">
+       {/* Call to Action */}
+        <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need API 653 Certified Inspection Services?
+              Need Professional NDT Services?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Our certified inspectors are ready to help ensure your tanks meet all API 653 requirements for safety, compliance, and operational efficiency.
+            <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
+              Our certified NDT professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
+                className="bg-white text-teal-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+              >
                 Get Free Quote
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm ">
+              </a>
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Inquiry&body=Hello, I would like to speak with your NDT experts about our inspection needs. Please contact me at your earliest convenience."
+                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
+              >
                 Contact Our Experts
-              </button>
+              </a>
             </div>
           </div>
         </section>

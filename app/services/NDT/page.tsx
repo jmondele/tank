@@ -211,7 +211,7 @@ export default function NDT() {
                     <strong>Non-Destructive Testing (NDT)</strong> refers to a range of inspection techniques used to evaluate the integrity of tanks, piping, and pressure vessels <strong>without causing damage</strong> or interrupting operations.
                   </p>
                   <p>
-                    It allows inspectors to detect flaws, cracks, corrosion, and other defects early—ensuring assets remain <strong>safe, reliable, and compliant</strong>.
+                    It allows inspectors to detect flaws, cracks, corrosion, and other defects early ensuring assets remain <strong>safe, reliable, and compliant</strong>.
                   </p>
                 </div>
               </div>
@@ -253,27 +253,7 @@ export default function NDT() {
                   </div>
                 </div>
 
-                {/* Radiographic Testing */}
-                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-cyan-500 rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-cyan-600">Radiographic Testing (RT)</h3>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-gray-700">Uses X-rays or gamma rays to reveal internal defects in welds and materials.</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-gray-700">Provides a permanent record of inspection results.</p>
-                    </div>
-                  </div>
-                </div>
+
 
                 {/* Magnetic Particle Testing */}
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
@@ -403,7 +383,7 @@ export default function NDT() {
           </div>
         </section>
 
-        {/* Call to Action */}
+       {/* Call to Action */}
         <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -413,12 +393,18 @@ export default function NDT() {
               Our certified NDT professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-teal-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
+                className="bg-white text-teal-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+              >
                 Get Free Quote
-              </button>
-              <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+              </a>
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Inquiry&body=Hello, I would like to speak with your NDT experts about our inspection needs. Please contact me at your earliest convenience."
+                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
+              >
                 Contact Our Experts
-              </button>
+              </a>
             </div>
           </div>
         </section>
