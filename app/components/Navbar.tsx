@@ -151,6 +151,14 @@ export default function Navbar() {
           position: relative;
         }
 
+        /* Force white text color */
+        .menu .navLink,
+        .menu .linkBtn,
+        .menu li .navLink,
+        .menu li .linkBtn {
+          color: #ffffff !important;
+        }
+
         .navLink:hover,
         .linkBtn:hover { 
           color: var(--brand); 
@@ -322,6 +330,8 @@ export default function Navbar() {
             flex-shrink: 0;
           }
           
+          .menu .navLink,
+          .menu .linkBtn,
           .navLink,
           .linkBtn {
             font-size: 12px;
