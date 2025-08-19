@@ -190,7 +190,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
                 <div className="text-center group">
                   <div className="h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                    <span className="text-white font-bold text-lg">Shell</span>
+                    <span className="text-white font-bold text-lg">Vopak</span>
                   </div>
                 </div>
                 <div className="text-center group">
@@ -200,12 +200,12 @@ export default function HomePage() {
                 </div>
                 <div className="text-center group">
                   <div className="h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                    <span className="text-white font-bold text-lg">ExxonMobil</span>
+                    <span className="text-white font-bold text-lg">VTTI</span>
                   </div>
                 </div>
                 <div className="text-center group">
                   <div className="h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-                    <span className="text-white font-bold text-lg">BP</span>
+                    <span className="text-white font-bold text-lg">PetroPort</span>
                   </div>
                 </div>
               </div>

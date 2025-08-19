@@ -33,17 +33,21 @@ export default function Navbar() {
   return (
     <nav role="navigation" aria-label="Main" className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="inner">
-        {/* Logo - Fixed href to point to home */}
-        <Link href="/" className="logo flex items-center gap-2">
+        {/* Logo - Keep horizontal layout */}
+        <Link href="../" className="logo">
+        <div className="logo">
           <Image
             src="/tank_iso.png"
             alt="Tank Inspection Logo"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
             priority
           />
-          <span className="font-extrabold text-[#5587b8]">Tank Inspection Services</span>
-        </Link>
+          <span>Tank Inspection Services</span>
+        </div>
+                   </Link>
+
+
 
         {/* Menu */}
         <ul className="menu">
@@ -66,7 +70,7 @@ export default function Navbar() {
               <Link href="/services/api653" role="menuitem">API 653</Link>
               <Link href="/services/api570" role="menuitem">API 570</Link>
               <Link href="/services/api510" role="menuitem">API 510</Link>
-              <Link href="/services/ndt" role="menuitem">NDT</Link>
+              <Link href="/services/NDT" role="menuitem">NDT</Link>
             </div>
           </li>
 
@@ -106,13 +110,19 @@ export default function Navbar() {
         }
 
         .logo {
-          color: var(--brand);
-          font-weight: 700;
-          white-space: nowrap;
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 12px;
           text-decoration: none;
+          cursor: pointer;
+        }
+
+        .logo span {
+          color: #5587b8;
+          font-weight: 700;
+          font-size: 20px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          white-space: nowrap;
         }
 
         .menu {
@@ -130,7 +140,16 @@ export default function Navbar() {
           position: relative;
         }
 
-        /* Unified style for all nav items */
+        /* Reset and force white text for all navigation items */
+        .menu a,
+        .menu button,
+        .navLink,
+        .linkBtn {
+          color: white !important;
+          -webkit-text-fill-color: white !important;
+        }
+
+        /* Unified style for all nav items - make them identical */
         .navLink,
         .linkBtn {
           display: inline-flex;
@@ -140,7 +159,8 @@ export default function Navbar() {
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 600;
           font-size: 16px;
-          color: #ffffff !important;
+          color: white !important;
+          -webkit-text-fill-color: white !important;
           background: none;
           border: 0;
           cursor: pointer;
@@ -149,14 +169,20 @@ export default function Navbar() {
           transition: color 0.2s ease;
           text-decoration: none;
           position: relative;
+          appearance: none;
+          -webkit-appearance: none;
         }
 
-        /* Force white text color */
+        /* Force white text color and identical appearance */
         .menu .navLink,
         .menu .linkBtn,
         .menu li .navLink,
         .menu li .linkBtn {
-          color: #ffffff !important;
+          color: white !important;
+          -webkit-text-fill-color: white !important;
+          font-weight: 600;
+          font-size: 16px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         .navLink:hover,
@@ -202,9 +228,10 @@ export default function Navbar() {
           height: 0;
           border-left: 5px solid transparent;
           border-right: 5px solid transparent;
-          border-top: 6px solid var(--brand);
+          border-top: 6px solid white;
           position: relative;
-          top: 2px;
+          top: 1px;
+          margin-left: 4px;
           transition: transform 0.15s ease;
         }
         
@@ -306,13 +333,14 @@ export default function Navbar() {
 
         @media (max-width: 480px) {
           .inner {
-            flex-direction: column;
+            flex-direction: row;
             gap: 8px;
             padding: 8px 16px;
+            justify-content: space-between;
           }
           
           .logo {
-            justify-self: center;
+            justify-self: flex-start;
           }
           
           .logo span {
@@ -321,9 +349,9 @@ export default function Navbar() {
           
           .menu { 
             gap: 6px;
-            justify-content: center;
+            justify-content: flex-end;
             flex-wrap: wrap;
-            width: 100%;
+            width: auto;
           }
           
           .menu li {
