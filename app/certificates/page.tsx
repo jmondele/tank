@@ -1,9 +1,8 @@
-"user-client"
+"use client";
 
 export default function Certificates() {
   return (
     <div className="min-h-screen flex flex-col">
-
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
@@ -45,7 +44,9 @@ export default function Certificates() {
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
                 <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">API Certifications</h2>
               </div>
@@ -115,7 +116,9 @@ export default function Certificates() {
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
                 <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.091 3.09z"/>
+                  </svg>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Non-Destructive Testing (NDT) Certifications</h2>
               </div>
@@ -125,7 +128,7 @@ export default function Certificates() {
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.091 3.09z"/>
                       </svg>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Ultrasonic Testing</h3>
@@ -140,7 +143,7 @@ export default function Certificates() {
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        <path d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 010 1.953l-7.108 4.061A1.125 1.125 0 013 16.811z"/>
                       </svg>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Magnetic Particle Testing</h3>
@@ -155,7 +158,7 @@ export default function Certificates() {
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path d="M6 3a3 3 0 00-3 3v12a3 3 0 003 3h12a3 3 0 003-3V6a3 3 0 00-3-3H6zM14.25 9a.75.75 0 01.75.75v4.5a.75.75 0 01-.75.75h-4.5A.75.75 0 019 14.25v-4.5A.75.75 0 019.75 9h4.5z"/>
                       </svg>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Liquid Penetrant Testing</h3>
@@ -170,7 +173,8 @@ export default function Certificates() {
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                        <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path fillRule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clipRule="evenodd"/>
                       </svg>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Visual Testing</h3>
@@ -191,7 +195,9 @@ export default function Certificates() {
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
                 <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307z"/>
+                  </svg>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Other Accreditations</h2>
               </div>
@@ -273,7 +279,7 @@ export default function Certificates() {
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
                   <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">Guaranteed Compliance</h3>
@@ -321,18 +327,23 @@ export default function Certificates() {
                 Contact us today to discuss your tank inspection needs with our certified team of experts.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                  Request Certification Details
-                </button>
-                <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300">
-                  Contact Our Team
-                </button>
+                <a 
+                  href="mailto:luismon@tankinspectionservices.com?subject=Certificate Verification Request&body=Hello, I would like to verify your certifications and discuss our inspection requirements. Please contact me with more information about your qualifications."
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+                >
+                  Request Certificate Details
+                </a>
+                <a 
+                  href="mailto:luismon@tankinspectionservices.com?subject=Inspection Services Inquiry&body=Hello, I would like to speak with your certified experts about our inspection needs. Please contact me at your earliest convenience."
+                  className="bg-gray-600 hover:bg-gray-700 text-white border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-xl inline-block"
+                >
+                  Contact Our Experts
+                </a>
               </div>
             </div>
           </div>
         </section>
       </main>
-
     </div>
   );
 }
