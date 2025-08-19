@@ -12,9 +12,10 @@ export default function API570() {
   const photos = [
     { src: '/api570-1.jpg', alt: 'In-Service Inspection', fallback: false },
     { src: '/api570-5.jpg', alt: 'In-Service Inspection', fallback: false },
-    { src: '/api570-3.jpg', alt: 'Certified Inspector at Work', fallback: false },
-    { src: '/api570-4.jpg', alt: 'Weld Repair Operations', fallback: false },
+    { src: '/api570-31.jpg', alt: 'Certified Inspector at Work', fallback: false },
+    { src: '/api570-41.jpg', alt: 'Weld Repair Operations', fallback: false },
     { src: '/api570-2.jpg', alt: 'In-Service Inspection', fallback: false },
+    { src: '/api570-6.jpg', alt: 'In-Service Inspection', fallback: false },
   ];
 
   // Autoplay functionality
