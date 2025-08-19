@@ -401,10 +401,10 @@ export default function API510() {
         <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need Professional NDT Services?
+              Need Professional API 510 Services?
             </h2>
             <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
-              Our certified NDT professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+              Our certified API 510 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
