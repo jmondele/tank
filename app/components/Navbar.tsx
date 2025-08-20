@@ -16,9 +16,13 @@ export default function Navbar() {
   // Close dropdown if clicking outside
   useEffect(() => {
     const onClickOutside = (e: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) setOpen(false);
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
     };
-    if (open) document.addEventListener("click", onClickOutside);
+    if (open) {
+      document.addEventListener("click", onClickOutside);
+    }
     return () => document.removeEventListener("click", onClickOutside);
   }, [open]);
 
@@ -28,6 +32,7 @@ export default function Navbar() {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -42,6 +47,11 @@ export default function Navbar() {
       document.body.style.overflow = 'unset';
     };
   }, [mobileMenuOpen]);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <>
@@ -71,31 +81,185 @@ export default function Navbar() {
                 className={`linkBtn ${isServicesActive ? "active" : ""}`}
                 aria-haspopup="true"
                 aria-expanded={open}
-                onClick={() => setOpen(v => !v)}
+                onClick={() => setOpen(prev => !prev)}
               >
                 Services <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
               </button>
 
-              <div className="dropdown" role="menu" aria-label="Services">
-                <Link href="/services/api653" role="menuitem">API 653</Link>
-                <Link href="/services/api570" role="menuitem">API 570</Link>
-                <Link href="/services/api510" role="menuitem">API 510</Link>
-                <Link href="/services/ndt" role="menuitem">NDT</Link>
+              <div 
+                className="dropdown" 
+                role="menu" 
+                aria-label="Services"
+                style={{
+                  position: 'absolute',
+                  top: 'calc(100% + 10px)',
+                  left: '0',
+                  minWidth: '200px',
+                  background: '#000000',
+                  border: '1px solid #333',
+                  borderRadius: '8px',
+                  padding: '8px',
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5)',
+                  display: open ? 'flex' : 'none',
+                  flexDirection: 'column',
+                  zIndex: 1000
+                }}
+              >
+                <Link 
+                  href="/services/api653" 
+                  role="menuitem" 
+                  className={pathname === "/services/api653" ? "active" : ""}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 16px',
+                    margin: '2px 0',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: pathname === "/services/api653" ? '#5587b8' : '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: pathname === "/services/api653" ? '#1a1a1a' : 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#5587b8';
+                    e.currentTarget.style.backgroundColor = '#1a1a1a';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (pathname !== "/services/api653") {
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
+                >
+                  API 653
+                </Link>
+                <Link 
+                  href="/services/api570" 
+                  role="menuitem" 
+                  className={pathname === "/services/api570" ? "active" : ""}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 16px',
+                    margin: '2px 0',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: pathname === "/services/api570" ? '#5587b8' : '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: pathname === "/services/api570" ? '#1a1a1a' : 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#5587b8';
+                    e.currentTarget.style.backgroundColor = '#1a1a1a';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (pathname !== "/services/api570") {
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
+                >
+                  API 570
+                </Link>
+                <Link 
+                  href="/services/api510" 
+                  role="menuitem" 
+                  className={pathname === "/services/api510" ? "active" : ""}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 16px',
+                    margin: '2px 0',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: pathname === "/services/api510" ? '#5587b8' : '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: pathname === "/services/api510" ? '#1a1a1a' : 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#5587b8';
+                    e.currentTarget.style.backgroundColor = '#1a1a1a';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (pathname !== "/services/api510") {
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
+                >
+                  API 510
+                </Link>
+                <Link 
+                  href="/services/ndt" 
+                  role="menuitem" 
+                  className={pathname === "/services/ndt" ? "active" : ""}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 16px',
+                    margin: '2px 0',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: pathname === "/services/ndt" ? '#5587b8' : '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: pathname === "/services/ndt" ? '#1a1a1a' : 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#5587b8';
+                    e.currentTarget.style.backgroundColor = '#1a1a1a';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (pathname !== "/services/ndt") {
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
+                >
+                  NDT
+                </Link>
               </div>
             </li>
 
-            <li><Link className="navLink" href="/certificates">Certificates</Link></li>
-            <li><Link className="navLink" href="/equipment">Equipment</Link></li>
-            <li><Link className="navLink" href="/safety">Safety</Link></li>
-            <li><Link className="navLink" href="/about">About us</Link></li>
-            <li><Link className="navLink" href="/contact">Contact us</Link></li>
+            <li>
+              <Link className={`navLink ${pathname === "/certificates" ? "active" : ""}`} href="/certificates">
+                Certificates
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/equipment" ? "active" : ""}`} href="/equipment">
+                Equipment
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/safety" ? "active" : ""}`} href="/safety">
+                Safety
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/about" ? "active" : ""}`} href="/about">
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/contact" ? "active" : ""}`} href="/contact">
+                Contact us
+              </Link>
+            </li>
           </ul>
 
           {/* Mobile Hamburger Button */}
           <button 
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle mobile menu"
+            aria-label={mobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
           >
             <div className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}>
               <span></span>
@@ -125,27 +289,85 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 aria-label="Close menu"
               >
-                ✕
+                ×
               </button>
             </div>
             
-            <nav className="mobile-nav">
-              <div className="mobile-nav-section">
-                <h3>Services</h3>
-                <div className="service-links">
-                  <Link href="/services/api653" onClick={() => setMobileMenuOpen(false)}>API 653</Link>
-                  <Link href="/services/api570" onClick={() => setMobileMenuOpen(false)}>API 570</Link>
-                  <Link href="/services/api510" onClick={() => setMobileMenuOpen(false)}>API 510</Link>
-                  <Link href="/services/ndt" onClick={() => setMobileMenuOpen(false)}>NDT</Link>
+            <div style={{
+              padding: '24px 20px',
+              backgroundColor: '#000000',
+              height: '100%',
+              overflow: 'auto'
+            }}>
+              <div style={{
+                marginBottom: '40px'
+              }}>
+                <div style={{
+                  color: '#5587b8',
+                  fontSize: '20px',
+                  fontWeight: '700',
+                  marginBottom: '16px',
+                  paddingBottom: '8px',
+                  borderBottom: '2px solid #333'
+                }}>
+                  Services
+                </div>
+                
+                <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
+                  <Link href="/services/api653" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    API 653
+                  </Link>
+                </div>
+                
+                <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
+                  <Link href="/services/api570" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    API 570
+                  </Link>
+                </div>
+                
+                <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
+                  <Link href="/services/api510" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    API 510
+                  </Link>
+                </div>
+                
+                <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '2px solid #333' }}>
+                  <Link href="/services/ndt" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    NDT
+                  </Link>
                 </div>
               </div>
               
-              <Link href="/certificates" onClick={() => setMobileMenuOpen(false)}>Certificates</Link>
-              <Link href="/equipment" onClick={() => setMobileMenuOpen(false)}>Equipment</Link>
-              <Link href="/safety" onClick={() => setMobileMenuOpen(false)}>Safety</Link>
-              <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About us</Link>
-              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact us</Link>
-            </nav>
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/certificates" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Certificates
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/equipment" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Equipment
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/safety" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Safety
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/about" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  About us
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0' }}>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Contact us
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -282,61 +504,53 @@ export default function Navbar() {
           transform: rotate(180deg); 
         }
 
-        .dropdown {
+        .services .dropdown {
           position: absolute;
-          top: 100%;
+          top: calc(100% + 10px);
           left: 0;
-          min-width: 180px;
+          min-width: 200px;
           background: #000000;
           border: 1px solid #333;
-          border-radius: 10px;
-          padding: 6px;
-          margin-top: 8px;
-          box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+          border-radius: 8px;
+          padding: 4px;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
           display: none;
-          z-index: 30;
+          z-index: 1000;
+          flex-direction: column;
         }
 
-        .dropdown :global(a) {
-          position: relative;
-          display: block;
-          padding: 10px 12px;
+        .services.open .dropdown,
+        .services:hover .dropdown { 
+          display: flex;
+        }
+
+        .services .dropdown a {
+          display: flex !important;
+          width: 100%;
+          padding: 14px 18px;
           font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
           font-weight: 600;
-          font-size: 16px;
+          font-size: 15px;
           color: #ffffff;
-          white-space: nowrap;
-          transition: color 0.2s ease;
           text-decoration: none;
+          white-space: nowrap;
+          transition: all 0.2s ease;
           border-radius: 6px;
+          margin: 2px 0;
+          line-height: 1.2;
+          box-sizing: border-box;
+          cursor: pointer;
+          align-items: center;
         }
 
-        .dropdown :global(a)::after {
-          content: "";
-          position: absolute;
-          left: 12px;
-          bottom: 6px;
-          width: 0;
-          height: 2px;
-          background-color: var(--brand);
-          transition: width 0.25s ease;
-        }
-
-        .dropdown :global(a:hover) { 
+        .services .dropdown a:hover { 
           color: var(--brand);
           background-color: #1a1a1a;
         }
         
-        .dropdown :global(a:hover)::after { 
-          width: calc(100% - 24px); 
-        }
-
-        .dropdown :global(a.active)::after { 
-          width: calc(100% - 24px); 
-        }
-        
-        .dropdown :global(a.active) { 
+        .services .dropdown a.active { 
           color: var(--brand); 
+          background-color: #1a1a1a;
         }
 
         .services:hover .dropdown,
@@ -397,11 +611,11 @@ export default function Navbar() {
           position: fixed;
           top: 0;
           left: 0;
-          width: 100%;
+          width: 100vw;
           height: 100vh;
           background: #000000;
           z-index: 1000;
-          animation: slideIn 0.3s ease;
+          animation: slideIn 0.3s ease-out;
         }
 
         @keyframes slideIn {
@@ -414,9 +628,10 @@ export default function Navbar() {
         }
 
         .mobile-menu-content {
-          height: 100%;
+          height: 100vh;
           overflow-y: auto;
-          padding: 0;
+          display: flex;
+          flex-direction: column;
         }
 
         .mobile-menu-header {
@@ -425,6 +640,7 @@ export default function Navbar() {
           align-items: center;
           padding: 16px 20px;
           border-bottom: 1px solid #333;
+          flex-shrink: 0;
         }
 
         .mobile-logo {
@@ -445,7 +661,7 @@ export default function Navbar() {
           padding: 8px;
           border-radius: 4px;
           transition: background-color 0.2s ease;
-          font-size: 20px;
+          font-size: 24px;
           width: 40px;
           height: 40px;
           display: flex;
@@ -459,70 +675,8 @@ export default function Navbar() {
 
         .mobile-nav {
           padding: 24px 20px;
-          display: flex;
-          flex-direction: column;
-        }
-
-        .mobile-nav-section {
-          margin-bottom: 40px;
-        }
-
-        .mobile-nav-section h3 {
-          color: #5587b8;
-          font-size: 20px;
-          font-weight: 700;
-          margin-bottom: 16px;
-          padding-bottom: 8px;
-          border-bottom: 2px solid #333;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        .mobile-nav > a {
-          display: block;
-          color: white;
-          text-decoration: none;
-          font-size: 20px;
-          font-weight: 600;
-          padding: 20px 0;
-          margin: 0;
-          border-bottom: 1px solid #333;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          transition: all 0.2s ease;
-          width: 100%;
-          box-sizing: border-box;
-        }
-
-        .mobile-nav > a:hover {
-          color: #5587b8;
-          padding-left: 10px;
-        }
-
-        .mobile-nav > a:last-child {
-          border-bottom: none;
-        }
-
-        .mobile-nav-section a {
-          display: block;
-          border-bottom: 1px solid #222;
-          padding: 18px 0 18px 24px;
-          margin: 0;
-          font-size: 18px;
-          color: #ccc;
-          text-decoration: none;
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          transition: all 0.2s ease;
-          width: 100%;
-          box-sizing: border-box;
-        }
-
-        .mobile-nav-section a:hover {
-          color: #5587b8;
-          padding-left: 32px;
-        }
-
-        .mobile-nav-section a:last-child {
-          border-bottom: 2px solid #333;
-          margin-bottom: 0;
+          flex: 1;
+          background: #000000;
         }
 
         @media (max-width: 768px) {
