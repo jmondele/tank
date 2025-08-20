@@ -196,9 +196,9 @@ export default function Navbar() {
                   API 510
                 </Link>
                 <Link 
-                  href="/services/ndt" 
+                  href="/services/NDT" 
                   role="menuitem" 
-                  className={pathname === "/services/ndt" ? "active" : ""}
+                  className={pathname === "/services/NDT" ? "active" : ""}
                   style={{
                     display: 'block',
                     width: '100%',
@@ -206,18 +206,18 @@ export default function Navbar() {
                     margin: '2px 0',
                     fontSize: '15px',
                     fontWeight: '600',
-                    color: pathname === "/services/ndt" ? '#5587b8' : '#ffffff',
+                    color: pathname === "/services/NDT" ? '#5587b8' : '#ffffff',
                     textDecoration: 'none',
                     borderRadius: '6px',
                     transition: 'all 0.2s ease',
-                    backgroundColor: pathname === "/services/ndt" ? '#1a1a1a' : 'transparent'
+                    backgroundColor: pathname === "/services/NDT" ? '#1a1a1a' : 'transparent'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.color = '#5587b8';
                     e.currentTarget.style.backgroundColor = '#1a1a1a';
                   }}
                   onMouseLeave={(e) => {
-                    if (pathname !== "/services/ndt") {
+                    if (pathname !== "/services/NDT") {
                       e.currentTarget.style.color = '#ffffff';
                       e.currentTarget.style.backgroundColor = 'transparent';
                     }
