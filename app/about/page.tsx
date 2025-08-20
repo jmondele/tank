@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -46,13 +48,13 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Who We Are</h2>
               </div>
 
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-12 border border-blue-200 shadow-xl">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-12 border border-blue-200 shadow-xl mb-12">
                 <div className="flex flex-col lg:flex-row items-center gap-12">
                   <div className="lg:w-1/3">
                     <div className="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl flex items-center justify-center mx-auto mb-6">
@@ -105,6 +107,39 @@ export default function About() {
                   </div>
                 </div>
               </div>
+
+              {/* Team Photo Section */}
+              <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-200">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Meet Our Expert Team</h3>
+                  <p className="text-gray-600 max-w-3xl mx-auto">
+                    Our dedicated professionals bring decades of combined experience in tank inspection, NDT services, and asset integrity management.
+                  </p>
+                </div>
+                
+                <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200">
+                  <Image 
+                    src="/team-3.jpg" 
+                    alt="Tank Inspection Services Team" 
+                    width={800}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    sizes="(max-width: 600px) 100vw, (max-width: 600px) 80vw, 1200px"
+                  />
+                  
+                 
+                  
+                  {/* Overlay with team member count */}
+                  <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm rounded-xl px-4 py-2">
+                    <div className="flex items-center space-x-2 text-white">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                      </svg>
+                      <span className="font-semibold">Expert Inspection Team</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -114,7 +149,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What We Do</h2>
@@ -137,7 +172,7 @@ export default function About() {
 
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-xl">570</span>
                     </div>
                     <div>
@@ -151,7 +186,7 @@ export default function About() {
 
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-xl">510</span>
                     </div>
                     <div>
@@ -165,7 +200,7 @@ export default function About() {
 
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19.5 12.5L12 3L4.5 12.5H7V21h10v-8.5h2.5z"/>
                       </svg>
@@ -194,7 +229,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Difference</h2>
@@ -215,28 +250,28 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-green-800 mb-4">Proven Solutions</h3>
+                    <h3 className="text-xl font-bold text-blue-800 mb-4">Proven Solutions</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Reliable, innovative, and cost-effective solutions tailored to your specific needs.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border border-purple-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-purple-800 mb-4">Client Commitment</h3>
+                    <h3 className="text-xl font-bold text-blue-800 mb-4">Client Commitment</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Strong commitment to safety, compliance, and client satisfaction in every project.
                     </p>
@@ -257,7 +292,7 @@ export default function About() {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Our Promise</h2>

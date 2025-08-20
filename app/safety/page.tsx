@@ -43,7 +43,7 @@ export default function Safety() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Safety Practices</h2>
@@ -64,56 +64,56 @@ export default function Safety() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border border-red-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-4">Standards Compliance</h3>
+                    <h3 className="text-xl font-bold text-red-800 mb-4">Standards Compliance</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Strict compliance with API, ANSI, and ASME standards in all inspection procedures and protocols.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border border-red-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-green-800 mb-4">Certified PPE</h3>
+                    <h3 className="text-xl font-bold text-red-800 mb-4">Certified PPE</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Use of certified PPE and safety equipment on every site, ensuring maximum protection for all personnel.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border border-purple-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border border-red-200 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-purple-800 mb-4">Risk Assessment</h3>
+                    <h3 className="text-xl font-bold text-red-800 mb-4">Risk Assessment</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Job Safety Analysis (JSA) and comprehensive risk assessments before each inspection project.
                     </p>
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-3xl p-8 border border-orange-200 shadow-lg hover:shadow-xl transition-all duration-300 group md:col-span-2 lg:col-span-1">
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 border border-red-200 shadow-lg hover:shadow-xl transition-all duration-300 group md:col-span-2 lg:col-span-1">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-orange-800 mb-4">Emergency Preparedness</h3>
+                    <h3 className="text-xl font-bold text-red-800 mb-4">Emergency Preparedness</h3>
                     <p className="text-gray-700 leading-relaxed">
                       Emergency preparedness and response protocols, ensuring rapid response to any safety incidents.
                     </p>
@@ -129,7 +129,7 @@ export default function Safety() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Safety Matters</h2>
@@ -138,7 +138,7 @@ export default function Safety() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                       </svg>
@@ -170,7 +170,7 @@ export default function Safety() {
 
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
@@ -186,7 +186,7 @@ export default function Safety() {
 
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-6">
-                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                       </svg>
@@ -214,7 +214,7 @@ export default function Safety() {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 ">
                   <span className="text-white font-bold">🔹</span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Our Promise</h2>
