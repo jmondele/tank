@@ -16,13 +16,9 @@ export default function Navbar() {
   // Close dropdown if clicking outside
   useEffect(() => {
     const onClickOutside = (e: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
+      if (wrapperRef.current && !wrapperRef.current.contains(e.target as Node)) setOpen(false);
     };
-    if (open) {
-      document.addEventListener("click", onClickOutside);
-    }
+    if (open) document.addEventListener("click", onClickOutside);
     return () => document.removeEventListener("click", onClickOutside);
   }, [open]);
 
@@ -32,7 +28,6 @@ export default function Navbar() {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check initial scroll position
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,11 +42,6 @@ export default function Navbar() {
       document.body.style.overflow = 'unset';
     };
   }, [mobileMenuOpen]);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
 
   return (
     <>
@@ -81,60 +71,31 @@ export default function Navbar() {
                 className={`linkBtn ${isServicesActive ? "active" : ""}`}
                 aria-haspopup="true"
                 aria-expanded={open}
-                onClick={() => setOpen(prev => !prev)}
+                onClick={() => setOpen(v => !v)}
               >
                 Services <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
               </button>
 
               <div className="dropdown" role="menu" aria-label="Services">
-                <Link href="/services/api653" role="menuitem" className={pathname === "/services/api653" ? "active" : ""}>
-                  API 653
-                </Link>
-                <Link href="/services/api570" role="menuitem" className={pathname === "/services/api570" ? "active" : ""}>
-                  API 570
-                </Link>
-                <Link href="/services/api510" role="menuitem" className={pathname === "/services/api510" ? "active" : ""}>
-                  API 510
-                </Link>
-                <Link href="/services/ndt" role="menuitem" className={pathname === "/services/ndt" ? "active" : ""}>
-                  NDT
-                </Link>
+                <Link href="/services/api653" role="menuitem">API 653</Link>
+                <Link href="/services/api570" role="menuitem">API 570</Link>
+                <Link href="/services/api510" role="menuitem">API 510</Link>
+                <Link href="/services/ndt" role="menuitem">NDT</Link>
               </div>
             </li>
 
-            <li>
-              <Link className={`navLink ${pathname === "/certificates" ? "active" : ""}`} href="/certificates">
-                Certificates
-              </Link>
-            </li>
-            <li>
-              <Link className={`navLink ${pathname === "/equipment" ? "active" : ""}`} href="/equipment">
-                Equipment
-              </Link>
-            </li>
-            <li>
-              <Link className={`navLink ${pathname === "/safety" ? "active" : ""}`} href="/safety">
-                Safety
-              </Link>
-            </li>
-            <li>
-              <Link className={`navLink ${pathname === "/about" ? "active" : ""}`} href="/about">
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link className={`navLink ${pathname === "/contact" ? "active" : ""}`} href="/contact">
-                Contact us
-              </Link>
-            </li>
+            <li><Link className="navLink" href="/certificates">Certificates</Link></li>
+            <li><Link className="navLink" href="/equipment">Equipment</Link></li>
+            <li><Link className="navLink" href="/safety">Safety</Link></li>
+            <li><Link className="navLink" href="/about">About us</Link></li>
+            <li><Link className="navLink" href="/contact">Contact us</Link></li>
           </ul>
 
           {/* Mobile Hamburger Button */}
           <button 
             className="mobile-menu-btn"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label={mobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
-            aria-expanded={mobileMenuOpen}
+            aria-label="Toggle mobile menu"
           >
             <div className={`hamburger ${mobileMenuOpen ? 'active' : ''}`}>
               <span></span>
@@ -147,11 +108,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="mobile-menu-overlay" onClick={(e) => {
-          if (e.target === e.currentTarget) {
-            setMobileMenuOpen(false);
-          }
-        }}>
+        <div className="mobile-menu-overlay">
           <div className="mobile-menu-content">
             <div className="mobile-menu-header">
               <Link href="/" className="mobile-logo" onClick={() => setMobileMenuOpen(false)}>
@@ -176,72 +133,18 @@ export default function Navbar() {
               <div className="mobile-nav-section">
                 <h3>Services</h3>
                 <div className="service-links">
-                  <Link 
-                    href="/services/api653" 
-                    className={pathname === "/services/api653" ? "active" : ""}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    API 653
-                  </Link>
-                  <Link 
-                    href="/services/api570" 
-                    className={pathname === "/services/api570" ? "active" : ""}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    API 570
-                  </Link>
-                  <Link 
-                    href="/services/api510" 
-                    className={pathname === "/services/api510" ? "active" : ""}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    API 510
-                  </Link>
-                  <Link 
-                    href="/services/ndt" 
-                    className={pathname === "/services/ndt" ? "active" : ""}
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    NDT
-                  </Link>
+                  <Link href="/services/api653" onClick={() => setMobileMenuOpen(false)}>API 653</Link>
+                  <Link href="/services/api570" onClick={() => setMobileMenuOpen(false)}>API 570</Link>
+                  <Link href="/services/api510" onClick={() => setMobileMenuOpen(false)}>API 510</Link>
+                  <Link href="/services/ndt" onClick={() => setMobileMenuOpen(false)}>NDT</Link>
                 </div>
               </div>
               
-              <Link 
-                href="/certificates" 
-                className={pathname === "/certificates" ? "active" : ""}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Certificates
-              </Link>
-              <Link 
-                href="/equipment" 
-                className={pathname === "/equipment" ? "active" : ""}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Equipment
-              </Link>
-              <Link 
-                href="/safety" 
-                className={pathname === "/safety" ? "active" : ""}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Safety
-              </Link>
-              <Link 
-                href="/about" 
-                className={pathname === "/about" ? "active" : ""}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                About us
-              </Link>
-              <Link 
-                href="/contact" 
-                className={pathname === "/contact" ? "active" : ""}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact us
-              </Link>
+              <Link href="/certificates" onClick={() => setMobileMenuOpen(false)}>Certificates</Link>
+              <Link href="/equipment" onClick={() => setMobileMenuOpen(false)}>Equipment</Link>
+              <Link href="/safety" onClick={() => setMobileMenuOpen(false)}>Safety</Link>
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)}>About us</Link>
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Contact us</Link>
             </nav>
           </div>
         </div>
@@ -394,7 +297,7 @@ export default function Navbar() {
           z-index: 30;
         }
 
-        .dropdown a {
+        .dropdown :global(a) {
           position: relative;
           display: block;
           padding: 10px 12px;
@@ -403,12 +306,12 @@ export default function Navbar() {
           font-size: 16px;
           color: #ffffff;
           white-space: nowrap;
-          transition: color 0.2s ease, background-color 0.2s ease;
+          transition: color 0.2s ease;
           text-decoration: none;
           border-radius: 6px;
         }
 
-        .dropdown a::after {
+        .dropdown :global(a)::after {
           content: "";
           position: absolute;
           left: 12px;
@@ -419,20 +322,20 @@ export default function Navbar() {
           transition: width 0.25s ease;
         }
 
-        .dropdown a:hover { 
+        .dropdown :global(a:hover) { 
           color: var(--brand);
           background-color: #1a1a1a;
         }
         
-        .dropdown a:hover::after { 
+        .dropdown :global(a:hover)::after { 
           width: calc(100% - 24px); 
         }
 
-        .dropdown a.active::after { 
+        .dropdown :global(a.active)::after { 
           width: calc(100% - 24px); 
         }
         
-        .dropdown a.active { 
+        .dropdown :global(a.active) { 
           color: var(--brand); 
         }
 
@@ -522,10 +425,6 @@ export default function Navbar() {
           align-items: center;
           padding: 16px 20px;
           border-bottom: 1px solid #333;
-          position: sticky;
-          top: 0;
-          background: #000000;
-          z-index: 10;
         }
 
         .mobile-logo {
@@ -598,10 +497,6 @@ export default function Navbar() {
           padding-left: 10px;
         }
 
-        .mobile-nav > a.active {
-          color: #5587b8;
-        }
-
         .mobile-nav > a:last-child {
           border-bottom: none;
         }
@@ -623,10 +518,6 @@ export default function Navbar() {
         .mobile-nav-section a:hover {
           color: #5587b8;
           padding-left: 32px;
-        }
-
-        .mobile-nav-section a.active {
-          color: #5587b8;
         }
 
         .mobile-nav-section a:last-child {
@@ -666,16 +557,6 @@ export default function Navbar() {
           .mobile-menu-btn {
             display: none;
           }
-          
-          .mobile-menu-overlay {
-            display: none;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        body.mobile-menu-open {
-          overflow: hidden;
         }
       `}</style>
     </>
