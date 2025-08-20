@@ -60,10 +60,10 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="logo">
             <Image
-              src="/tank_iso.png"
+              src="/tank_isoblue.png"
               alt="Tank Inspection Logo"
-              width={60}
-              height={60}
+              width={100}
+              height={100}
               priority
             />
             <span>Tank Inspection Services</span>

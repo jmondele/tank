@@ -392,18 +392,18 @@ export default function API653() {
         </section>
 
        {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-r from-teal-600 to-teal-800">
+        <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Need Professional API 653 Services?
             </h2>
-            <p className="text-xl text-teal-100 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
               Our certified API 653 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
                 href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
-                className="bg-white text-teal-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+                className="bg-white text-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
               >
                 Get Free Quote
               </a>

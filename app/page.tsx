@@ -48,11 +48,11 @@ export default function HomePage() {
                   </p>
                   <p>
                     Our mission is simple: keep your assets compliant, safe, and efficient through work . we provide exceptional
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 653</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 570</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 510</span>
+                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 653</span>
+                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 570</span>
+                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 510</span>
                     certified inspections, supported by advanced
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">Non-Destructive Testing (NDT)</span>
+                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">Non-Destructive Testing (NDT)</span>
                     methods and a full range of inspection equipment to handle projects of any size or complexity.
                   </p>
                 </div>
