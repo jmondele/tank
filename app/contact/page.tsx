@@ -42,8 +42,8 @@ export default function Contact() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                <div className="w-8 h-8 ">
+                  <span className="text-white font-bold"></span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Get in Touch</h2>
               </div>
@@ -67,7 +67,7 @@ export default function Contact() {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 shadow-lg">
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-blue-200 shadow-lg">
                     <div className="flex items-start space-x-6">
                       <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center flex-shrink-0">
                         <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -215,8 +215,8 @@ export default function Contact() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                <div className="w-8 h-8 ">
+                  <span className="text-white font-bold"></span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Business Hours</h2>
               </div>
@@ -271,8 +271,8 @@ export default function Contact() {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
+                <div className="w-8 h-8 ">
+                  <span className="text-white font-bold"></span>
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Request a Quote</h2>
               </div>

@@ -258,25 +258,25 @@ export default function API653() {
                 {/* Tank Evaluation */}
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"/>
                         <path d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-green-600">Tank Evaluation</h3>
+                    <h3 className="text-2xl font-bold text-blue-600">Tank Evaluation</h3>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Shell thickness calculations.</p>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Floor and roof corrosion assessment.</p>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Settlement and foundation evaluations.</p>
                     </div>
                   </div>
@@ -285,24 +285,24 @@ export default function API653() {
                 {/* Repairs & Alterations */}
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655-4.653a2.548 2.548 0 010-3.586l6.837-6.836a5.814 5.814 0 018.485 8.485L15.25 15.25M4.236 10.53a8.031 8.031 0 00-2.372 3.104.5.5 0 00.136.696l6.718 4.9a.5.5 0 00.596-.04l4.143-3.36M4.236 10.53l6.525 4.737"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-purple-600">Repairs & Alterations</h3>
+                    <h3 className="text-2xl font-bold text-blue-600">Repairs & Alterations</h3>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Welding and shell repairs.</p>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Bottom replacements.</p>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Nozzle additions or relocations.</p>
                     </div>
                   </div>
@@ -311,20 +311,20 @@ export default function API653() {
                 {/* Reconstruction & Certification */}
                 <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mr-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path fillRule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd"/>
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-orange-600">Reconstruction & Certification</h3>
+                    <h3 className="text-2xl font-bold text-blue-600">Reconstruction & Certification</h3>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Rules for dismantling, relocating, and reassembling tanks.</p>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Work must be performed or overseen by an API 653 certified inspector.</p>
                     </div>
                   </div>
@@ -347,7 +347,7 @@ export default function API653() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-colors duration-300">
-                  <div className="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
@@ -357,7 +357,7 @@ export default function API653() {
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-colors duration-300">
-                  <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                     </svg>
@@ -367,7 +367,7 @@ export default function API653() {
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-colors duration-300">
-                  <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
                     </svg>
@@ -377,7 +377,7 @@ export default function API653() {
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-colors duration-300">
-                  <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-6">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                       <path fillRule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clipRule="evenodd"/>
