@@ -11,13 +11,12 @@ export default function API510() {
   // Photo gallery data - replace with your actual images
   const photos = [
     { src: '/api510-1.jpg', alt: 'Pressure Vessel External Inspection', fallback: false },
-    { src: '/api510-2.jpg', alt: 'Internal Vessel Assessment', fallback: false },
-    { src: '/api510-3.jpg', alt: 'Thickness Measurement Process', fallback: true },
-    { src: '/api510-4.jpg', alt: 'Welding and Component Replacement', fallback: true },
-    { src: '/api510-5.jpg', alt: 'On-Stream Inspection', fallback: true },
-    { src: '/api510-6.jpg', alt: 'Stress Analysis Equipment', fallback: true },
-    { src: '/api510-7.jpg', alt: 'Pressure Vessel Rerating', fallback: true },
-    { src: '/api510-8.jpg', alt: 'Certified Inspector at Work', fallback: true }
+    { src: '/api510-2.jpg', alt: 'Thickness Measurement Process', fallback: false },
+    { src: '/api510-3.jpg', alt: 'Thickness Measurement Process', fallback: false },
+    { src: '/api510-4.jpg', alt: 'Pressure Vessel External Inspection', fallback: false },
+    { src: '/api510-5.jpg', alt: 'Thickness Measurement Process', fallback: false },
+    { src: '/api510-6.jpg', alt: 'Pressure Vessel External Inspection', fallback: false },
+
   ];
 
   // Autoplay functionality
