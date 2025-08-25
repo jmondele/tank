@@ -48,9 +48,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Who We Are</h2>
               </div>
 
@@ -149,9 +147,6 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What We Do</h2>
               </div>
 
@@ -229,9 +224,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Difference</h2>
               </div>
 
@@ -292,9 +285,7 @@ export default function About() {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Our Promise</h2>
               </div>
 

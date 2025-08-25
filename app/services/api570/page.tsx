@@ -192,11 +192,7 @@ export default function API570() {
             <div className="max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200">
                 <div className="flex items-start space-x-4 mb-8">
-                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                  </div>
+
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What is API 570?</h2>
                 </div>
                 

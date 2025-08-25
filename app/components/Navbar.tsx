@@ -332,7 +332,7 @@ export default function Navbar() {
                 </div>
                 
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '2px solid #333' }}>
-                  <Link href="/services/ndt" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link href="/services/NDT" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
                     NDT
                   </Link>
                 </div>

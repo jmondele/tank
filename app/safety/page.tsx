@@ -43,9 +43,7 @@ export default function Safety() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Safety Practices</h2>
               </div>
 
@@ -129,9 +127,7 @@ export default function Safety() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 from-red-500 to-red-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
+
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Safety Matters</h2>
               </div>
 
@@ -214,9 +210,6 @@ export default function Safety() {
           <div className="container mx-auto px-4 relative">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
-                <div className="w-8 h-8 ">
-                  <span className="text-white font-bold">🔹</span>
-                </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-white">Our Promise</h2>
               </div>
 

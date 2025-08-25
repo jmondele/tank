@@ -189,7 +189,7 @@ export default function HomePage() {
             <div className="bg-white rounded-3xl p-12 shadow-2xl border border-gray-200 max-w-6xl mx-auto">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
                 <div className="text-center group">
-                  <div className="h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                  <div className="h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                     <span className="text-white font-bold text-lg">Vopak</span>
                   </div>
                 </div>
@@ -199,12 +199,12 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="text-center group">
-                  <div className="h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                  <div className="h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                     <span className="text-white font-bold text-lg">VTTI</span>
                   </div>
                 </div>
                 <div className="text-center group">
-                  <div className="h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                  <div className="h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
                     <span className="text-white font-bold text-lg">PetroPort</span>
                   </div>
                 </div>
