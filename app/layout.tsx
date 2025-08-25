@@ -4,6 +4,7 @@ import "./globals.css";
 import { Nunito } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
+import { Analytics } from "@vercel/analytics/next"
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500","700"], variable: "--font-nunito" });
 
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        <Analytics/> 
       </body>
     </html>
   );
