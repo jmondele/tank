@@ -47,7 +47,7 @@ export default function HomePage() {
                     At Tank Inspection Services, we deliver safe, precise, and reliable inspection services for storage tanks, piping, and pressure vessels.
                   </p>
                   <p>
-                    Our mission is simple: keep your assets compliant, safe, and efficient through work . we provide exceptional
+                    Our mission is simple: keep your assets compliant, safe, and efficient through work . We provide exceptional
                     <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 653</span>
                     <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 570</span>
                     <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 510</span>
