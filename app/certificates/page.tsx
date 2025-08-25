@@ -106,127 +106,236 @@ export default function Certificates() {
           </div>
         </section>
 
-        {/* ISO Certifications */}
+        {/* ISO Certifications & Maritime License */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="flex items-start space-x-4 mb-12">
 
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ISO Certifications</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ISO Certifications & Maritime License</h2>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-xl border border-blue-200">
-                <div className="flex flex-col lg:flex-row gap-8">
-                  {/* Certificate Display */}
-                  <div className="lg:w-1/2">
-                    <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200">
-                      <div className="absolute top-4 right-4">
-                        <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                          Valid
-                        </span>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* ISO Certificate */}
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-blue-200">
+                  <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200">
+                    <div className="absolute top-4 right-4">
+                      <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Valid
+                      </span>
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
                       </div>
-                      
-                      <div className="text-center mb-6">
-                        <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                          <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                          </svg>
-                        </div>
-                        <h3 className="text-2xl font-bold text-blue-800 mb-2">ISO/IEC 17020:2014</h3>
-                        <p className="text-blue-700 font-semibold">Inspection Body Type A</p>
-                      </div>
+                      <h3 className="text-xl font-bold text-blue-800 mb-2">ISO/IEC 17020:2014</h3>
+                      <p className="text-blue-700 font-semibold text-sm">Inspection Body Type A</p>
+                    </div>
 
-                      <div className="space-y-4 text-sm">
-                        <div className="flex justify-between">
-                          <span className="font-medium text-gray-700">Issuing Authority:</span>
-                          <span className="text-blue-800">CNA Panama</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-gray-700">Certificate Code:</span>
-                          <span className="text-blue-800">OI-050</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-gray-700">Issue Date:</span>
-                          <span className="text-blue-800">October 7, 2016</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-gray-700">Renewal Date:</span>
-                          <span className="text-blue-800">July 22, 2025</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="font-medium text-gray-700">Standard:</span>
-                          <span className="text-blue-800">DGNTI-COPANIT ISO/IEC 17020:2014</span>
-                        </div>
+                    <div className="space-y-3 text-xs">
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Authority:</span>
+                        <span className="text-blue-800">CNA Panama</span>
                       </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Code:</span>
+                        <span className="text-blue-800">OI-050</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Issued:</span>
+                        <span className="text-blue-800">Oct 7, 2016</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Renewal:</span>
+                        <span className="text-blue-800">Jul 22, 2025</span>
+                      </div>
+                    </div>
 
-                      <div className="mt-6 pt-4 border-t border-blue-200">
-                        <button 
-                          onClick={() => window.open('/isoo.pdf', '_blank')}
-                          className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center space-x-2"
-                        >
-                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                          <span>Download Certificate</span>
-                        </button>
+                    <div className="mt-6 pt-4 border-t border-blue-200 space-y-2">
+                      <button 
+                        onClick={() => window.open('/isoo.pdf', '_blank')}
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                          <path fillRule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clipRule="evenodd"/>
+                        </svg>
+                        <span>View Certificate</span>
+                      </button>
+                      <a 
+                        href="/isoo.pdf" 
+                        download="ISO-17020-Certificate.pdf"
+                        className="w-full bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>Download PDF</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Maritime Operations License */}
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-blue-200">
+                  <div className="relative bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 border-2 border-blue-200">
+                    <div className="absolute top-4 right-4">
+                      <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Active
+                      </span>
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5H2M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.001"/>
+                        </svg>
                       </div>
+                      <h3 className="text-xl font-bold text-blue-800 mb-2">Maritime Operations</h3>
+                      <p className="text-blue-700 font-semibold text-sm">LICENCIA DE OPERACIÓN</p>
+                    </div>
+
+                    <div className="space-y-3 text-xs">
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Authority:</span>
+                        <span className="text-blue-800">AMP Panama</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">License:</span>
+                        <span className="text-blue-800">03299</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Issued:</span>
+                        <span className="text-blue-800">Jul 16, 2024</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="font-medium text-gray-700">Expires:</span>
+                        <span className="text-blue-800">Jul 15, 2034</span>
+                      </div>
+                    </div>
+
+                    <div className="mt-6 pt-4 border-t border-blue-200 space-y-2">
+                      <button 
+                        onClick={() => window.open('/maritime-license.pdf', '_blank')}
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                          <path fillRule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clipRule="evenodd"/>
+                        </svg>
+                        <span>View License</span>
+                      </button>
+                      <a 
+                        href="/maritime-license.pdf" 
+                        download="Maritime-Operations-License.pdf"
+                        className="w-full bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-lg font-semibold text-sm transition-all duration-300 flex items-center justify-center space-x-2"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>Download PDF</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Certificate Information */}
+              <div className="mt-12 bg-white rounded-3xl p-8 shadow-xl border border-blue-200">
+                <h4 className="text-2xl font-bold text-gray-900 mb-8 text-center">Combined Accreditation Coverage</h4>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div>
+                    <h5 className="text-lg font-semibold text-blue-800 mb-4 flex items-center">
+                      <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                      </svg>
+                      ISO/IEC 17020:2014 Scope
+                    </h5>
+                    <ul className="text-gray-700 space-y-3">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Independent inspection body Type A certification</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Storage tanks and pressure vessels inspection</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Non-destructive testing services</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Piping system inspections</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="text-lg font-semibold text-blue-800 mb-4 flex items-center">
+                      <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5H2M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.001"/>
+                      </svg>
+                      Maritime Operations License
+                    </h5>
+                    <ul className="text-gray-700 space-y-3">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Port installation repairs and maintenance</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Maritime facility remodeling</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>Port infrastructure restructuring</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        <span>National-level maritime operations</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Certificate Verification */}
+                <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                    <h6 className="font-semibold text-blue-800 mb-3 flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                      ISO Certificate Verification
+                    </h6>
+                    <p className="text-blue-700 text-sm mb-3">
+                      Verify through CNA Panama website or contact us directly
+                    </p>
+                    <div className="text-xs space-y-1">
+                      <p><strong>Website:</strong> www.cna.gob.pa</p>
+                      <p><strong>Certificate Code:</strong> OI-050</p>
+                      <p><strong>Company:</strong> Tank Inspection Services</p>
                     </div>
                   </div>
 
-                  {/* Certificate Information */}
-                  <div className="lg:w-1/2">
-                    <h4 className="text-2xl font-bold text-gray-900 mb-6">Accreditation Details</h4>
-                    
-                    <div className="space-y-6">
-                      <div>
-                        <h5 className="text-lg font-semibold text-blue-800 mb-3">What This Means</h5>
-                        <p className="text-gray-700 leading-relaxed">
-                          Our ISO/IEC 17020:2014 accreditation certifies us as a Type A inspection body, demonstrating our competence, independence, and impartiality in conducting inspections.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h5 className="text-lg font-semibold text-blue-800 mb-3">Scope of Accreditation</h5>
-                        <ul className="text-gray-700 space-y-2">
-                          <li className="flex items-start">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Inspection of storage tanks and pressure vessels</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Non-destructive testing services</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Piping system inspections</span>
-                          </li>
-                          <li className="flex items-start">
-                            <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                            <span>Fitness-for-service evaluations</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h5 className="text-lg font-semibold text-blue-800 mb-3">Recognition</h5>
-                        <p className="text-gray-700 leading-relaxed">
-                          This accreditation is internationally recognized and demonstrates our commitment to maintaining the highest standards of inspection quality and technical competence.
-                        </p>
-                      </div>
-
-                      <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
-                        <div className="flex items-start space-x-3">
-                          <svg className="w-6 h-6 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <div>
-                            <h6 className="font-semibold text-blue-800 mb-1">Certificate Verification</h6>
-                            <p className="text-blue-700 text-sm">
-                              This certificate can be verified through the CNA Panama website or by contacting us directly for authentication.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                  <div className="bg-green-50 rounded-xl p-6 border border-green-200">
+                    <h6 className="font-semibold text-green-800 mb-3 flex items-center">
+                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                      Maritime License Verification
+                    </h6>
+                    <p className="text-green-700 text-sm mb-3">
+                      Verify through AMP Panama or contact our office
+                    </p>
+                    <div className="text-xs space-y-1">
+                      <p><strong>Authority:</strong> Autoridad Marítima de Panamá</p>
+                      <p><strong>License Number:</strong> 03299</p>
+                      <p><strong>Valid Until:</strong> July 15, 2034</p>
                     </div>
                   </div>
                 </div>
@@ -310,76 +419,7 @@ export default function Certificates() {
           </div>
         </section>
 
-        {/* Other Accreditations */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="flex items-start space-x-4 mb-12">
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Other Accreditations</h2>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 shadow-lg">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-blue-800 mb-4">OSHA Safety Training</h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      Comprehensive safety training certification ensuring workplace safety compliance and hazard prevention protocols.
-                    </p>
-                    <div className="mt-6">
-                      <span className="bg-blue-200 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">
-                        Current Certification
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-dashed border-blue-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-blue-700 mb-4">ISO Certifications</h3>
-                    <p className="text-blue-600 leading-relaxed">
-                      [Add any ISO or regional certifications your company holds]
-                    </p>
-                    <div className="mt-6">
-                      <span className="bg-blue-200 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-                        Available Upon Request
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border-2 border-dashed border-blue-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
-                      </svg>
-                    </div>
-                    <h3 className="text-2xl font-bold text-blue-700 mb-4">Industry Approvals</h3>
-                    <p className="text-blue-600 leading-relaxed">
-                      [Add local/national industry-specific approvals]
-                    </p>
-                    <div className="mt-6">
-                      <span className="bg-blue-200 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-                        Contact for Details
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         {/* Certification Benefits */}
         <section className="py-20 bg-gradient-to-br from-blue-900 to-blue-800">

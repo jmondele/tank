@@ -17,16 +17,12 @@ export default function Footer() {
           <li><Link href="/services/api653">API 653</Link></li>
           <li><Link href="/services/api570">API 570</Link></li>
           <li><Link href="/services/api510">API 510</Link></li>
-          <li><Link href="/services/ndt">NDT</Link></li>
+          <li><Link href="/services/NDT">NDT</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
 
-        {/* Right: Social links */}
-        <div className="footer-social">
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </div>
+
       </div>
 
       <style jsx>{`
