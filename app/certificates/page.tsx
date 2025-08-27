@@ -250,9 +250,7 @@ export default function Certificates() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <h5 className="text-lg font-semibold text-blue-800 mb-4 flex items-center">
-                      <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                      </svg>
+
                       ISO/IEC 17020:2014 Scope
                     </h5>
                     <ul className="text-gray-700 space-y-3">
@@ -277,9 +275,7 @@ export default function Certificates() {
 
                   <div>
                     <h5 className="text-lg font-semibold text-blue-800 mb-4 flex items-center">
-                      <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5H2M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.001"/>
-                      </svg>
+
                       Maritime Operations License
                     </h5>
                     <ul className="text-gray-700 space-y-3">
@@ -307,32 +303,28 @@ export default function Certificates() {
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
                     <h6 className="font-semibold text-blue-800 mb-3 flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                      </svg>
+
                       ISO Certificate Verification
                     </h6>
                     <p className="text-blue-700 text-sm mb-3">
                       Verify through CNA Panama website or contact us directly
                     </p>
-                    <div className="text-xs space-y-1">
+                    <div className="text-blue-700 text-xs space-y-1">
                       <p><strong>Website:</strong> www.cna.gob.pa</p>
                       <p><strong>Certificate Code:</strong> OI-050</p>
                       <p><strong>Company:</strong> Tank Inspection Services</p>
                     </div>
                   </div>
 
-                  <div className="bg-green-50 rounded-xl p-6 border border-green-200">
-                    <h6 className="font-semibold text-green-800 mb-3 flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                      </svg>
+                  <div className="bg-blue-50 rounded-xl p-6 border border-blue-200">
+                    <h6 className="font-semibold text-blue-800 mb-3 flex items-center">
+
                       Maritime License Verification
                     </h6>
-                    <p className="text-green-700 text-sm mb-3">
+                    <p className="text-blue-700 text-sm mb-3">
                       Verify through AMP Panama or contact our office
                     </p>
-                    <div className="text-xs space-y-1">
+                    <div className="text-blue-700 text-xs space-y-1">
                       <p><strong>Authority:</strong> Autoridad Marítima de Panamá</p>
                       <p><strong>License Number:</strong> 03299</p>
                       <p><strong>Valid Until:</strong> July 15, 2034</p>

@@ -1,9 +1,54 @@
-"user client"
+"use client";
+
+import { useState } from 'react';
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name as keyof typeof formData]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Create email content
+    const subject = `New Contact Form Submission - ${formData.service || 'General Inquiry'}`;
+    const body = `
+New contact form submission from your website:
+
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Service: ${formData.service}
+
+Message:
+${formData.message}
+
+---
+This message was sent from the contact form on tankinspectionservices.com
+    `.trim();
+
+    // Create mailto link
+    const mailtoLink = `mailto:luismon@tankinspectionservices.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
-
-
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-green-900 relative overflow-hidden">
@@ -59,7 +104,7 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-blue-800 mb-3">📍 Office Address</h3>
+                        <h3 className="text-2xl font-bold text-blue-800 mb-3">Office Address</h3>
                         <p className="text-gray-700 text-lg">
                           Panama City, Panama
                         </p>
@@ -75,7 +120,7 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-green-800 mb-3">📞 Phone</h3>
+                        <h3 className="text-2xl font-bold text-green-800 mb-3">Phone</h3>
                         <p className="text-gray-700 text-lg">
                           <a href="tel:+50766163164" className="hover:text-green-600 transition-colors">
                             +507 6616 3164
@@ -94,7 +139,7 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-purple-800 mb-3">📧 Email</h3>
+                        <h3 className="text-2xl font-bold text-purple-800 mb-3">Email</h3>
                         <p className="text-gray-700 text-lg">
                           <a href="mailto:luismon@tankinspectionservices.com" className="hover:text-purple-600 transition-colors">
                             luismon@tankinspectionservices.com
@@ -112,7 +157,7 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className="text-2xl font-bold text-orange-800 mb-3">🌐 Website</h3>
+                        <h3 className="text-2xl font-bold text-orange-800 mb-3">Website</h3>
                         <p className="text-gray-700 text-lg">
                           <a href="https://tankinspectionservices.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600 transition-colors">
                             tankinspectionservices.com
@@ -126,7 +171,7 @@ export default function Contact() {
                 {/* Contact Form */}
                 <div className="bg-gray-50 rounded-3xl p-8 border border-gray-200">
                   <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
-                  <form className="space-y-6">
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -134,8 +179,12 @@ export default function Contact() {
                         </label>
                         <input
                           type="text"
+                          name="firstName"
+                          value={formData.firstName}
+                          onChange={handleInputChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           placeholder="Your first name"
+                          required
                         />
                       </div>
                       <div>
@@ -144,8 +193,12 @@ export default function Contact() {
                         </label>
                         <input
                           type="text"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={handleInputChange}
                           className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           placeholder="Your last name"
+                          required
                         />
                       </div>
                     </div>
@@ -156,8 +209,12 @@ export default function Contact() {
                       </label>
                       <input
                         type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         placeholder="your@email.com"
+                        required
                       />
                     </div>
 
@@ -167,6 +224,9 @@ export default function Contact() {
                       </label>
                       <input
                         type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleInputChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         placeholder="+507 1234 5678"
                       />
@@ -176,13 +236,19 @@ export default function Contact() {
                       <label className="block text-sm font-semibold text-gray-700 mb-2">
                         Service Type
                       </label>
-                      <select className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option>Select a service</option>
-                        <option>API 653 - Tank Inspection</option>
-                        <option>API 570 - Piping Inspection</option>
-                        <option>API 510 - Pressure Vessel Inspection</option>
-                        <option>NDT Services</option>
-                        <option>General Inquiry</option>
+                      <select 
+                        name="service"
+                        value={formData.service}
+                        onChange={handleInputChange}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required
+                      >
+                        <option value="">Select a service</option>
+                        <option value="API 653 - Tank Inspection">API 653 - Tank Inspection</option>
+                        <option value="API 570 - Piping Inspection">API 570 - Piping Inspection</option>
+                        <option value="API 510 - Pressure Vessel Inspection">API 510 - Pressure Vessel Inspection</option>
+                        <option value="NDT Services">NDT Services</option>
+                        <option value="General Inquiry">General Inquiry</option>
                       </select>
                     </div>
 
@@ -191,9 +257,13 @@ export default function Contact() {
                         Message
                       </label>
                       <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleInputChange}
                         rows={6}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                         placeholder="Tell us about your project and inspection needs..."
+                        required
                       ></textarea>
                     </div>
 
@@ -279,14 +349,8 @@ export default function Contact() {
 
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-12 border border-white/20">
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-green-500 rounded-3xl flex items-center justify-center mx-auto mb-8">
-                    <svg className="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
-                      <polyline points="14,2 14,8 20,8"/>
-                      <line x1="16" y1="13" x2="8" y2="13"/>
-                      <line x1="16" y1="17" x2="8" y2="17"/>
-                      <polyline points="10,9 9,9 8,9"/>
-                    </svg>
+                  <div className=" from-green-400 to-green-500 rounded-3xl flex items-center justify-center mx-auto mb-8">
+                    
                   </div>
 
                   <h3 className="text-3xl md:text-4xl font-bold text-white mb-8">Get Your Custom Quote</h3>
@@ -301,43 +365,49 @@ export default function Contact() {
                         <span className="text-white font-bold">653</span>
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">Tank Inspections</h4>
-                      <p className="text-green-200 text-sm">API 653 certified</p>
+                      <p className="text-white-200 text-sm">API 653 certified</p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                      <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <span className="text-white font-bold">570</span>
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">Piping Systems</h4>
-                      <p className="text-green-200 text-sm">API 570 certified</p>
+                      <p className="text-white-200 text-sm">API 570 certified</p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                      <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <span className="text-white font-bold">510</span>
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">Pressure Vessels</h4>
-                      <p className="text-green-200 text-sm">API 510 certified</p>
+                      <p className="text-white-200 text-sm">API 510 certified</p>
                     </div>
 
                     <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                      <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mx-auto mb-4">
                         <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M19.5 12.5L12 3L4.5 12.5H7V21h10v-8.5h2.5z"/>
                         </svg>
                       </div>
                       <h4 className="text-lg font-semibold text-white mb-2">NDT Services</h4>
-                      <p className="text-green-200 text-sm">All methods available</p>
+                      <p className="text-white-200 text-sm">All methods available</p>
                     </div>
                   </div>
 
                   <div className="mt-12">
-                    <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl mr-4">
+                    <a 
+                      href="mailto:luismon@tankinspectionservices.com?subject=Quote Request&body=Hello, I would like to request a quote for inspection services. Please contact me with more information about your services and pricing."
+                      className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl mr-4 inline-block"
+                    >
                       Request Quote Now
-                    </button>
-                    <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
+                    </a>
+                    <a 
+                      href="tel:+50766163164"
+                      className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
+                    >
                       Call Us Directly
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -367,7 +437,6 @@ export default function Contact() {
           </div>
         </section>
       </main>
-
     </div>
   );
 }
