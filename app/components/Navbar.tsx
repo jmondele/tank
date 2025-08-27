@@ -225,6 +225,36 @@ export default function Navbar() {
                 >
                   NDT
                 </Link>
+                <Link 
+                  href="/services/welding" 
+                  role="menuitem" 
+                  className={pathname === "/services/api653" ? "active" : ""}
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    padding: '12px 16px',
+                    margin: '2px 0',
+                    fontSize: '15px',
+                    fontWeight: '600',
+                    color: pathname === "/services/api653" ? '#5587b8' : '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.2s ease',
+                    backgroundColor: pathname === "/services/api653" ? '#1a1a1a' : 'transparent'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.color = '#5587b8';
+                    e.currentTarget.style.backgroundColor = '#1a1a1a';
+                  }}
+                  onMouseLeave={(e) => {
+                    if (pathname !== "/services/api653") {
+                      e.currentTarget.style.color = '#ffffff';
+                      e.currentTarget.style.backgroundColor = 'transparent';
+                    }
+                  }}
+                >
+                  Welder Qualification
+                </Link>
               </div>
             </li>
 
@@ -334,6 +364,11 @@ export default function Navbar() {
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '2px solid #333' }}>
                   <Link href="/services/NDT" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
                     NDT
+                  </Link>
+                </div>
+                <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
+                  <Link href="/services/welding" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                    Welder Qualification
                   </Link>
                 </div>
               </div>

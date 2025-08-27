@@ -292,7 +292,7 @@ export default function NDT() {
                 </div>
 
                 {/* Visual Testing */}
-                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300 lg:col-span-2 xl:col-span-1">
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -310,6 +310,50 @@ export default function NDT() {
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-gray-700">Certified inspectors visually assess components for damage, leaks, or corrosion.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Advanced Ultrasonic Testing */}
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-blue-600">Advanced Ultrasonic Methods</h3>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700">Phased Array UT: Electronic beam steering for complex geometries and improved coverage.</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700">PAUT provides detailed imaging and precise flaw characterization for critical welds.</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Time-of-Flight Diffraction */}
+                <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mr-4">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-blue-600">Time-of-Flight Diffraction (TOFD)</h3>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700">Highly accurate technique measuring diffracted ultrasonic waves for precise flaw sizing.</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
+                      <p className="text-gray-700">Superior detection of planar defects and through-wall crack height measurements.</p>
                     </div>
                   </div>
                 </div>
