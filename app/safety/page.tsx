@@ -301,27 +301,33 @@ export default function Safety() {
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4 text-center">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Ready to Work with Safety-First Professionals?
-              </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Contact us today to learn more about our comprehensive safety protocols and zero-incident commitment.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
-                  Discuss Safety Requirements
-                </button>
-                <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300">
-                  View Safety Protocols
-                </button>
-              </div>
-            </div>
-          </div>
-        </section>
+{/* Call to Action */}
+<section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-4 text-center">
+    <div className="max-w-4xl mx-auto">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Ready to Work with Safety-First Professionals?
+      </h2>
+      <p className="text-xl text-gray-600 mb-8">
+        Contact us today to learn more about our comprehensive safety protocols and zero-incident commitment.
+      </p>
+      <div className="flex flex-wrap justify-center gap-4">
+        <a 
+          href="mailto:luismon@tankinspectionservices.com?subject=Safety Requirements Discussion"
+          className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+        >
+          Discuss Safety Requirements
+        </a>
+        <a 
+          href="/protocol"
+          className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 inline-block"
+        >
+          View Safety Protocols
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
       </main>
 
     </div>
