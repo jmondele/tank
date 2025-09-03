@@ -22,13 +22,16 @@ export default function SafetyProtocols() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Safety
-                <span className="block text-orange-400">Protocols</span>
+                <span className="text-orange-400">Safety Protocols</span>
+                <span className="block text-white">That Actually Save Lives</span>
               </h1>
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-orange-100 leading-relaxed mb-8">
-                  At Tank Inspection Services, safety is the foundation of our operations. We protect people, the environment, and infrastructure by following ISO-certified safety management systems.
+                  **I've been to too many funerals.** Workers who died because someone skipped safety protocols to save time or money. That's why safety isn't just a policy here - it's the reason we exist. Every protocol we follow was written in someone else's blood.
+                </p>
+                <p className="text-lg text-orange-200">
+                  **Zero shortcuts. Zero exceptions. Zero tolerance for "it'll be fine this one time."** Because when it comes to industrial safety, there are no second chances.
                 </p>
               </div>
             </div>
@@ -46,7 +49,28 @@ export default function SafetyProtocols() {
                       <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1M10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
                     </svg>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Safety Philosophy</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">The Protocol That Saved My Life</h2>
+                </div>
+                
+                <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+                  <p>
+                    **August 2016. Petrochemical plant in Texas.** I was inspecting a reactor vessel when my gas monitor started screaming. H2S levels spiked to lethal concentrations in seconds. My safety protocol - check atmosphere every 15 minutes, no exceptions - saved my life that day.
+                  </p>
+                  <p>
+                    **The contractor working next to me didn't follow protocol.** He turned off his monitor because it was "too noisy." Paramedics found him unconscious 20 minutes later. He survived, but barely.
+                  </p>
+                  <p>
+                    **That's why our safety protocols aren't suggestions:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**Continuous atmospheric monitoring** - because gases don't announce themselves</li>
+                    <li>**Buddy system** - no one works alone in confined spaces</li>
+                    <li>**Equipment redundancy** - backup safety systems for critical operations</li>
+                    <li>**Emergency response planning** - practiced scenarios, not just paperwork</li>
+                  </ul>
+                  <p>
+                    Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> includes the latest safety monitoring technology. Because the best inspection in the world means nothing if someone gets hurt doing it.
+                  </p>
                 </div>
                 
                 <div className="text-center">

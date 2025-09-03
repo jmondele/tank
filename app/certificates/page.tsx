@@ -22,16 +22,16 @@ export default function Certificates() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Certificates &
-                <span className="block text-blue-400">Accreditations</span>
+                <span className="text-blue-400">Certificates & Accreditations</span>
+                <span className="block text-white">That Actually Mean Something</span>
               </h1>
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-blue-100 leading-relaxed mb-8">
-                  At Tank Inspection Services, we take pride in holding the highest industry certifications to ensure our inspection services meet and exceed international standards.
+                  **Here's the truth about certifications**: anyone can print a fancy certificate. What matters is whether your inspector can actually find problems before they become disasters. I've got the certifications that matter, backed by real experience that keeps your assets safe.
                 </p>
                 <p className="text-lg text-blue-200">
-                  Our team of certified professionals guarantees compliance, quality, and safety in every project.
+                  **Every certification we hold** was earned through rigorous testing, maintained through continuing education, and proven in the field on million-dollar projects. No paper mills, no shortcuts - just the real deal.
                 </p>
               </div>
             </div>
@@ -42,9 +42,30 @@ export default function Certificates() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200 mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Why These Certifications Matter</h2>
+                
+                <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+                  <p>
+                    **Let me tell you about the inspector who cost a refinery $15 million.** He had certifications from three different organizations - all expired. The company didn't check. His "inspection" missed critical corrosion that led to a massive failure six months later.
+                  </p>
+                  <p>
+                    **That's why I'm obsessive about maintaining current, valid certifications:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**API certifications** that are current, not expired</li>
+                    <li>**Continuing education** to stay current with evolving standards</li>
+                    <li>**Field experience** backing up every piece of paper</li>
+                    <li>**Traceable credentials** you can verify independently</li>
+                  </ul>
+                  <p>
+                    When you hire us, you're getting inspectors whose certifications are backed by proven results. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> combined with properly certified technicians gives you the confidence to make critical decisions.
+                  </p>
+                </div>
+              </div>
+              
               <div className="flex items-start space-x-4 mb-12">
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">API Certifications</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Current API Certifications</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

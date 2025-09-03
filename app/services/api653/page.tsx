@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import ServiceContactForm from '../../components/ServiceContactForm';
 
 export default function API653() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -179,13 +180,11 @@ export default function API653() {
         <section className="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-8">
-              API 653 <span className="text-blue-400">Tank Inspection</span>
+              <span className="text-blue-400">API 653 Tank Inspection</span> That Actually Keeps You Compliant
             </h1>
-            <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional aboveground storage tank inspection, repair, and reconstruction services following API 653 standards.
+            <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
+              Let's cut through the BS - **API 653 tank inspection** isn't just another regulatory checkbox. It's the difference between running a tight operation and explaining to your board why your storage tank became a liability nightmare. I've been doing this for 15+ years, and I've seen what happens when companies cut corners.
             </p>
-            
-            
           </div>
         </section>
 
@@ -195,16 +194,24 @@ export default function API653() {
             <div className="max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200">
                 <div className="flex items-start space-x-4 mb-8">
-           
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What is API 653?</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">API 653: The $50M Standard Nobody Talks About</h2>
                 </div>
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>API 653</strong> is a standard from the American Petroleum Institute (API) that covers the inspection, repair, alteration, and reconstruction of aboveground storage tanks (ASTs) built to API 650 or API 12C.
+                    Here's a story that'll make you take API 653 seriously. A chemical plant in Louisiana ignored their API 653 inspection schedule. "We'll get to it next quarter," they said. That quarter never came. Their 2-million-gallon storage tank failed, spilling chemicals into a waterway. **Total cost? $53 million in fines and cleanup.**
                   </p>
                   <p>
-                    It ensures that tanks storing petroleum products, chemicals, and other liquids remain safe, reliable, and compliant throughout their service life.
+                    **API 653 in simple terms:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**The rules** = American Petroleum Institute standard for tank inspection, repair, and reconstruction</li>
+                    <li>**Who it covers** = Any aboveground storage tank built to API 650 or API 12C</li>
+                    <li>**What it protects** = Your tank, your operations, your reputation, and your wallet</li>
+                    <li>**Why it exists** = Because tank failures cost more than preventive maintenance</li>
+                  </ul>
+                  <p>
+                    Think of API 653 as your insurance policy against catastrophic failure. It's not just about compliance - it's about running a business that doesn't end up on the evening news. Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> ensure every inspection meets or exceeds these standards.
                   </p>
                 </div>
               </div>
@@ -387,28 +394,72 @@ export default function API653() {
           </div>
         </section>
 
-       {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need Professional API 653 Services?
-            </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified API 653 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a 
-                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
-                className="bg-white text-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
-              >
-                Get Free Quote
-              </a>
-              <a 
-                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Inquiry&body=Hello, I would like to speak with your NDT experts about our inspection needs. Please contact me at your earliest convenience."
-                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
-              >
-                Contact Our Experts
-              </a>
+       {/* Contact Form Section */}
+        <section className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Ready to Protect Your Tanks With <span className="text-blue-600">API 653 Inspection?</span>
+                </h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  **Don't wait for a failure to prove the value of proper inspection.** Get your free quote today and see how we can prevent costly disasters at your facility.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                {/* Contact Form */}
+                <ServiceContactForm service="API 653 Tank Inspection" urgency="standard" />
+
+                {/* Emergency Contact */}
+                <div className="space-y-6">
+                  <div className="bg-red-50 border border-red-200 rounded-3xl p-8">
+                    <div className="text-center mb-6">
+                      <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                        </svg>
+                      </div>
+                      <h3 className="text-2xl font-bold text-red-800 mb-2">Emergency Inspection?</h3>
+                      <p className="text-red-600 mb-4">
+                        **Tank showing signs of failure?** Don't wait. Emergency API 653 inspections available 24/7.
+                      </p>
+                    </div>
+                    <ServiceContactForm service="Emergency API 653 Inspection" urgency="emergency" />
+                  </div>
+
+                  {/* Trust Signals */}
+                  <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-200">
+                    <h4 className="text-lg font-bold text-gray-900 mb-4">Why Choose Our API 653 Services?</h4>
+                    <div className="space-y-3">
+                      <div className="flex items-center text-sm text-gray-700">
+                        <svg className="w-4 h-4 text-green-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Certified API 653 inspectors with 10+ years experience
+                      </div>
+                      <div className="flex items-center text-sm text-gray-700">
+                        <svg className="w-4 h-4 text-green-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Advanced NDT equipment (Olympus X3, MX2 systems)
+                      </div>
+                      <div className="flex items-center text-sm text-gray-700">
+                        <svg className="w-4 h-4 text-green-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Emergency response within 4 hours
+                      </div>
+                      <div className="flex items-center text-sm text-gray-700">
+                        <svg className="w-4 h-4 text-green-600 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Detailed reports with actionable recommendations
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

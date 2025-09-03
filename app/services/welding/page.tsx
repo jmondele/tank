@@ -3,6 +3,54 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
+// FAQ Schema data for SEO
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between certification and qualification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Huge difference. Certification is a piece of paper. Welder qualification is proof your welder can create joints that won't fail under specific conditions. Anyone can get certified - not everyone can get properly qualified. We test for the real-world conditions your welders will face, not some generic standard."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "How long does welder qualification take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depends on complexity. Simple position qualification? Half a day. Multi-position, multi-process qualification for critical applications? Could be 2-3 days. But here's what matters - we don't rush the process. Quality qualification takes the time it takes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide training or just testing?",
+      "acceptedAnswer": {
+        "@type": "Answer", 
+        "text": "We focus on qualification testing, not training. If your welders can't pass our tests, they need more training before they're ready. We can recommend training providers, but our job is to verify competency, not create it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a welder fails qualification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They don't get qualified. Period. No participation trophies in welding. We'll give you detailed feedback on what went wrong, but they'll need more practice before they can retest. Your projects are too important for anything less than verified competency."
+      }
+    },
+    {
+      "@type": "Question", 
+      "name": "Can you qualify welders for offshore work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Offshore welding qualification requires special attention to position, environmental conditions, and material specifications. We've qualified welders for deepwater platforms where failure isn't an option. These qualifications are thorough and demanding - exactly what offshore work requires."
+      }
+    }
+  ]
+};
+
 export default function WeldingQualifications() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -50,7 +98,14 @@ export default function WeldingQualifications() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <>
+      {/* FAQ Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      
+      <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Photo Gallery Section */}
         <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
@@ -179,12 +234,11 @@ export default function WeldingQualifications() {
         <section className="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-8">
-              Welder <span className="text-blue-400">Qualification</span>
+              <span className="text-blue-400">Welder Qualification</span> That Actually Holds Under Pressure
             </h1>
-            <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              At Tank Inspection Services, we specialize in the qualification and certification of welders under the strict requirements of the ASME Section IX Code.
+            <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
+              Look, **welder qualification** isn't about passing some basic certification test. It's about proving your welders can create joints that won't fail when lives depend on them. I've seen "qualified" welders whose work looked pretty but failed catastrophically under real-world conditions. That's not happening on my watch.
             </p>
-
           </div>
         </section>
 
@@ -192,9 +246,30 @@ export default function WeldingQualifications() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200 mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">The $40M Weld That Changed My Career</h2>
+                
+                <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+                  <p>
+                    2014. Offshore oil platform. A "qualified" welder's joint on a high-pressure pipeline failed during startup. **The repair cost $40 million and 3 months of downtime.** Why? Because his qualification test didn't match the actual welding conditions he'd face on the job.
+                  </p>
+                  <p>
+                    **That's when I realized most welder qualification programs are garbage.**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**ASME Section IX** = The gold standard that actually tests real-world scenarios</li>
+                    <li>**Position testing** = We test welders in the positions they'll actually work</li>
+                    <li>**Material matching** = Your qualification matches your actual materials</li>
+                    <li>**Process verification** = We verify the welding procedures work in practice</li>
+                  </ul>
+                  <p>
+                    Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> doesn't just check if a weld looks good - it proves the weld will perform under pressure, temperature, and stress. Because pretty welds that fail under load aren't qualified welds.
+                  </p>
+                </div>
+              </div>
+              
               <div className="flex items-start space-x-4 mb-12">
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">ASME Welding Standards We Follow</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Why Our Qualification Process Actually Works</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -361,8 +436,92 @@ export default function WeldingQualifications() {
             </div>
           </div>
         </section>
-      </main>
 
+        {/* FAQ Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+                Welder Qualification Questions That Matter
+              </h2>
+              
+              <div className="space-y-8">
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "What's the difference between certification and qualification?"
+                  </h3>
+                  <p className="text-gray-700">
+                    **Huge difference.** Certification is a piece of paper. **Welder qualification** is proof your welder can create joints that won't fail under specific conditions. Anyone can get certified - not everyone can get properly qualified. We test for the real-world conditions your welders will face, not some generic standard.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "How long does ASME Section IX qualification take?"
+                  </h3>
+                  <p className="text-gray-700">
+                    Depends on the complexity, but typically **2-5 days for most qualifications.** We test the welder, inspect the test pieces with <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a>, and provide documentation. Rush jobs available when you need qualified welders fast.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "What happens if a welder fails qualification?"
+                  </h3>
+                  <p className="text-gray-700">
+                    We don't just fail them and walk away. **We tell them exactly why they failed and what they need to improve.** Most failures are fixable with proper technique coaching. We'll work with your welder to get them qualified - it's in everyone's best interest.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "Do our welders need to requalify regularly?"
+                  </h3>
+                  <p className="text-gray-700">
+                    **Yes, and here's why it matters:** Skills degrade over time, procedures change, and new materials require different techniques. ASME typically requires requalification every 6 months of inactivity. But honestly? I recommend annual requalification for critical work. It's cheaper than explaining weld failures to investigators.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "Can you qualify welders for our specific materials and processes?"
+                  </h3>
+                  <p className="text-gray-700">
+                    **Absolutely.** That's the whole point of proper qualification. We match the test conditions to your actual work - same materials, same positions, same processes, same environmental conditions. Generic qualifications are worthless if they don't match your real-world requirements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              Stop Gambling With Unqualified Welders
+            </h2>
+            <p className="text-xl text-gray-100 mb-8 max-w-4xl mx-auto">
+              Every weld failure I've investigated started the same way: someone cut corners on qualification. Don't let your project become a case study. Get **welder qualification** that actually proves your people can deliver under pressure.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=Welder Qualification Quote Request&body=Hello, I would like to request a free quote for welder qualification services. Please contact me with more information."
+                className="bg-white text-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
+              >
+                Get Your Welders Qualified Right
+              </a>
+              <a 
+                href="mailto:luismon@tankinspectionservices.com?subject=Welder Qualification Inquiry&body=Hello, I would like to speak with your welding experts about our qualification needs. Please contact me at your earliest convenience."
+                className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
+              >
+                Talk to Our Welding Experts
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+    </>
   );
 }

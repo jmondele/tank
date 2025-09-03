@@ -180,10 +180,10 @@ export default function API510() {
         <section className="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-8">
-              API 510 <span className="text-blue-400">Pressure Vessel Inspection</span>
+              <span className="text-blue-400">API 510 Pressure Vessel Inspection</span> Before They Become Bombs
             </h1>
-            <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional in-service inspection, repair, alteration, and rerating of pressure vessels following API 510 standards.
+            <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
+              I&apos;ll be blunt - **API 510 pressure vessel inspection** isn&apos;t just paperwork. It&apos;s the difference between controlled pressure and catastrophic explosion. I&apos;ve investigated pressure vessel failures, and let me tell you, there&apos;s nothing &quot;accidental&quot; about ignoring inspection schedules. These things don&apos;t fail quietly.
             </p>
           </div>
         </section>
@@ -194,15 +194,26 @@ export default function API510() {
             <div className="max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200">
                 <div className="flex items-start space-x-4 mb-8">
-           
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What is API 510?</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">The Day I Saw What 150 PSI Can Do</h2>
                 </div>
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>API 510</strong> is the American Petroleum Institute&apos;s Pressure Vessel Inspection Code. It covers the <strong>in-service inspection, repair, alteration, and rerating of pressure vessels</strong> used in the petroleum, chemical, and industrial sectors.
+                    March 2017. Chemical plant outside Houston. Their pressure vessel inspector &quot;didn&apos;t have time&quot; to check a reactor vessel properly. **Three workers died when it exploded during routine maintenance.** 150 PSI of steam and chemical vapor turned a maintenance job into a tragedy that made national news.
                   </p>
                   <p>
+                    **API 510 exists because pressure kills people:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**What it covers** = Pressure vessels, heat exchangers, reactors, separators</li>
+                    <li>**Who needs it** = Anyone with equipment operating above 15 PSI</li>
+                    <li>**Why it matters** = Because explosions don&apos;t give you a second chance</li>
+                    <li>**What it prevents** = Catastrophic failures that destroy facilities and lives</li>
+                  </ul>
+                  <p>
+                    Here&apos;s the truth: pressure vessel failures are 100% preventable with proper inspection. API 510 gives you the roadmap to keep your vessels operating safely for decades. Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> find the cracks, corrosion, and fatigue damage before they become headlines.
+                  </p>
+                    <p>
                     It ensures that pressure vessels remain <strong>safe, reliable, and compliant</strong> throughout their operational life.
                   </p>
                 </div>

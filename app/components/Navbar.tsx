@@ -269,6 +269,16 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
+              <Link className={`navLink ${pathname === "/case-studies" ? "active" : ""}`} href="/case-studies">
+                Case Studies
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/blog" ? "active" : ""}`} href="/blog">
+                Knowledge Base
+              </Link>
+            </li>
+            <li>
               <Link className={`navLink ${pathname === "/safety" ? "active" : ""}`} href="/safety">
                 Safety
               </Link>
@@ -281,6 +291,11 @@ export default function Navbar() {
             <li>
               <Link className={`navLink ${pathname === "/contact" ? "active" : ""}`} href="/contact">
                 Contact us
+              </Link>
+            </li>
+            <li>
+              <Link className={`navLink ${pathname === "/quote" ? "active" : ""}`} href="/quote" style={{background: '#16a34a', color: 'white', padding: '8px 16px', borderRadius: '8px', fontWeight: 'bold'}}>
+                Get Quote
               </Link>
             </li>
           </ul>
@@ -382,6 +397,18 @@ export default function Navbar() {
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/equipment" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
                   Equipment
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Case Studies
+                </Link>
+              </div>
+              
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
+                <Link href="/blog" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  Knowledge Base
                 </Link>
               </div>
               

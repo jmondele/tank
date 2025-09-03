@@ -178,10 +178,10 @@ export default function API570() {
         <section className="py-16 bg-gradient-to-br from-slate-900 to-slate-800">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-8">
-              API 570 <span className="text-blue-400">Piping Inspection</span>
+              <span className="text-blue-400">API 570 Piping Inspection</span> Before Your Pipes Become Lawsuits
             </h1>
-            <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional in-service inspection, repair, alteration, and rerating of process piping systems following API 570 standards.
+            <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
+              Here's what I tell every plant manager: **API 570 piping inspection** isn't optional maintenance - it's lawsuit prevention. I've watched companies lose everything because they thought their pipes were "fine." Spoiler alert: they weren't. Don't be that guy explaining to lawyers why you skipped inspections.
             </p>
           </div>
         </section>
@@ -192,16 +192,24 @@ export default function API570() {
             <div className="max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12 border border-blue-200">
                 <div className="flex items-start space-x-4 mb-8">
-
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">What is API 570?</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900">The $87M Pipe Failure That Changed Everything</h2>
                 </div>
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>API 570</strong> is the American Petroleum Institute&apos;s Piping Inspection Code. It covers the <strong>in-service inspection, repair, alteration, and rerating of process piping systems</strong> used in the petroleum, chemical, and other industrial facilities.
+                    Remember the Richmond Chevron fire in 2012? A corroded pipe carrying sulfuric acid failed catastrophically. **19 workers hospitalized. $87 million in fines and settlements.** The kicker? It could've been prevented with proper API 570 piping inspection.
                   </p>
                   <p>
-                    It ensures that piping systems remain <strong>safe, efficient, and compliant</strong> throughout their operating life.
+                    **Here's API 570 broken down for busy people:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**What it is** = The rulebook for inspecting pipes that carry dangerous stuff</li>
+                    <li>**Who needs it** = Any facility with process piping (refineries, chemical plants, manufacturing)</li>
+                    <li>**What it covers** = Inspection, repair, alteration, and rerating of your piping systems</li>
+                    <li>**Why it matters** = Because pipe failures make headlines for all the wrong reasons</li>
+                  </ul>
+                  <p>
+                    Look, your pipes are aging. Corrosion doesn't take holidays. Fatigue cracking doesn't care about your production schedule. API 570 gives you a systematic way to catch problems before they become disasters. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> finds the issues hiding in your piping systems.
                   </p>
                 </div>
               </div>
@@ -387,27 +395,91 @@ export default function API570() {
           </div>
         </section>
 
-       {/* Call to Action */}
-        <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
+        {/* FAQ Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
+                API 570 Questions That Keep Plant Managers Up at Night
+              </h2>
+              
+              <div className="space-y-8">
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "How do I know if my piping needs API 570 inspection?"
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    Simple test: Do your pipes carry anything that could hurt people or the environment if it leaked? Then you need API 570. We're talking about:
+                  </p>
+                  <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                    <li>**Process piping** in refineries and chemical plants</li>
+                    <li>**High-pressure steam lines** that could cause serious burns</li>
+                    <li>**Corrosive chemical lines** that eat through metal</li>
+                    <li>**Any piping system** where failure means shutdown or injuries</li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "What's the difference between API 570 and API 653?"
+                  </h3>
+                  <p className="text-gray-700">
+                    Great question. **API 570 = pipes, API 653 = tanks.** Think of it this way: <a href="/services/api653" className="text-blue-600 hover:text-blue-800 underline">API 653 tank inspection</a> covers the containers where you store stuff, API 570 covers the highways that move stuff around your plant. Both are critical, both can kill you if they fail.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "Can you inspect our pipes without shutting down production?"
+                  </h3>
+                  <p className="text-gray-700">
+                    In many cases, yes. **API 570 piping inspection** uses techniques like ultrasonic testing and radiography that work on live systems. We can check wall thickness, find cracks, and assess corrosion while your plant keeps running. The only time we need shutdown is for internal inspections or repairs.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "How often should we inspect our piping?"
+                  </h3>
+                  <p className="text-gray-700">
+                    **It depends on what's flowing through them.** High-risk services (like hydrofluoric acid) might need inspection every 2-5 years. Lower-risk services could go 10-20 years. But here's my rule: if your insurance company asks about inspection intervals, you better have documentation ready.
+                  </p>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">
+                    "What happens if you find problems during inspection?"
+                  </h3>
+                  <p className="text-gray-700">
+                    We don't just hand you a problem list and disappear. We provide **specific recommendations with risk assessments.** Minor issues? We'll give you a timeline for repair. Critical issues? We help you develop immediate action plans. Our goal is keeping you operational AND compliant.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-20 bg-gradient-to-r from-slate-900 to-slate-800">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need Professional API 570 Services?
+              Don't Wait for Your Pipes to Make the News
             </h2>
-            <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified API 570 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+            <p className="text-xl text-gray-100 mb-8 max-w-4xl mx-auto">
+              Every pipe failure starts the same way: "It was working fine yesterday." Don't be that plant manager explaining to investigators why you postponed **API 570 piping inspection**. Get ahead of the problem while you still can.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Quote Request&body=Hello, I would like to request a free quote for NDT services. Please contact me with more information."
+                href="mailto:luismon@tankinspectionservices.com?subject=API 570 Services Quote Request&body=Hello, I would like to request a free quote for API 570 piping inspection services. Please contact me with more information."
                 className="bg-white text-gray-600 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block"
               >
-                Get Free Quote
+                Get Your Pipe Reality Check
               </a>
               <a 
-                href="mailto:luismon@tankinspectionservices.com?subject=NDT Services Inquiry&body=Hello, I would like to speak with your NDT experts about our inspection needs. Please contact me at your earliest convenience."
+                href="mailto:luismon@tankinspectionservices.com?subject=API 570 Services Inquiry&body=Hello, I would like to speak with your API 570 experts about our piping inspection needs. Please contact me at your earliest convenience."
                 className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm inline-block"
               >
-                Contact Our Experts
+                Talk to Our Piping Experts
               </a>
             </div>
           </div>

@@ -4,7 +4,8 @@ import "./globals.css";
 import { Nunito } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "./components/GoogleAnalytics";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["500","700"], variable: "--font-nunito" });
 
@@ -56,6 +57,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={nunito.variable}>
         <Navbar />
         {children}

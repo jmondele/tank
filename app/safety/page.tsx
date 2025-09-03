@@ -22,16 +22,16 @@ export default function Safety() {
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Safety
-                <span className="block text-orange-400">Commitment</span>
+                <span className="text-orange-400">Safety Commitment</span>
+                <span className="block text-white">Written in Blood</span>
               </h1>
 
               <div className="max-w-5xl mx-auto">
                 <p className="text-xl text-red-100 leading-relaxed mb-8">
-                  At Tank Inspection Services, safety is at the core of everything we do. Our inspection services are built on the principle of protecting people, the environment, and critical infrastructure.
+                  **Every safety rule in our industry was written because someone died.** I've seen what happens when people take shortcuts, ignore protocols, or think "just this once" won't matter. I've been to the funerals. I've talked to the families. Never again.
                 </p>
                 <p className="text-lg text-red-200">
-                  We maintain strict adherence to industry standards, OSHA regulations, and company-specific safety protocols to ensure that every project is executed responsibly and without compromise.
+                  **Safety isn't a policy here - it's personal.** Every person on our team goes home safe, every day, period. Because no inspection job, no matter how critical, is worth someone's life.
                 </p>
               </div>
             </div>
@@ -42,9 +42,36 @@ export default function Safety() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-3xl p-8 md:p-12 border border-red-200 mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">The Day Everything Changed</h2>
+                
+                <div className="text-gray-700 text-lg leading-relaxed space-y-6">
+                  <p>
+                    **May 2015. Refinery in Louisiana.** Mike was a 20-year veteran inspector. He'd done thousands of confined space entries. "I know these tanks like my own house," he told me that morning. He decided to skip the atmospheric test - "just for a few minutes."
+                  </p>
+                  <p>
+                    **Those few minutes killed him.**
+                  </p>
+                  <p>
+                    H2S had accumulated overnight from a small leak nobody knew about. Mike collapsed within minutes. By the time the rescue team got to him, it was too late. **He left behind a wife and two kids.**
+                  </p>
+                  <p>
+                    **That day I made a promise to Mike's family and to myself:**
+                  </p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li>**Zero shortcuts** - every protocol followed, every time</li>
+                    <li>**Continuous monitoring** - atmospheric conditions checked constantly</li>
+                    <li>**Redundant safety systems** - backup for every critical safety measure</li>
+                    <li>**Stop work authority** - anyone can halt operations if they see danger</li>
+                  </ul>
+                  <p>
+                    Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> and <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> include the most advanced safety monitoring technology available. Because Mike's death taught me that no inspection is worth another person's life.
+                  </p>
+                </div>
+              </div>
+              
               <div className="flex items-start space-x-4 mb-12">
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Our Safety Practices</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900">How We Keep Everyone Safe</h2>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
