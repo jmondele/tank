@@ -16,7 +16,7 @@ export default function Quote() {
     urgency: '',
     currentIssues: '',
     lastInspection: '',
-    additionalServices: [],
+    additionalServices: [] as string[],
     message: ''
   });
 
@@ -108,7 +108,7 @@ Please respond within 24 hours for standard requests, immediately for emergency 
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-green-100 leading-relaxed mb-8">
-                  **No games, no sales pitches** - just honest pricing for professional inspection services. Fill out the form below and I'll personally review your requirements and get back to you within 24 hours with a detailed quote.
+                  **No games, no sales pitches** - just honest pricing for professional inspection services. Fill out the form below and I&apos;ll personally review your requirements and get back to you within 24 hours with a detailed quote.
                 </p>
                 <p className="text-lg text-green-200">
                   **Emergency inspections?** Call me directly at <strong className="text-white">(555) 123-4567</strong> - I answer 24/7.

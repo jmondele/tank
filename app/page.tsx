@@ -12,16 +12,17 @@ const structuredData = {
   "foundingDate": "2011",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "US"
+    "addressLocality": "Panama City",
+    "addressCountry": "PA"
   },
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer service",
-    "availableLanguage": "English"
+    "availableLanguage": ["English", "Spanish"]
   },
   "serviceArea": {
     "@type": "Place",
-    "name": "United States"
+    "name": "Central America, Caribbean, and International"
   },
   "services": [
     "API 653 Tank Inspections",
@@ -44,21 +45,21 @@ export default function HomePage() {
     <>
       <Head>
         <title>Tank Inspection Services | API 653, 570, 510 Certified Inspections & NDT Testing</title>
-        <meta name="description" content="Professional tank inspection services with API 653, API 570, API 510 certifications. Specializing in storage tanks, piping, pressure vessels with advanced NDT methods. 10+ years serving petroleum, chemical, and industrial sectors." />
-        <meta name="keywords" content="tank inspection, API 653, API 570, API 510, NDT testing, non-destructive testing, storage tank inspection, pressure vessel inspection, piping inspection, petroleum industry, chemical industry, tank compliance, industrial inspections" />
+        <meta name="description" content="Professional tank inspection services based in Panama City, Panama with API 653, API 570, API 510 certifications. Specializing in storage tanks, piping, pressure vessels with advanced NDT methods. 10+ years serving Central America, Caribbean, and international markets." />
+        <meta name="keywords" content="tank inspection Panama, API 653, API 570, API 510, NDT testing, non-destructive testing, storage tank inspection, pressure vessel inspection, piping inspection, petroleum industry, chemical industry, tank compliance, industrial inspections, Central America, Caribbean" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tankinspectionservices.com/" />
         <meta property="og:title" content="Tank Inspection Services | API Certified Inspections & NDT Testing" />
-        <meta property="og:description" content="Professional tank inspection services with API 653, API 570, API 510 certifications. 10+ years serving petroleum, chemical, and industrial sectors." />
+        <meta property="og:description" content="Professional tank inspection services based in Panama City, Panama with API 653, API 570, API 510 certifications. 10+ years serving Central America, Caribbean, and international markets." />
         <meta property="og:image" content="https://tankinspectionservices.com/og-image.jpg" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://tankinspectionservices.com/" />
         <meta property="twitter:title" content="Tank Inspection Services | API Certified Inspections" />
-        <meta property="twitter:description" content="Professional tank inspection services with API 653, API 570, API 510 certifications and advanced NDT methods." />
+        <meta property="twitter:description" content="Professional tank inspection services based in Panama City, Panama with API 653, API 570, API 510 certifications and advanced NDT methods serving Central America and Caribbean." />
         <meta property="twitter:image" content="https://tankinspectionservices.com/og-image.jpg" />
 
         {/* Additional SEO Meta Tags */}
@@ -297,7 +298,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900" itemProp="name">Michael Rodriguez</p>
-                      <p className="text-gray-600 text-sm">Plant Manager, Major US Refinery</p>
+                      <p className="text-gray-600 text-sm">Plant Manager, Major Caribbean Refinery</p>
                       <p className="text-blue-600 text-sm font-medium">Saved $3.2 Million in Cleanup Costs</p>
                     </div>
                   </div>

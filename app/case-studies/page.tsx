@@ -10,7 +10,7 @@ export default function CaseStudies() {
     {
       id: 1,
       title: "Petrochemical Refinery - Hidden Corrosion Detection",
-      client: "Major US Refinery",
+      client: "Major Caribbean Refinery",
       industry: "Petroleum Refining",
       challenge: "Routine API 653 inspection on 2.5M gallon crude oil storage tank revealed concerning readings",
       solution: "Advanced ultrasonic thickness testing with Olympus MX2 system revealed 40% wall thinning in critical areas",

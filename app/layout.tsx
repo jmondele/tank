@@ -11,7 +11,7 @@ const nunito = Nunito({ subsets: ["latin"], weight: ["500","700"], variable: "--
 
 export const metadata: Metadata = { 
   title: "Tank Inspection Services",
-  description: "Professional tank inspection, NDT services, and maritime operations. API 653, API 570, API 510 certified inspections.",
+  description: "Professional tank inspection services based in Panama City, Panama. API 653, API 570, API 510 certified inspections and NDT services for Central America and Caribbean.",
   icons: {
     icon: [
       {

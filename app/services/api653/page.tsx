@@ -183,7 +183,7 @@ export default function API653() {
               <span className="text-blue-400">API 653 Tank Inspection</span> That Actually Keeps You Compliant
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
-              Let's cut through the BS - **API 653 tank inspection** isn't just another regulatory checkbox. It's the difference between running a tight operation and explaining to your board why your storage tank became a liability nightmare. I've been doing this for 15+ years, and I've seen what happens when companies cut corners.
+              Let&apos;s cut through the BS - **API 653 tank inspection** isn&apos;t just another regulatory checkbox. It&apos;s the difference between running a tight operation and explaining to your board why your storage tank became a liability nightmare. I&apos;ve been doing this for 15+ years, and I&apos;ve seen what happens when companies cut corners.
             </p>
           </div>
         </section>
@@ -199,7 +199,7 @@ export default function API653() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    Here's a story that'll make you take API 653 seriously. A chemical plant in Louisiana ignored their API 653 inspection schedule. "We'll get to it next quarter," they said. That quarter never came. Their 2-million-gallon storage tank failed, spilling chemicals into a waterway. **Total cost? $53 million in fines and cleanup.**
+                    Here&apos;s a story that&apos;ll make you take API 653 seriously. A chemical plant in Louisiana ignored their API 653 inspection schedule. &quot;We&apos;ll get to it next quarter,&quot; they said. That quarter never came. Their 2-million-gallon storage tank failed, spilling chemicals into a waterway. **Total cost? $53 million in fines and cleanup.**
                   </p>
                   <p>
                     **API 653 in simple terms:**
@@ -211,7 +211,7 @@ export default function API653() {
                     <li>**Why it exists** = Because tank failures cost more than preventive maintenance</li>
                   </ul>
                   <p>
-                    Think of API 653 as your insurance policy against catastrophic failure. It's not just about compliance - it's about running a business that doesn't end up on the evening news. Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> ensure every inspection meets or exceeds these standards.
+                    Think of API 653 as your insurance policy against catastrophic failure. It&apos;s not just about compliance - it&apos;s about running a business that doesn&apos;t end up on the evening news. Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> ensure every inspection meets or exceeds these standards.
                   </p>
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function API653() {
                   Ready to Protect Your Tanks With <span className="text-blue-600">API 653 Inspection?</span>
                 </h2>
                 <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  **Don't wait for a failure to prove the value of proper inspection.** Get your free quote today and see how we can prevent costly disasters at your facility.
+                  **Don&apos;t wait for a failure to prove the value of proper inspection.** Get your free quote today and see how we can prevent costly disasters at your facility.
                 </p>
               </div>
 
@@ -422,7 +422,7 @@ export default function API653() {
                       </div>
                       <h3 className="text-2xl font-bold text-red-800 mb-2">Emergency Inspection?</h3>
                       <p className="text-red-600 mb-4">
-                        **Tank showing signs of failure?** Don't wait. Emergency API 653 inspections available 24/7.
+                        **Tank showing signs of failure?** Don&apos;t wait. Emergency API 653 inspections available 24/7.
                       </p>
                     </div>
                     <ServiceContactForm service="Emergency API 653 Inspection" urgency="emergency" />

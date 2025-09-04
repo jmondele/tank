@@ -76,7 +76,7 @@ Resource downloaded from tankinspectionservices.com/resources
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-purple-100 leading-relaxed mb-8">
-                  **No fluff, no sales pitches** - just practical checklists, guides, and tools I've developed over 15+ years in the industry. These are the same resources I use on million-dollar projects.
+                  **No fluff, no sales pitches** - just practical checklists, guides, and tools I&apos;ve developed over 15+ years in the industry. These are the same resources I use on million-dollar projects.
                 </p>
                 <p className="text-lg text-purple-200">
                   **Download any resource instantly** - just tell me where to send it.

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const blogPosts = [
@@ -83,7 +82,6 @@ export default function Blog() {
     : blogPosts.filter(post => post.category === selectedCategory);
 
   const featuredPosts = blogPosts.filter(post => post.featured);
-  const recentPosts = blogPosts.slice(0, 3);
 
   return (
     <div className="min-h-screen flex flex-col">
