@@ -69,16 +69,16 @@ This message was sent from the contact form on tankinspectionservices.com
               </div>
 
               <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-                Let's Talk About Your
+                Let&apos;s Talk About Your
                 <span className="block text-green-400">Inspection Needs</span>
               </h1>
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-green-100 leading-relaxed mb-8">
-                  **Here's the deal** - I'm not going to waste your time with a sales pitch. You know what you need: reliable inspections that actually protect your assets and keep you compliant. Let's have a real conversation about how we can help.
+                  **Here&apos;s the deal** - I&apos;m not going to waste your time with a sales pitch. You know what you need: reliable inspections that actually protect your assets and keep you compliant. Let&apos;s have a real conversation about how we can help.
                 </p>
                 <p className="text-lg text-green-200">
-                  Whether you need **API 653 tank inspection**, **API 570 piping assessment**, **API 510 pressure vessel evaluation**, or comprehensive **NDT services** - I'll personally make sure you get straight answers and honest recommendations.
+                  Whether you need **API 653 tank inspection**, **API 570 piping assessment**, **API 510 pressure vessel evaluation**, or comprehensive **NDT services** - I&apos;ll personally make sure you get straight answers and honest recommendations.
                 </p>
               </div>
             </div>

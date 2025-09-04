@@ -237,7 +237,7 @@ export default function WeldingQualifications() {
               <span className="text-blue-400">Welder Qualification</span> That Actually Holds Under Pressure
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
-              Look, **welder qualification** isn't about passing some basic certification test. It's about proving your welders can create joints that won't fail when lives depend on them. I've seen "qualified" welders whose work looked pretty but failed catastrophically under real-world conditions. That's not happening on my watch.
+              Look, **welder qualification** isn&apos;t about passing some basic certification test. It&apos;s about proving your welders can create joints that won&apos;t fail when lives depend on them. I&apos;ve seen &quot;qualified&quot; welders whose work looked pretty but failed catastrophically under real-world conditions. That&apos;s not happening on my watch.
             </p>
           </div>
         </section>
@@ -251,19 +251,19 @@ export default function WeldingQualifications() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    2014. Offshore oil platform. A "qualified" welder's joint on a high-pressure pipeline failed during startup. **The repair cost $40 million and 3 months of downtime.** Why? Because his qualification test didn't match the actual welding conditions he'd face on the job.
+                    2014. Offshore oil platform. A &quot;qualified&quot; welder&apos;s joint on a high-pressure pipeline failed during startup. **The repair cost $40 million and 3 months of downtime.** Why? Because his qualification test didn&apos;t match the actual welding conditions he&apos;d face on the job.
                   </p>
                   <p>
-                    **That's when I realized most welder qualification programs are garbage.**
+                    **That&apos;s when I realized most welder qualification programs are garbage.**
                   </p>
                   <ul className="list-disc pl-6 space-y-3">
                     <li>**ASME Section IX** = The gold standard that actually tests real-world scenarios</li>
-                    <li>**Position testing** = We test welders in the positions they'll actually work</li>
+                    <li>**Position testing** = We test welders in the positions they&apos;ll actually work</li>
                     <li>**Material matching** = Your qualification matches your actual materials</li>
                     <li>**Process verification** = We verify the welding procedures work in practice</li>
                   </ul>
                   <p>
-                    Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> doesn't just check if a weld looks good - it proves the weld will perform under pressure, temperature, and stress. Because pretty welds that fail under load aren't qualified welds.
+                    Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> doesn&apos;t just check if a weld looks good - it proves the weld will perform under pressure, temperature, and stress. Because pretty welds that fail under load aren&apos;t qualified welds.
                   </p>
                 </div>
               </div>
@@ -448,16 +448,16 @@ export default function WeldingQualifications() {
               <div className="space-y-8">
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "What's the difference between certification and qualification?"
+                    &quot;What&apos;s the difference between certification and qualification?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    **Huge difference.** Certification is a piece of paper. **Welder qualification** is proof your welder can create joints that won't fail under specific conditions. Anyone can get certified - not everyone can get properly qualified. We test for the real-world conditions your welders will face, not some generic standard.
+                    **Huge difference.** Certification is a piece of paper. **Welder qualification** is proof your welder can create joints that won&apos;t fail under specific conditions. Anyone can get certified - not everyone can get properly qualified. We test for the real-world conditions your welders will face, not some generic standard.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "How long does ASME Section IX qualification take?"
+                    &quot;How long does ASME Section IX qualification take?&quot;
                   </h3>
                   <p className="text-gray-700">
                     Depends on the complexity, but typically **2-5 days for most qualifications.** We test the welder, inspect the test pieces with <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a>, and provide documentation. Rush jobs available when you need qualified welders fast.
@@ -466,28 +466,28 @@ export default function WeldingQualifications() {
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "What happens if a welder fails qualification?"
+                    &quot;What happens if a welder fails qualification?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    We don't just fail them and walk away. **We tell them exactly why they failed and what they need to improve.** Most failures are fixable with proper technique coaching. We'll work with your welder to get them qualified - it's in everyone's best interest.
+                    We don&apos;t just fail them and walk away. **We tell them exactly why they failed and what they need to improve.** Most failures are fixable with proper technique coaching. We&apos;ll work with your welder to get them qualified - it&apos;s in everyone&apos;s best interest.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "Do our welders need to requalify regularly?"
+                    &quot;Do our welders need to requalify regularly?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    **Yes, and here's why it matters:** Skills degrade over time, procedures change, and new materials require different techniques. ASME typically requires requalification every 6 months of inactivity. But honestly? I recommend annual requalification for critical work. It's cheaper than explaining weld failures to investigators.
+                    **Yes, and here&apos;s why it matters:** Skills degrade over time, procedures change, and new materials require different techniques. ASME typically requires requalification every 6 months of inactivity. But honestly? I recommend annual requalification for critical work. It&apos;s cheaper than explaining weld failures to investigators.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "Can you qualify welders for our specific materials and processes?"
+                    &quot;Can you qualify welders for our specific materials and processes?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    **Absolutely.** That's the whole point of proper qualification. We match the test conditions to your actual work - same materials, same positions, same processes, same environmental conditions. Generic qualifications are worthless if they don't match your real-world requirements.
+                    **Absolutely.** That&apos;s the whole point of proper qualification. We match the test conditions to your actual work - same materials, same positions, same processes, same environmental conditions. Generic qualifications are worthless if they don&apos;t match your real-world requirements.
                   </p>
                 </div>
               </div>
@@ -502,7 +502,7 @@ export default function WeldingQualifications() {
               Stop Gambling With Unqualified Welders
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-4xl mx-auto">
-              Every weld failure I've investigated started the same way: someone cut corners on qualification. Don't let your project become a case study. Get **welder qualification** that actually proves your people can deliver under pressure.
+              Every weld failure I&apos;ve investigated started the same way: someone cut corners on qualification. Don&apos;t let your project become a case study. Get **welder qualification** that actually proves your people can deliver under pressure.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

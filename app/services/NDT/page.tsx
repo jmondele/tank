@@ -184,7 +184,7 @@ export default function NDT() {
               <span className="text-blue-400">NDT Non-Destructive Testing</span> That Actually Saves You Money
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-4xl mx-auto mb-12">
-              Here's the deal - **NDT Non-Destructive Testing** isn't just some fancy inspection method. It's your insurance policy against catastrophic failures that cost millions. I've seen too many companies learn this lesson the hard way, and I don't want you to be one of them.
+              Here&apos;s the deal - **NDT Non-Destructive Testing** isn&apos;t just some fancy inspection method. It&apos;s your insurance policy against catastrophic failures that cost millions. I&apos;ve seen too many companies learn this lesson the hard way, and I don&apos;t want you to be one of them.
             </p>
           </div>
         </section>
@@ -200,10 +200,10 @@ export default function NDT() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    Let me tell you a story. In 2018, I watched a petrochemical company lose **$10.2 million** because they skipped proper NDT testing on a storage tank. The "minor" crack they missed turned into a catastrophic failure that shut down their entire operation for 6 months.
+                    Let me tell you a story. In 2018, I watched a petrochemical company lose **$10.2 million** because they skipped proper NDT testing on a storage tank. The &quot;minor&quot; crack they missed turned into a catastrophic failure that shut down their entire operation for 6 months.
                   </p>
                   <p>
-                    **Here's what NDT actually is (in plain English):**
+                    **Here&apos;s what NDT actually is (in plain English):**
                   </p>
                   <ul className="list-disc pl-6 space-y-3">
                     <li>**Non-Destructive Testing** = We inspect your equipment without tearing it apart</li>
@@ -212,7 +212,7 @@ export default function NDT() {
                     <li>**Regulatory compliance** = You pass inspections and sleep better at night</li>
                   </ul>
                   <p>
-                    The bottom line? NDT testing finds the cracks, corrosion, and defects that will cost you millions if left unchecked. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> lets us see problems that the naked eye simply can't detect.
+                    The bottom line? NDT testing finds the cracks, corrosion, and defects that will cost you millions if left unchecked. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> lets us see problems that the naked eye simply can&apos;t detect.
                   </p>
                 </div>
               </div>
@@ -439,13 +439,13 @@ export default function NDT() {
               <div className="space-y-8">
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "How is NDT different from just looking at my tank?"
+                    &quot;How is NDT different from just looking at my tank?&quot;
                   </h3>
                   <p className="text-gray-700 mb-4">
-                    Visual inspection catches maybe 30% of problems. **NDT Non-Destructive Testing** finds the other 70% that's hiding inside your steel. We're talking about:
+                    Visual inspection catches maybe 30% of problems. **NDT Non-Destructive Testing** finds the other 70% that&apos;s hiding inside your steel. We&apos;re talking about:
                   </p>
                   <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                    <li>**Internal corrosion** you can't see from outside</li>
+                    <li>**Internal corrosion** you can&apos;t see from outside</li>
                     <li>**Micro-cracks** that will become major failures</li>
                     <li>**Wall thinning** that happens gradually over years</li>
                     <li>**Weld defects** that compromise structural integrity</li>
@@ -454,37 +454,37 @@ export default function NDT() {
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "Will NDT testing shut down my operations?"
+                    &quot;Will NDT testing shut down my operations?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    That's the beauty of it - **no downtime required** for most NDT methods. Ultrasonic testing, magnetic particle inspection, and liquid penetrant testing can all be done while your tanks are in service. The only time you need downtime is for internal inspections, and we plan those during your scheduled maintenance windows.
+                    That&apos;s the beauty of it - **no downtime required** for most NDT methods. Ultrasonic testing, magnetic particle inspection, and liquid penetrant testing can all be done while your tanks are in service. The only time you need downtime is for internal inspections, and we plan those during your scheduled maintenance windows.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "How often should I get NDT testing done?"
+                    &quot;How often should I get NDT testing done?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    Depends on your industry and regulations. <a href="/services/api653" className="text-blue-600 hover:text-blue-800 underline">API 653 standards</a> typically require external inspections every 5 years and internal every 10-20 years. But honestly? I recommend more frequent testing for critical assets. It's cheaper than explaining to your insurance company why you didn't.
+                    Depends on your industry and regulations. <a href="/services/api653" className="text-blue-600 hover:text-blue-800 underline">API 653 standards</a> typically require external inspections every 5 years and internal every 10-20 years. But honestly? I recommend more frequent testing for critical assets. It&apos;s cheaper than explaining to your insurance company why you didn&apos;t.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "What happens if you find a problem?"
+                    &quot;What happens if you find a problem?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    First, don't panic. Most issues we find are manageable if caught early. We'll give you a detailed report with **specific recommendations** - not just "fix it someday." We work with your team to prioritize repairs based on risk level and help you develop a timeline that makes sense for your operations and budget.
+                    First, don&apos;t panic. Most issues we find are manageable if caught early. We&apos;ll give you a detailed report with **specific recommendations** - not just &quot;fix it someday.&quot; We work with your team to prioritize repairs based on risk level and help you develop a timeline that makes sense for your operations and budget.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">
-                    "Can you handle our specific compliance requirements?"
+                    &quot;Can you handle our specific compliance requirements?&quot;
                   </h3>
                   <p className="text-gray-700">
-                    Whether it's API, ASME, DOT, EPA, or OSHA requirements - we've got you covered. Our NDT technicians are certified to the highest industry standards, and all our testing meets or exceeds regulatory requirements. Plus, our reports are written to satisfy the pickiest auditors.
+                    Whether it&apos;s API, ASME, DOT, EPA, or OSHA requirements - we&apos;ve got you covered. Our NDT technicians are certified to the highest industry standards, and all our testing meets or exceeds regulatory requirements. Plus, our reports are written to satisfy the pickiest auditors.
                   </p>
                 </div>
               </div>
@@ -499,7 +499,7 @@ export default function NDT() {
               Stop Playing Russian Roulette With Your Assets
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-4xl mx-auto">
-              Every day you wait is another day that hidden defect gets worse. I've seen the "it'll be fine" mentality cost companies millions. Don't let that be your story. Get **NDT Non-Destructive Testing** that actually protects your bottom line.
+              Every day you wait is another day that hidden defect gets worse. I&apos;ve seen the &quot;it&apos;ll be fine&quot; mentality cost companies millions. Don&apos;t let that be your story. Get **NDT Non-Destructive Testing** that actually protects your bottom line.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

@@ -22,10 +22,10 @@ export default function NotFound() {
         {/* Error Message */}
         <div className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-200 mb-8">
           <p className="text-xl text-gray-600 leading-relaxed mb-6">
-            **The page you're looking for doesn't exist** - but don't worry, we've got plenty of other ways to help you protect your assets from catastrophic failure.
+            **The page you&apos;re looking for doesn&apos;t exist** - but don&apos;t worry, we&apos;ve got plenty of other ways to help you protect your assets from catastrophic failure.
           </p>
           <p className="text-lg text-gray-500 mb-6">
-            Maybe the URL was mistyped, or perhaps the page was moved. Either way, let's get you back to finding the tank inspection services you need.
+            Maybe the URL was mistyped, or perhaps the page was moved. Either way, let&apos;s get you back to finding the tank inspection services you need.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function NotFound() {
         <div className="mt-8 p-6 bg-red-50 border border-red-200 rounded-2xl">
           <p className="text-red-800 font-semibold mb-2">**Need Emergency Inspection?**</p>
           <p className="text-red-600 text-sm mb-3">
-            Don't let a missing page delay critical safety inspections
+            Don&apos;t let a missing page delay critical safety inspections
           </p>
           <a 
             href="mailto:luismon@tankinspectionservices.com?subject=Emergency%20Inspection%20Request&body=We%20need%20emergency%20inspection%20services.%20Please%20contact%20me%20immediately."

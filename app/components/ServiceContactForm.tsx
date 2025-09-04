@@ -167,7 +167,7 @@ Please contact me to discuss this ${service} service request.
         <p className="text-sm text-gray-600 text-center">
           {urgency === 'emergency' ? (
             <>
-              <span className="text-red-600 font-semibold">Emergency Response:</span> We'll contact you within 1 hour
+              <span className="text-red-600 font-semibold">Emergency Response:</span> We&apos;ll contact you within 1 hour
             </>
           ) : urgency === 'priority' ? (
             <>

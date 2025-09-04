@@ -126,10 +126,10 @@ export default function HomePage() {
               <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-gray-100">
                 <div className="text-gray-700 text-xl leading-relaxed space-y-6" itemProp="description">
                   <p className="text-2xl text-gray-900 font-semibold mb-6">
-                    **Look, I'll be straight with you** - most inspection companies just check boxes to keep regulators happy. We find problems before they become million-dollar disasters. There's a difference.
+                    **Look, I&apos;ll be straight with you** - most inspection companies just check boxes to keep regulators happy. We find problems before they become million-dollar disasters. There&apos;s a difference.
                   </p>
                   <p>
-                    **Here's what 15+ years in this industry taught me:** every catastrophic failure I've investigated could have been prevented with proper inspection. That's why we use
+                    **Here&apos;s what 15+ years in this industry taught me:** every catastrophic failure I&apos;ve investigated could have been prevented with proper inspection. That&apos;s why we use
                     <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1" itemProp="serviceType">API 653</span>
                     <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1" itemProp="serviceType">API 570</span>
                     <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1" itemProp="serviceType">API 510</span>
@@ -258,10 +258,10 @@ export default function HomePage() {
                 Real Client Testimonials
               </div>
               <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Here's What Our Clients <span className="text-blue-600">Actually Say</span>
+                Here&apos;s What Our Clients <span className="text-blue-600">Actually Say</span>
               </h3>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                **Don't take our word for it** - these are real testimonials from facility managers and engineers who trust us with their most critical assets.
+                **Don&apos;t take our word for it** - these are real testimonials from facility managers and engineers who trust us with their most critical assets.
               </p>
             </header>
 
@@ -287,7 +287,7 @@ export default function HomePage() {
                     <span className="ml-2 text-sm text-gray-500">5.0</span>
                   </div>
                   <blockquote className="text-gray-700 text-lg leading-relaxed italic mb-6" itemProp="reviewBody">
-                    "Tank Inspection Services found corrosion that three other companies missed. Their thoroughness saved us millions in cleanup costs and prevented a potential disaster. **This is exactly the kind of inspection work we needed** - not just box-checking, but actually finding problems before they become catastrophes."
+                    &quot;Tank Inspection Services found corrosion that three other companies missed. Their thoroughness saved us millions in cleanup costs and prevented a potential disaster. **This is exactly the kind of inspection work we needed** - not just box-checking, but actually finding problems before they become catastrophes.&quot;
                   </blockquote>
                   <div className="flex items-center" itemProp="author" itemScope itemType="https://schema.org/Person">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
@@ -324,7 +324,7 @@ export default function HomePage() {
                     <span className="ml-2 text-sm text-gray-500">5.0</span>
                   </div>
                   <blockquote className="text-gray-700 text-lg leading-relaxed italic mb-6" itemProp="reviewBody">
-                    "When we called with an emergency, they were on-site within 4 hours. Their quick response and expert analysis got us back online safely. **I've worked with a lot of inspection companies over 20 years** - these guys actually know what they're doing and explain everything clearly."
+                    &quot;When we called with an emergency, they were on-site within 4 hours. Their quick response and expert analysis got us back online safely. **I&apos;ve worked with a lot of inspection companies over 20 years** - these guys actually know what they&apos;re doing and explain everything clearly.&quot;
                   </blockquote>
                   <div className="flex items-center" itemProp="author" itemScope itemType="https://schema.org/Person">
                     <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
@@ -405,7 +405,7 @@ export default function HomePage() {
               **Ready to Stop Playing Russian Roulette With Your Assets?**
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-4xl mx-auto">
-              Every day you delay proper inspection is another day you're gambling with catastrophic failure. Our clients have saved over $8 million in disaster costs. **Your facility could be next** - but only if you take action today.
+              Every day you delay proper inspection is another day you&apos;re gambling with catastrophic failure. Our clients have saved over $8 million in disaster costs. **Your facility could be next** - but only if you take action today.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
@@ -418,7 +418,7 @@ export default function HomePage() {
                 href="/case-studies"
                 className="bg-blue-700 hover:bg-blue-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 inline-block border-2 border-blue-300"
               >
-                See How We've Saved $8M+
+                See How We&apos;ve Saved $8M+
               </a>
             </div>
             <p className="text-blue-200 text-sm mt-6">

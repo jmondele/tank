@@ -30,10 +30,10 @@ export default function About() {
 
               <div className="max-w-5xl mx-auto">
                 <p className="text-xl text-blue-100 leading-relaxed mb-8">
-                  I'm Luis, and I started Tank Inspection Services after watching too many preventable failures destroy companies and lives. **15+ years ago**, I was just another inspector following checklists. Then I witnessed my first catastrophic tank failure.
+                  I&apos;m Luis, and I started Tank Inspection Services after watching too many preventable failures destroy companies and lives. **15+ years ago**, I was just another inspector following checklists. Then I witnessed my first catastrophic tank failure.
                 </p>
                 <p className="text-lg text-blue-200 mb-8">
-                  **$12 million in damages. 4 workers injured. 6 months of regulatory hell.** All because someone cut corners on a "routine" inspection. That day changed everything for me - and it should change how you think about inspections too.
+                  **$12 million in damages. 4 workers injured. 6 months of regulatory hell.** All because someone cut corners on a &quot;routine&quot; inspection. That day changed everything for me - and it should change how you think about inspections too.
                 </p>
                 <p className="text-lg text-blue-200">
                   Now I run the kind of inspection service I wish existed back then: one that finds problems before they become disasters, uses equipment that actually works, and gives you answers you can trust with million-dollar decisions.
@@ -62,12 +62,12 @@ export default function About() {
                   </div>
 
                   <div className="lg:w-2/3">
-                    <h3 className="text-2xl font-bold text-blue-800 mb-6">We've Been Where You Are</h3>
+                    <h3 className="text-2xl font-bold text-blue-800 mb-6">We&apos;ve Been Where You Are</h3>
                     <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                      **Here's what most inspection companies won't tell you:** they've never managed a facility that depends on the assets they're inspecting. I have. I've been the guy making million-dollar decisions based on inspection reports. I know what you need because I've been in your shoes.
+                      **Here&apos;s what most inspection companies won&apos;t tell you:** they&apos;ve never managed a facility that depends on the assets they&apos;re inspecting. I have. I&apos;ve been the guy making million-dollar decisions based on inspection reports. I know what you need because I&apos;ve been in your shoes.
                     </p>
                     <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                      **My team isn't just certified - we're battle-tested.** We've prevented explosions, caught failures before they happened, and saved companies from regulatory nightmares. Every inspection we do is performed like our own facility depends on it.
+                      **My team isn&apos;t just certified - we&apos;re battle-tested.** We&apos;ve prevented explosions, caught failures before they happened, and saved companies from regulatory nightmares. Every inspection we do is performed like our own facility depends on it.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

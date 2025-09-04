@@ -28,7 +28,7 @@ export default function Certificates() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-blue-100 leading-relaxed mb-8">
-                  **Here's the truth about certifications**: anyone can print a fancy certificate. What matters is whether your inspector can actually find problems before they become disasters. I've got the certifications that matter, backed by real experience that keeps your assets safe.
+                  **Here&apos;s the truth about certifications**: anyone can print a fancy certificate. What matters is whether your inspector can actually find problems before they become disasters. I&apos;ve got the certifications that matter, backed by real experience that keeps your assets safe.
                 </p>
                 <p className="text-lg text-blue-200">
                   **Every certification we hold** was earned through rigorous testing, maintained through continuing education, and proven in the field on million-dollar projects. No paper mills, no shortcuts - just the real deal.
@@ -47,10 +47,10 @@ export default function Certificates() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    **Let me tell you about the inspector who cost a refinery $15 million.** He had certifications from three different organizations - all expired. The company didn't check. His "inspection" missed critical corrosion that led to a massive failure six months later.
+                    **Let me tell you about the inspector who cost a refinery $15 million.** He had certifications from three different organizations - all expired. The company didn&apos;t check. His &quot;inspection&quot; missed critical corrosion that led to a massive failure six months later.
                   </p>
                   <p>
-                    **That's why I'm obsessive about maintaining current, valid certifications:**
+                    **That&apos;s why I&apos;m obsessive about maintaining current, valid certifications:**
                   </p>
                   <ul className="list-disc pl-6 space-y-3">
                     <li>**API certifications** that are current, not expired</li>
@@ -59,7 +59,7 @@ export default function Certificates() {
                     <li>**Traceable credentials** you can verify independently</li>
                   </ul>
                   <p>
-                    When you hire us, you're getting inspectors whose certifications are backed by proven results. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> combined with properly certified technicians gives you the confidence to make critical decisions.
+                    When you hire us, you&apos;re getting inspectors whose certifications are backed by proven results. Our <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> combined with properly certified technicians gives you the confidence to make critical decisions.
                   </p>
                 </div>
               </div>

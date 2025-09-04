@@ -28,10 +28,10 @@ export default function Safety() {
 
               <div className="max-w-5xl mx-auto">
                 <p className="text-xl text-red-100 leading-relaxed mb-8">
-                  **Every safety rule in our industry was written because someone died.** I've seen what happens when people take shortcuts, ignore protocols, or think "just this once" won't matter. I've been to the funerals. I've talked to the families. Never again.
+                  **Every safety rule in our industry was written because someone died.** I&apos;ve seen what happens when people take shortcuts, ignore protocols, or think &quot;just this once&quot; won&apos;t matter. I&apos;ve been to the funerals. I&apos;ve talked to the families. Never again.
                 </p>
                 <p className="text-lg text-red-200">
-                  **Safety isn't a policy here - it's personal.** Every person on our team goes home safe, every day, period. Because no inspection job, no matter how critical, is worth someone's life.
+                  **Safety isn&apos;t a policy here - it&apos;s personal.** Every person on our team goes home safe, every day, period. Because no inspection job, no matter how critical, is worth someone&apos;s life.
                 </p>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default function Safety() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    **May 2015. Refinery in Louisiana.** Mike was a 20-year veteran inspector. He'd done thousands of confined space entries. "I know these tanks like my own house," he told me that morning. He decided to skip the atmospheric test - "just for a few minutes."
+                    **May 2015. Refinery in Louisiana.** Mike was a 20-year veteran inspector. He&apos;d done thousands of confined space entries. &quot;I know these tanks like my own house,&quot; he told me that morning. He decided to skip the atmospheric test - &quot;just for a few minutes.&quot;
                   </p>
                   <p>
                     **Those few minutes killed him.**
@@ -56,7 +56,7 @@ export default function Safety() {
                     H2S had accumulated overnight from a small leak nobody knew about. Mike collapsed within minutes. By the time the rescue team got to him, it was too late. **He left behind a wife and two kids.**
                   </p>
                   <p>
-                    **That day I made a promise to Mike's family and to myself:**
+                    **That day I made a promise to Mike&apos;s family and to myself:**
                   </p>
                   <ul className="list-disc pl-6 space-y-3">
                     <li>**Zero shortcuts** - every protocol followed, every time</li>
@@ -65,7 +65,7 @@ export default function Safety() {
                     <li>**Stop work authority** - anyone can halt operations if they see danger</li>
                   </ul>
                   <p>
-                    Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> and <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> include the most advanced safety monitoring technology available. Because Mike's death taught me that no inspection is worth another person's life.
+                    Our <a href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT testing methods</a> and <a href="/equipment" className="text-blue-600 hover:text-blue-800 underline">professional inspection equipment</a> include the most advanced safety monitoring technology available. Because Mike&apos;s death taught me that no inspection is worth another person&apos;s life.
                   </p>
                 </div>
               </div>
