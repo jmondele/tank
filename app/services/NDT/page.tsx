@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function NDT() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -188,7 +189,7 @@ export default function NDT() {
               NDT <span className="text-blue-400">Non-Destructive Testing</span>
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Advanced inspection techniques to evaluate integrity without causing damage or interrupting operations.
+              Advanced inspection techniques to evaluate integrity without causing damage or interrupting operations. Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified professionals</Link> deliver comprehensive solutions for all your inspection needs.
             </p>
           </div>
         </section>
@@ -204,10 +205,10 @@ export default function NDT() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>Non-Destructive Testing (NDT)</strong> refers to a range of inspection techniques used to evaluate the integrity of tanks, piping, and pressure vessels <strong>without causing damage</strong> or interrupting operations.
+                    <strong>Non-Destructive Testing (NDT)</strong> refers to a range of inspection techniques used to evaluate the integrity of tanks, piping, and pressure vessels <strong>without causing damage</strong> or interrupting operations. Our <Link href="/about" className="text-blue-600 hover:text-blue-700 underline transition-colors">experienced team</Link> applies these methods across all service areas.
                   </p>
                   <p>
-                    It allows inspectors to detect flaws, cracks, corrosion, and other defects early ensuring assets remain <strong>safe, reliable, and compliant</strong>.
+                    It allows inspectors to detect flaws, cracks, corrosion, and other defects early ensuring assets remain <strong>safe, reliable, and compliant</strong>. NDT is essential for <Link href="/services/api570" className="text-blue-600 hover:text-blue-700 underline transition-colors">API 570</Link> and <Link href="/services/api653" className="text-blue-600 hover:text-blue-700 underline transition-colors">API 653</Link> inspections.
                   </p>
                 </div>
               </div>
@@ -498,7 +499,7 @@ export default function NDT() {
               Need Professional NDT Services?
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified NDT professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+              Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified NDT professionals</Link> use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations. Explore our comprehensive <Link href="/safety" className="text-blue-400 hover:text-blue-300 underline transition-colors">safety standards</Link> and <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline transition-colors">get started</Link> today.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

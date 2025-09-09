@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Welder Qualification Services | ASME Section IX WPQ, PQR & WPS Testing",
+  title: "Welder Qualification Services",
   description: "Comprehensive ASME Section IX welder qualification and certification services. Professional WPQ testing, PQR validation, and WPS development for critical welding applications and compliance.",
 };
 

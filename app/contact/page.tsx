@@ -37,7 +37,13 @@ export default function Contact() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-green-100 leading-relaxed mb-8">
-                  We&apos;re here to help with all your inspection needs. Whether you need <Link href="/services/api653" className="text-green-300 hover:text-green-100 underline font-semibold">API 653 tank inspections</Link>, <Link href="/services/api570" className="text-green-300 hover:text-green-100 underline font-semibold">API 570 piping assessments</Link>, <Link href="/services/api510" className="text-green-300 hover:text-green-100 underline font-semibold">API 510 pressure vessel evaluations</Link>, or <Link href="/services/NDT" className="text-green-300 hover:text-green-100 underline font-semibold">NDT services</Link>, our team is ready to assist.
+                  We&apos;re here to help with all your inspection needs throughout Central America and the Caribbean region. Whether you need <Link href="/services/api653" className="text-green-300 hover:text-green-100 underline font-semibold">API 653 tank inspections</Link>, <Link href="/services/api570" className="text-green-300 hover:text-green-100 underline font-semibold">API 570 piping assessments</Link>, <Link href="/services/api510" className="text-green-300 hover:text-green-100 underline font-semibold">API 510 pressure vessel evaluations</Link>, comprehensive <Link href="/services/NDT" className="text-green-300 hover:text-green-100 underline font-semibold">NDT services</Link>, or <Link href="/services/welding" className="text-green-300 hover:text-green-100 underline font-semibold">welder qualification testing</Link>, our <Link href="/about" className="text-green-300 hover:text-green-100 underline font-semibold">experienced team</Link> is ready to assist with your most critical asset integrity needs.
+                </p>
+                <p className="text-lg text-green-200 mb-6">
+                  Our <Link href="/certificates" className="text-green-300 hover:text-green-100 underline font-semibold">certified professionals</Link> understand that industrial operations cannot afford unexpected downtime or regulatory compliance issues. That&apos;s why we provide flexible scheduling options, emergency response capabilities, and comprehensive inspection services tailored to your specific operational requirements and industry standards.
+                </p>
+                <p className="text-lg text-green-200">
+                  From initial consultation through final reporting, we maintain clear communication and deliver thorough documentation that supports your asset management decisions. Our commitment to <Link href="/safety" className="text-green-300 hover:text-green-100 underline font-semibold">safety excellence</Link> and quality assurance ensures every project meets the highest professional standards while minimizing operational disruption to your facility.
                 </p>
               </div>
             </div>
@@ -352,8 +358,113 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* Emergency Contact */}
+        {/* Service Delivery */}
         <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Our Service Delivery Approach
+                </h2>
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  We understand that every client has unique requirements, operational constraints, and regulatory obligations. Our flexible service delivery approach ensures we can meet your specific needs while maintaining the highest standards of quality and safety.
+                </p>
+              </div>
+
+              <div className="space-y-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-6">Project Management Excellence</h3>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      Our experienced project managers coordinate all aspects of your inspection services, from initial planning through final reporting. We maintain clear communication channels, provide regular progress updates, and ensure all deliverables meet your timeline requirements.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Whether you need a single tank inspection or a comprehensive facility assessment involving multiple systems, our project management approach ensures efficient execution while minimizing operational disruption to your facility.
+                    </p>
+                  </div>
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+                    <div className="space-y-4">
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">Detailed Project Planning</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">Clear Communication Protocols</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">Timeline Management</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">Quality Assurance</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 border border-gray-200">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">What Sets Us Apart</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div>
+                      <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-3">Regulatory Expertise</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Deep understanding of international standards, local regulations, and industry best practices across multiple jurisdictions and sectors.
+                      </p>
+                    </div>
+                    <div>
+                      <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-3">Advanced Technology</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        State-of-the-art inspection equipment, digital reporting systems, and advanced NDT techniques for comprehensive asset evaluation.
+                      </p>
+                    </div>
+                    <div>
+                      <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                        </svg>
+                      </div>
+                      <h4 className="text-xl font-bold text-gray-900 mb-3">Client Partnership</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        We view ourselves as strategic partners, not just service providers, working collaboratively to achieve your operational and safety objectives.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Emergency Contact */}
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <div className="bg-red-50 border border-red-200 rounded-3xl p-8">

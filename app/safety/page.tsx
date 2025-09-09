@@ -365,6 +365,60 @@ export default function Safety() {
           </div>
         </section>
 
+        {/* Safety Philosophy & Commitment */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Our Safety Philosophy: Beyond Compliance
+                </h2>
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  At Tank Inspection Services, safety isn&apos;t just a requirement—it&apos;s a core value that drives every decision we make. Our commitment to safety excellence extends far beyond regulatory compliance to create a comprehensive safety culture that protects our people, our clients, and the environment.
+                </p>
+              </div>
+
+              <div className="space-y-12">
+                <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 md:p-12 border border-red-200">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">Leadership in Safety Excellence</h3>
+                  <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                    <p>
+                      Our safety leadership begins with management commitment and extends through every level of our organization. We believe that true safety excellence requires active participation from everyone, from senior management to field technicians. This top-down, bottom-up approach ensures that safety considerations are integrated into every aspect of our operations.
+                    </p>
+                    <p>
+                      We regularly benchmark our safety performance against industry leaders and continuously seek opportunities to improve our systems, procedures, and training programs. Our goal is not just to meet safety standards, but to exceed them and set new benchmarks for excellence in industrial inspection services.
+                    </p>
+                    <p>
+                      Our safety management system includes comprehensive incident investigation procedures, root cause analysis methodologies, and corrective action tracking to ensure that any safety-related events become opportunities for system-wide improvement. This proactive approach has been instrumental in maintaining our exceptional safety record over more than a decade of operations.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <h4 className="text-2xl font-bold text-gray-900 mb-6">Client Partnership in Safety</h4>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      We work closely with our clients to understand and integrate with their safety management systems. This collaborative approach ensures seamless coordination of safety protocols, emergency response procedures, and communication systems throughout the duration of our projects.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Our team participates in client safety orientations, adheres to site-specific safety requirements, and contributes to safety meetings and discussions. This integration helps create a unified safety culture that benefits everyone involved in the project.
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <h4 className="text-2xl font-bold text-gray-900 mb-6">Innovation in Safety Technology</h4>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      We continuously invest in the latest safety technologies and equipment to enhance protection for our personnel and improve the effectiveness of our safety programs. This includes advanced gas detection systems, real-time monitoring equipment, and innovative personal protective equipment.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Our commitment to technological innovation extends to digital safety management tools, mobile safety reporting applications, and data analytics systems that help us identify trends and proactively address potential safety concerns before they become incidents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
@@ -376,12 +430,12 @@ export default function Safety() {
                 Contact us today to learn more about our comprehensive safety protocols and zero-incident commitment.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+                <Link href="/contact" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block">
                   Discuss Safety Requirements
-                </button>
-                <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300">
+                </Link>
+                <Link href="/certificates" className="bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-300 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 inline-block">
                   View Safety Protocols
-                </button>
+                </Link>
               </div>
             </div>
           </div>

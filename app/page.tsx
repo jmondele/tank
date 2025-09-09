@@ -24,6 +24,26 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Introduction Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Professional Tank Inspection Services</h2>
+            <div className="text-lg text-gray-700 leading-relaxed space-y-6">
+              <p>
+                Tank Inspection Services stands as a premier provider of comprehensive industrial inspection solutions throughout Central America and the Caribbean region. With over a decade of specialized experience, we deliver critical inspection services that ensure the safety, compliance, and operational integrity of your most valuable industrial assets.
+              </p>
+              <p>
+                Our expertise encompasses the full spectrum of <Link href="/services/api653" className="text-blue-600 hover:text-blue-800 underline">API 653 aboveground storage tank inspections</Link>, <Link href="/services/api570" className="text-blue-600 hover:text-blue-800 underline">API 570 piping system evaluations</Link>, and <Link href="/services/api510" className="text-blue-600 hover:text-blue-800 underline">API 510 pressure vessel assessments</Link>. Each inspection is conducted by <Link href="/certificates" className="text-blue-600 hover:text-blue-800 underline">certified professionals</Link> who bring decades of combined field experience and unwavering commitment to <Link href="/safety" className="text-blue-600 hover:text-blue-800 underline">safety excellence</Link>.
+              </p>
+              <p>
+                Whether your facility requires routine maintenance inspections, emergency assessments, or comprehensive asset integrity evaluations, our team provides reliable, accurate, and timely services that help you maintain regulatory compliance while optimizing operational efficiency. From petroleum refineries to chemical processing plants, our <Link href="/services/welding" className="text-blue-600 hover:text-blue-800 underline">certified inspection capabilities</Link> support critical infrastructure across multiple industry sectors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
        {/* Trusted Inspections Section */}
         <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative">
           {/* Background Pattern */}
@@ -55,13 +75,13 @@ export default function HomePage() {
                     At Tank Inspection Services, we deliver safe, precise, and reliable inspection services for storage tanks, piping, and pressure vessels.
                   </p>
                   <p>
-                    Our mission is simple: keep your assets compliant, safe, and efficient through work. We provide exceptional
+                    Our mission is simple: keep your assets compliant, safe, and efficient through professional inspection work. We provide exceptional
                     <Link href="/services/api653" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 653</Link>
                     <Link href="/services/api570" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 570</Link>
                     <Link href="/services/api510" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 510</Link>
-                    certified inspections, supported by advanced
+                    <Link href="/certificates" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">certified inspections</Link>, supported by advanced
                     <Link href="/services/NDT" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">Non-Destructive Testing (NDT)</Link>
-                    methods and a full range of inspection equipment to handle projects of any size or complexity.
+                    methods and comprehensive <Link href="/services/welding" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">welder qualification services</Link> to handle projects of any size or complexity.
                   </p>
                 </div>
 
@@ -249,11 +269,173 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* Our Services Overview */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                  Comprehensive Inspection Services
+                </h2>
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  Tank Inspection Services provides a complete range of inspection and testing services to ensure your industrial assets remain safe, compliant, and operationally efficient. Our certified professionals use state-of-the-art equipment and follow industry-leading standards to deliver precise, reliable results.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">API 653 Tank Inspections</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Comprehensive aboveground storage tank inspections, repairs, and reconstructions following API 653 standards. We ensure your tanks meet regulatory requirements while maintaining operational integrity throughout their service life.
+                  </p>
+                  <Link href="/services/api653" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Learn More →
+                  </Link>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">API 570 Piping Systems</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Professional in-service inspection, repair, alteration, and rerating of process piping systems. Our API 570 certified inspectors ensure your piping infrastructure remains safe and compliant with industry standards.
+                  </p>
+                  <Link href="/services/api570" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Learn More →
+                  </Link>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">API 510 Pressure Vessels</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Expert pressure vessel inspections, evaluations, and certifications. We provide thorough assessments of your pressure vessel systems to ensure they operate safely within design parameters and regulatory compliance.
+                  </p>
+                  <Link href="/services/api510" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Learn More →
+                  </Link>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Non-Destructive Testing</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Advanced NDT services including ultrasonic testing, phased array, magnetic particle testing, and liquid penetrant testing. Our certified technicians use cutting-edge equipment to detect defects without compromising asset integrity.
+                  </p>
+                  <Link href="/services/NDT" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Learn More →
+                  </Link>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Welder Qualification</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    Comprehensive ASME Section IX welder qualification and certification services. We test and certify welders to ensure they meet industry standards for critical welding applications across various processes and positions.
+                  </p>
+                  <Link href="/services/welding" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Learn More →
+                  </Link>
+                </div>
+
+                <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Emergency Services</h3>
+                  <p className="text-gray-700 mb-6 leading-relaxed">
+                    24/7 emergency inspection and response services for critical situations. When unexpected issues arise with your industrial assets, our rapid response team provides immediate professional assessment and solutions.
+                  </p>
+                  <Link href="/contact" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                    Contact Us →
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                  Why Tank Owners Trust Us
+                </h2>
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  Our commitment to excellence, safety, and reliability has made us the preferred inspection partner for major industrial facilities across the region. Here&apos;s what sets us apart in the industry.
+                </p>
+              </div>
+
+              <div className="space-y-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-6">Certified Expertise</h3>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      Our <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">experienced team</Link> consists of <Link href="/certificates" className="text-blue-600 hover:text-blue-800 underline">API certified inspectors</Link> with extensive field experience across multiple industries. We maintain current certifications and participate in ongoing professional development to stay at the forefront of inspection technology and regulatory requirements.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      With certifications in <Link href="/services/api653" className="text-blue-600 hover:text-blue-800 underline">API 653</Link>, <Link href="/services/api570" className="text-blue-600 hover:text-blue-800 underline">API 570</Link>, <Link href="/services/api510" className="text-blue-600 hover:text-blue-800 underline">API 510</Link>, and various <Link href="/services/NDT" className="text-blue-600 hover:text-blue-800 underline">NDT methods</Link>, we provide comprehensive inspection services that meet or exceed industry standards. Our <Link href="/safety" className="text-blue-600 hover:text-blue-800 underline">safety-first approach</Link> and regular training ensure the highest quality service delivery.
+                    </p>
+                  </div>
+                  <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <div className="space-y-6">
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">API Certified Inspectors</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">NDT Level II & III Technicians</span>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                          <svg className="w-6 h-6 text-yellow-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                          </svg>
+                        </div>
+                        <span className="text-lg font-semibold text-gray-900">Continuous Training & Development</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <div className="order-2 lg:order-1">
+                    <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                      <div className="space-y-6">
+                        <div className="text-center">
+                          <div className="text-4xl font-bold text-blue-600 mb-2">99.8%</div>
+                          <div className="text-gray-700 font-medium">Safety Record</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
+                          <div className="text-gray-700 font-medium">Compliance Rate</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-4xl font-bold text-yellow-600 mb-2">24/7</div>
+                          <div className="text-gray-700 font-medium">Emergency Response</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="order-1 lg:order-2">
+                    <h3 className="text-3xl font-bold text-gray-900 mb-6">Uncompromising Safety Standards</h3>
+                    <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                      <Link href="/safety" className="text-blue-600 hover:text-blue-800 underline">Safety</Link> is not just a priority—it&apos;s our foundation. Our <Link href="/safety" className="text-blue-600 hover:text-blue-800 underline">proven safety record of 99.8%</Link> reflects our unwavering commitment to protecting personnel, equipment, and the environment. We implement rigorous safety protocols and maintain comprehensive insurance coverage for all operations.
+                    </p>
+                    <p className="text-lg text-gray-700 leading-relaxed">
+                      Every project begins with a thorough safety assessment and risk analysis. Our <Link href="/about" className="text-blue-600 hover:text-blue-800 underline">certified team</Link> follows strict safety procedures, uses proper personal protective equipment, and maintains constant communication to ensure safe work practices throughout all <Link href="/contact" className="text-blue-600 hover:text-blue-800 underline">inspection activities</Link>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       
-
-
-
-   
     </main>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function API570() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -185,7 +186,7 @@ export default function API570() {
               API 570 <span className="text-blue-400">Piping Inspection</span>
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional in-service inspection, repair, alteration, and rerating of process piping systems following API 570 standards.
+              Professional in-service inspection, repair, alteration, and rerating of process piping systems following API 570 standards. Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified team</Link> delivers expert piping inspection services.
             </p>
           </div>
         </section>
@@ -202,10 +203,10 @@ export default function API570() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>API 570</strong> is the American Petroleum Institute&apos;s Piping Inspection Code. It covers the <strong>in-service inspection, repair, alteration, and rerating of process piping systems</strong> used in the petroleum, chemical, and other industrial facilities.
+                    <strong>API 570</strong> is the American Petroleum Institute&apos;s Piping Inspection Code. It covers the <strong>in-service inspection, repair, alteration, and rerating of process piping systems</strong> used in the petroleum, chemical, and other industrial facilities. Our <Link href="/about" className="text-blue-600 hover:text-blue-700 underline transition-colors">experienced professionals</Link> specialize in these critical systems.
                   </p>
                   <p>
-                    It ensures that piping systems remain <strong>safe, efficient, and compliant</strong> throughout their operating life.
+                    It ensures that piping systems remain <strong>safe, efficient, and compliant</strong> throughout their operating life. API 570 works in conjunction with <Link href="/services/NDT" className="text-blue-600 hover:text-blue-700 underline transition-colors">NDT methods</Link> to provide comprehensive integrity assessment.
                   </p>
                 </div>
               </div>
@@ -465,7 +466,7 @@ export default function API570() {
               Need Professional API 570 Services?
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified API 570 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+              Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified API 570 professionals</Link> use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations. Discover our commitment to <Link href="/safety" className="text-blue-400 hover:text-blue-300 underline transition-colors">safety excellence</Link> and <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline transition-colors">connect with our experts</Link>.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

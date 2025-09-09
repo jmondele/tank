@@ -28,10 +28,13 @@ export default function CertificatesClient() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-blue-100 leading-relaxed mb-8">
-                  At Tank Inspection Services, we take pride in holding the highest industry certifications to ensure our inspection services meet and exceed international standards.
+                  At Tank Inspection Services, we take pride in holding the highest industry certifications to ensure our inspection services meet and exceed international standards. Our comprehensive certification portfolio demonstrates our unwavering commitment to professional excellence and regulatory compliance across all aspects of industrial inspection services.
+                </p>
+                <p className="text-lg text-blue-200 mb-6">
+                  Our team of certified professionals guarantees compliance, quality, and safety in every project. Each member of our inspection team maintains current certifications and participates in ongoing professional development to ensure we remain at the forefront of industry best practices and technological advancements.
                 </p>
                 <p className="text-lg text-blue-200">
-                  Our team of certified professionals guarantees compliance, quality, and safety in every project.
+                  From API certification requirements to specialized NDT qualifications, our credentials reflect decades of combined experience and dedication to maintaining the highest professional standards. This commitment to certification excellence translates directly into superior service quality and reliable inspection results for our clients.
                 </p>
               </div>
             </div>
@@ -244,8 +247,92 @@ export default function CertificatesClient() {
           </div>
         </section>
 
-        {/* Call to Action */}
+        {/* Certification Details */}
         <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                  Understanding Our Certifications
+                </h2>
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                  Our certifications represent more than just credentials—they demonstrate our commitment to maintaining the highest industry standards and ensuring that every inspection is performed with precision, accuracy, and complete regulatory compliance.
+                </p>
+              </div>
+
+              <div className="space-y-12">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 border border-blue-200">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">API Certification Excellence</h3>
+                  <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                    <p>
+                      The American Petroleum Institute (API) certifications are the gold standard in the petroleum, petrochemical, and natural gas industries. Our API 653, API 570, and API 510 certifications demonstrate that our inspectors have met rigorous education, experience, and examination requirements established by the industry&apos;s leading authority.
+                    </p>
+                    <p>
+                      These certifications require extensive knowledge of codes, standards, materials, welding, corrosion, inspection techniques, and safety procedures. Our certified inspectors undergo continuous education and recertification every three years to maintain their credentials and stay current with evolving industry practices and regulatory requirements.
+                    </p>
+                    <p>
+                      With API certification, our inspectors are authorized to make critical decisions regarding the fitness-for-service of industrial assets, approve repairs and alterations, and ensure compliance with applicable codes and standards. This authority comes with significant responsibility, which we take seriously in every aspect of our work.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">API 653 Tank Inspector Responsibilities</h4>
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Perform comprehensive internal and external tank inspections according to API 653 standards
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Evaluate tank integrity and determine fitness-for-service based on corrosion rates and damage assessment
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Approve repair procedures, materials, and techniques for tank maintenance and reconstruction
+                      </li>
+                      <li className="flex items-start">
+                        <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                        Establish appropriate inspection intervals based on service conditions and regulatory requirements
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+                    <h4 className="text-xl font-bold text-gray-900 mb-4">ISO/IEC 17020:2014 Compliance</h4>
+                    <div className="space-y-3 text-gray-700">
+                      <p>
+                        Our ISO/IEC 17020:2014 certification as a Type A inspection body demonstrates our independence, impartiality, and technical competence. This international standard ensures that our inspection services are performed according to established procedures and quality management systems.
+                      </p>
+                      <p>
+                        Type A inspection bodies like ours are completely independent from the organizations whose installations, products, or services they inspect. This independence ensures objective, unbiased inspection results that clients and regulatory authorities can trust.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-12 border border-gray-200">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Continuous Professional Development</h3>
+                  <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+                    <p>
+                      Maintaining our certifications requires ongoing commitment to professional development and education. Our team regularly participates in industry conferences, training seminars, and certification renewal programs to stay current with evolving technologies, regulations, and best practices.
+                    </p>
+                    <p>
+                      We invest significantly in continuing education because the industrial landscape is constantly evolving. New materials, inspection techniques, regulatory requirements, and safety protocols emerge regularly, and our team must be prepared to incorporate these developments into our service delivery.
+                    </p>
+                    <p>
+                      This commitment to continuous improvement ensures that our clients benefit from the most advanced inspection techniques, the latest regulatory knowledge, and the most effective approaches to asset integrity management available in the industry today.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action */}
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">

@@ -3,7 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-///import Link from 'next/link';
+import Link from 'next/link';
 
 export default function API653() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -188,7 +188,7 @@ export default function API653() {
               API 653 <span className="text-blue-400">Tank Inspection</span>
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional aboveground storage tank inspection, repair, and reconstruction services following API 653 standards.
+              Professional aboveground storage tank inspection, repair, and reconstruction services following API 653 standards. Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified inspectors</Link> ensure comprehensive compliance with industry requirements.
             </p>
             
             
@@ -207,10 +207,10 @@ export default function API653() {
                 
                 <div className="text-gray-700 text-lg leading-relaxed space-y-6">
                   <p>
-                    <strong>API 653</strong> is a standard from the American Petroleum Institute (API) that covers the inspection, repair, alteration, and reconstruction of aboveground storage tanks (ASTs) built to API 650 or API 12C.
+                    <strong>API 653</strong> is a standard from the American Petroleum Institute (API) that covers the inspection, repair, alteration, and reconstruction of aboveground storage tanks (ASTs) built to API 650 or API 12C. Our <Link href="/about" className="text-blue-600 hover:text-blue-700 underline transition-colors">experienced team</Link> specializes in these critical standards.
                   </p>
                   <p>
-                    It ensures that tanks storing petroleum products, chemicals, and other liquids remain safe, reliable, and compliant throughout their service life.
+                    It ensures that tanks storing petroleum products, chemicals, and other liquids remain safe, reliable, and compliant throughout their service life. Combined with <Link href="/services/NDT" className="text-blue-600 hover:text-blue-700 underline transition-colors">NDT techniques</Link>, API 653 provides comprehensive asset integrity management.
                   </p>
                 </div>
               </div>
@@ -327,7 +327,7 @@ export default function API653() {
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-gray-700">Work must be performed or overseen by an API 653 certified inspector.</p>
+                      <p className="text-gray-700">Work must be performed or overseen by an <Link href="/certificates" className="text-blue-600 hover:text-blue-700 underline transition-colors">API 653 certified inspector</Link>.</p>
                     </div>
                   </div>
                 </div>
@@ -469,7 +469,7 @@ export default function API653() {
               Need Professional API 653 Services?
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified API 653 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+              Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified API 653 professionals</Link> use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations. Learn more about our <Link href="/safety" className="text-blue-400 hover:text-blue-300 underline transition-colors">safety protocols</Link> and <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline transition-colors">contact us</Link> for expert consultation.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

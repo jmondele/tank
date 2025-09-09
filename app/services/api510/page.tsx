@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function API510() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -188,7 +189,7 @@ export default function API510() {
               API 510 <span className="text-blue-400">Pressure Vessel Inspection</span>
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional in-service inspection, repair, alteration, and rerating of pressure vessels following API 510 standards.
+              Professional in-service inspection, repair, alteration, and rerating of pressure vessels following API 510 standards. Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified inspectors</Link> ensure comprehensive vessel integrity assessments.
             </p>
           </div>
         </section>
@@ -468,7 +469,7 @@ export default function API510() {
               Need Professional API 510 Services?
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified API 510 professionals use advanced techniques to ensure your assets remain safe, reliable, and compliant without interrupting operations.
+              Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified API 510 professionals</Link> use advanced techniques including <Link href="/services/NDT" className="text-blue-400 hover:text-blue-300 underline transition-colors">NDT methods</Link> to ensure your assets remain safe, reliable, and compliant. Learn about our <Link href="/safety" className="text-blue-400 hover:text-blue-300 underline transition-colors">safety commitment</Link> and <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline transition-colors">get started today</Link>.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 

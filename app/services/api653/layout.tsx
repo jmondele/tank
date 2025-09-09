@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "API 653 Tank Inspections | Aboveground Storage Tank Services",
+  title: "API 653 Tank Inspections",
   description: "Expert API 653 aboveground storage tank inspections, repairs, and reconstructions. Professional tank integrity assessments with certified inspectors for petroleum and chemical facilities.",
 };
 

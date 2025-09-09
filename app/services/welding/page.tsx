@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function WeldingQualifications() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -184,7 +185,7 @@ export default function WeldingQualifications() {
               Welder <span className="text-blue-400">Qualification Services</span>
             </h1>
             <p className="text-xl text-slate-300 text-center max-w-3xl mx-auto mb-12">
-              Professional ASME Section IX welder qualification and certification services ensuring compliance with industry standards.
+              Professional ASME Section IX welder qualification and certification services ensuring compliance with industry standards. Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">qualified team</Link> provides comprehensive welder certification programs.
             </p>
           </div>
         </section>
@@ -489,7 +490,7 @@ export default function WeldingQualifications() {
               Need Professional Welder Qualification Services?
             </h2>
             <p className="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">
-              Our certified professionals provide comprehensive ASME Section IX welder qualification and testing services to ensure your welders meet industry standards.
+              Our <Link href="/certificates" className="text-blue-400 hover:text-blue-300 underline transition-colors">certified professionals</Link> provide comprehensive ASME Section IX welder qualification and testing services to ensure your welders meet industry standards. All testing follows strict <Link href="/safety" className="text-blue-400 hover:text-blue-300 underline transition-colors">safety protocols</Link>. <Link href="/contact" className="text-blue-400 hover:text-blue-300 underline transition-colors">Contact us</Link> for qualification services.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a 
