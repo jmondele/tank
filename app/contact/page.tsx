@@ -1,4 +1,10 @@
-"user client"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Tank Inspection Services - Get Your Quote Today",
+  description: "Contact Tank Inspection Services for professional tank inspections, NDT services, and maritime operations. Get your free quote today.",
+};
+
 export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">

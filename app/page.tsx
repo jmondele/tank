@@ -1,4 +1,11 @@
 // app/page.tsx
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tank Inspection Services | Professional API 653, 570, 510 Inspections",
+  description: "Leading provider of professional tank and vessel inspections. API 653, API 570, API 510 certified services. Expert NDT testing and maritime operations.",
+};
+
 export default function HomePage() {
   return (
     <main className="bg-white text-[#2b2b2b]">

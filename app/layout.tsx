@@ -9,7 +9,10 @@ import { Analytics } from "@vercel/analytics/next"
 const nunito = Nunito({ subsets: ["latin"], weight: ["500","700"], variable: "--font-nunito" });
 
 export const metadata: Metadata = { 
-  title: "Tank Inspection Services",
+  title: {
+    template: '%s | Tank Inspection Services',
+    default: 'Tank Inspection Services - Professional API 653, 570, 510 Inspections'
+  },
   description: "Professional tank inspection, NDT services, and maritime operations. API 653, API 570, API 510 certified inspections.",
   icons: {
     icon: [

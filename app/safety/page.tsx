@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Safety | Tank Inspection Services - 99.8% Safety Record",
+  description: "Our commitment to safety in tank inspections and industrial operations. Learn about our safety protocols, training, and 99.8% safety record.",
+};
+
 export default function Safety() {
   return (
     <div className="min-h-screen flex flex-col">

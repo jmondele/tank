@@ -1,4 +1,10 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us | Tank Inspection Services - Expert Industrial Inspectors",
+  description: "Learn about Tank Inspection Services, our team of certified inspectors, and our commitment to safety and excellence in industrial tank inspections.",
+};
 
 export default function About() {
   return (
