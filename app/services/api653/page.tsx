@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function API653() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -382,6 +383,61 @@ export default function API653() {
                   <h3 className="text-xl font-bold text-white mb-4">Safety Protection</h3>
                   <p className="text-slate-300">Protects workers, communities, and the environment from hazards.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Services */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Complete Inspection Solutions</h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Beyond API 653 tank inspections, we offer comprehensive inspection services for all your critical infrastructure
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <Link href="/services/api570" className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 hover:shadow-xl transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-white font-bold text-xl">570</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-blue-800 mb-4">API 570 Piping</h3>
+                    <p className="text-gray-700">Professional piping system inspections and assessments</p>
+                  </div>
+                </Link>
+
+                <Link href="/services/api510" className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 hover:shadow-xl transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-white font-bold text-xl">510</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-green-800 mb-4">API 510 Pressure Vessels</h3>
+                    <p className="text-gray-700">Comprehensive pressure vessel inspection services</p>
+                  </div>
+                </Link>
+
+                <Link href="/services/NDT" className="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border border-purple-200 hover:shadow-xl transition-all duration-300">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.5 12.5L12 3L4.5 12.5H7V21h10v-8.5h2.5z"/>
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-purple-800 mb-4">NDT Testing</h3>
+                    <p className="text-gray-700">Advanced non-destructive testing methods</p>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="text-center mt-12">
+                <p className="text-gray-600 mb-6">
+                  Learn more about our company&apos;s <Link href="/safety" className="text-blue-600 hover:text-blue-800 font-semibold underline">safety standards</Link> and 
+                  <Link href="/about" className="text-blue-600 hover:text-blue-800 font-semibold underline ml-1">our expert team</Link>
+                </p>
               </div>
             </div>
           </div>

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Tank Inspection Services - Get Your Quote Today",
+  title: "Contact Us - Get Your Quote Today",
   description: "Contact Tank Inspection Services for professional tank inspections, NDT services, and maritime operations. Get your free quote today.",
 };
 
@@ -36,7 +37,7 @@ export default function Contact() {
 
               <div className="max-w-4xl mx-auto">
                 <p className="text-xl text-green-100 leading-relaxed mb-8">
-                  We&apos;re here to help with all your inspection needs. Whether you need API 653 tank inspections, API 570 piping assessments, API 510 pressure vessel evaluations, or NDT services, our team is ready to assist.
+                  We&apos;re here to help with all your inspection needs. Whether you need <Link href="/services/api653" className="text-green-300 hover:text-green-100 underline font-semibold">API 653 tank inspections</Link>, <Link href="/services/api570" className="text-green-300 hover:text-green-100 underline font-semibold">API 570 piping assessments</Link>, <Link href="/services/api510" className="text-green-300 hover:text-green-100 underline font-semibold">API 510 pressure vessel evaluations</Link>, or <Link href="/services/NDT" className="text-green-300 hover:text-green-100 underline font-semibold">NDT services</Link>, our team is ready to assist.
                 </p>
               </div>
             </div>

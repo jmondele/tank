@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Tank Inspection Services - Expert Industrial Inspectors",
+  title: "About Us - Expert Industrial Inspectors",
   description: "Learn about Tank Inspection Services, our team of certified inspectors, and our commitment to safety and excellence in industrial tank inspections.",
 };
 
@@ -39,7 +40,7 @@ export default function About() {
                   At Tank Inspection Services, we specialize in providing comprehensive inspection services for aboveground storage tanks, piping systems, and pressure vessels.
                 </p>
                 <p className="text-lg text-blue-200 mb-8">
-                  Our expertise covers API 653, API 570, API 510 certified inspections, supported by advanced Non-Destructive Testing (NDT) methods.
+                  Our expertise covers <Link href="/services/api653" className="text-blue-300 hover:text-blue-100 underline font-semibold">API 653</Link>, <Link href="/services/api570" className="text-blue-300 hover:text-blue-100 underline font-semibold">API 570</Link>, <Link href="/services/api510" className="text-blue-300 hover:text-blue-100 underline font-semibold">API 510</Link> certified inspections, supported by advanced <Link href="/services/NDT" className="text-blue-300 hover:text-blue-100 underline font-semibold">Non-Destructive Testing (NDT)</Link> methods.
                 </p>
                 <p className="text-lg text-blue-200">
                   With over a decade of experience, our mission is to help industries safeguard critical infrastructure, maintain compliance, and operate with confidence.

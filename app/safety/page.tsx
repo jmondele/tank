@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Safety | Tank Inspection Services - 99.8% Safety Record",
+  title: "Safety - 99.8% Safety Record",
   description: "Our commitment to safety in tank inspections and industrial operations. Learn about our safety protocols, training, and 99.8% safety record.",
 };
 
@@ -303,6 +304,62 @@ export default function Safety() {
                   <div className="text-xl font-semibold text-purple-800 mb-2">OSHA Compliance</div>
                   <div className="text-purple-700">All personnel certified</div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Safe Services We Provide */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Safety-First Inspection Services</h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  All our inspection services follow the same rigorous safety standards and protocols
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <Link href="/services/api653" className="group bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
+                  <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold">653</span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">API 653</h3>
+                  <p className="text-sm text-gray-600">Tank Inspections</p>
+                </Link>
+
+                <Link href="/services/api570" className="group bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
+                  <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold">570</span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">API 570</h3>
+                  <p className="text-sm text-gray-600">Piping Inspections</p>
+                </Link>
+
+                <Link href="/services/api510" className="group bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
+                  <div className="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold">510</span>
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">API 510</h3>
+                  <p className="text-sm text-gray-600">Pressure Vessels</p>
+                </Link>
+
+                <Link href="/services/NDT" className="group bg-white rounded-3xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 text-center">
+                  <div className="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19.5 12.5L12 3L4.5 12.5H7V21h10v-8.5h2.5z"/>
+                    </svg>
+                  </div>
+                  <h3 className="font-bold text-gray-900 mb-2">NDT</h3>
+                  <p className="text-sm text-gray-600">Non-Destructive Testing</p>
+                </Link>
+              </div>
+
+              <div className="text-center mt-12">
+                <p className="text-gray-600 mb-6">
+                  Want to know more about our company? Learn about <Link href="/about" className="text-red-600 hover:text-red-800 font-semibold underline">our team and experience</Link> or <Link href="/contact" className="text-red-600 hover:text-red-800 font-semibold underline">contact us directly</Link>
+                </p>
               </div>
             </div>
           </div>

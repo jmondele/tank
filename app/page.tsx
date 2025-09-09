@@ -1,5 +1,6 @@
 // app/page.tsx
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Tank Inspection Services | Professional API 653, 570, 510 Inspections",
@@ -54,12 +55,12 @@ export default function HomePage() {
                     At Tank Inspection Services, we deliver safe, precise, and reliable inspection services for storage tanks, piping, and pressure vessels.
                   </p>
                   <p>
-                    Our mission is simple: keep your assets compliant, safe, and efficient through work . We provide exceptional
-                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 653</span>
-                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 570</span>
-                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">API 510</span>
+                    Our mission is simple: keep your assets compliant, safe, and efficient through work. We provide exceptional
+                    <Link href="/services/api653" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 653</Link>
+                    <Link href="/services/api570" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 570</Link>
+                    <Link href="/services/api510" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">API 510</Link>
                     certified inspections, supported by advanced
-                    <span className=" text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1">Non-Destructive Testing (NDT)</span>
+                    <Link href="/services/NDT" className="text-blue-800 px-3 py-1 rounded-lg font-semibold mx-1 hover:bg-blue-100 transition-colors">Non-Destructive Testing (NDT)</Link>
                     methods and a full range of inspection equipment to handle projects of any size or complexity.
                   </p>
                 </div>
