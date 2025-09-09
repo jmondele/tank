@@ -7,19 +7,17 @@ export default function NDT() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageErrors, setImageErrors] = useState<boolean[]>(new Array(10).fill(false));
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   // Photo gallery data - replace with your actual images
   const photos = [
-    { src: '/phased-array-ut.jpg', alt: 'Phased Array Ultrasonic Testing', fallback: true },
-    { src: '/tofd-testing.jpg', alt: 'TOFD (Time-of-Flight Diffraction) Testing', fallback: true },
     { src: '/ndt-1.jpg', alt: 'Ultrasonic Testing Process', fallback: false },
     { src: '/ndt-2.jpg', alt: 'Radiographic Testing Setup', fallback: false },
     { src: '/ndt-3.jpg', alt: 'Magnetic Particle Testing', fallback: false },
     { src: '/ndt-4.jpg', alt: 'Liquid Penetrant Testing', fallback: false },
     { src: '/ndt-5.jpg', alt: 'Visual Testing Inspection', fallback: false },
     { src: '/ndt-6.jpg', alt: 'Weld Inspection Process', fallback: false },
-    { src: '/ndt-7.jpg', alt: 'Thickness Measurement', fallback: true },
-    { src: '/ndt-8.jpg', alt: 'Certified NDT Inspector', fallback: true }
+
   ];
 
   // Autoplay functionality
@@ -51,6 +49,10 @@ export default function NDT() {
 
   const prevPhoto = () => {
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   return (
@@ -364,269 +366,6 @@ export default function NDT() {
           </div>
         </section>
 
-        {/* Featured Technology - Phased Array Ultrasonic Testing */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-cyan-50 to-teal-100 rounded-3xl p-8 md:p-12 border border-cyan-200">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-cyan-600 rounded-2xl flex items-center justify-center mr-4">
-                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.091 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Phased Array Ultrasonic Testing</h2>
-                        <p className="text-lg text-cyan-600 font-semibold">Advanced PAUT Technology</p>
-                      </div>
-                    </div>
-                    
-                    <div className="text-gray-700 text-lg leading-relaxed space-y-4 mb-8">
-                      <p>
-                        <strong>Phased Array Ultrasonic Testing (PAUT)</strong> represents the cutting edge of NDT technology, using electronic beam steering to provide superior inspection capabilities for complex geometries and critical applications.
-                      </p>
-                      <p>
-                        Our advanced PAUT systems deliver high-resolution imaging and precise defect characterization, essential for API 510, API 570, and API 653 compliance inspections.
-                      </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <h4 className="text-lg font-bold text-gray-900 mb-3">Key Advantages</h4>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Electronic beam steering and focusing</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">High-resolution imaging capabilities</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Multiple angle inspection from single probe position</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Real-time imaging and data analysis</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <h4 className="text-lg font-bold text-gray-900 mb-3">Applications</h4>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Weld inspection and quality assessment</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Corrosion mapping and thickness measurement</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Complex geometry inspection</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-cyan-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Crack detection and sizing</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="lg:pl-8">
-                    <div className="bg-gradient-to-br from-cyan-600 to-teal-700 rounded-2xl p-8 text-white">
-                      <h4 className="text-2xl font-bold mb-6 text-center">PAUT Capabilities</h4>
-                      <div className="space-y-4">
-                        <div className="flex justify-between items-center border-b border-cyan-300/30 pb-2">
-                          <span className="font-medium">Frequency Range:</span>
-                          <span className="text-cyan-100">0.5 - 20 MHz</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-cyan-300/30 pb-2">
-                          <span className="font-medium">Beam Angles:</span>
-                          <span className="text-cyan-100">0° to 80°</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-cyan-300/30 pb-2">
-                          <span className="font-medium">Elements:</span>
-                          <span className="text-cyan-100">32 to 256 elements</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-cyan-300/30 pb-2">
-                          <span className="font-medium">Resolution:</span>
-                          <span className="text-cyan-100">Sub-millimeter accuracy</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-cyan-300/30 pb-2">
-                          <span className="font-medium">Coverage:</span>
-                          <span className="text-cyan-100">100% volumetric inspection</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="font-medium">Standards:</span>
-                          <span className="text-cyan-100">ASME, API, AWS certified</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mt-6 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-cyan-200">
-                      <h5 className="text-lg font-bold text-gray-900 mb-3">Why Choose PAUT?</h5>
-                      <ul className="space-y-2 text-sm text-gray-700">
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>Superior defect detection and sizing accuracy</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>Reduced inspection time and access requirements</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-cyan-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>Comprehensive data recording for trending analysis</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Technology - TOFD (Time-of-Flight Diffraction) */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-purple-50 to-indigo-100 rounded-3xl p-8 md:p-12 border border-purple-200">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mr-4">
-                        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                      </div>
-                      <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">TOFD Technology</h2>
-                        <p className="text-lg text-purple-600 font-semibold">Time-of-Flight Diffraction</p>
-                      </div>
-                    </div>
-                    
-                    <div className="text-gray-700 text-lg leading-relaxed space-y-4 mb-8">
-                      <p>
-                        <strong>Time-of-Flight Diffraction (TOFD)</strong> is a highly sophisticated ultrasonic testing technique that measures diffracted ultrasonic waves to provide exceptional accuracy in defect detection and sizing.
-                      </p>
-                      <p>
-                        TOFD technology excels in detecting and characterizing planar defects such as cracks, lack of fusion, and incomplete penetration in welded structures, making it ideal for critical infrastructure inspections.
-                      </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-4">
-                        <h4 className="text-lg font-bold text-gray-900 mb-3">Key Benefits</h4>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Exceptional crack height sizing accuracy</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Superior detection of planar defects</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Rapid inspection of long weld sections</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Permanent record for trend analysis</p>
-                        </div>
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <h4 className="text-lg font-bold text-gray-900 mb-3">Applications</h4>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Pressure vessel weld inspection</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Pipeline integrity assessment</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Storage tank shell examination</p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="w-2 h-2 bg-purple-500 rounded-full mt-3 flex-shrink-0"></div>
-                          <p className="text-gray-700">Critical weld monitoring programs</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="lg:pl-8">
-                    <div className="bg-gradient-to-br from-purple-600 to-indigo-700 rounded-2xl p-8 text-white">
-                      <h4 className="text-2xl font-bold mb-6 text-center">TOFD Specifications</h4>
-                      <div className="space-y-4">
-                        <div className="flex justify-between items-center border-b border-purple-300/30 pb-2">
-                          <span className="font-medium">Frequency Range:</span>
-                          <span className="text-purple-100">2 - 15 MHz</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-purple-300/30 pb-2">
-                          <span className="font-medium">Sizing Accuracy:</span>
-                          <span className="text-purple-100">±1 mm height accuracy</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-purple-300/30 pb-2">
-                          <span className="font-medium">Detection:</span>
-                          <span className="text-purple-100">Planar defects&quot; 2 mm</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-purple-300/30 pb-2">
-                          <span className="font-medium">Coverage:</span>
-                          <span className="text-purple-100">100% weld volume</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-purple-300/30 pb-2">
-                          <span className="font-medium">Speed:</span>
-                          <span className="text-purple-100">Up to 150 mm/min</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                          <span className="font-medium">Standards:</span>
-                          <span className="text-purple-100">ASME V, BS EN ISO 10863</span>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="mt-6 bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-purple-200">
-                      <h5 className="text-lg font-bold text-gray-900 mb-3">TOFD Advantages</h5>
-                      <ul className="space-y-2 text-sm text-gray-700">
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>Precise through-wall crack height measurement</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>High probability of detection for critical defects</span>
-                        </li>
-                        <li className="flex items-center space-x-2">
-                          <svg className="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                          </svg>
-                          <span>Rapid scanning with permanent data storage</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Why It Matters */}
         <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
@@ -680,6 +419,73 @@ export default function NDT() {
                   <h3 className="text-xl font-bold text-white mb-4">Minimized Downtime</h3>
                   <p className="text-slate-300">Minimizes downtime and repair costs through preventive detection.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">
+                  Common questions about NDT services
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What types of defects can NDT detect?",
+                    answer: "NDT can detect surface cracks, internal flaws, corrosion, weld defects, thickness variations, and material inconsistencies. Different NDT methods are suitable for different types of defects - for example, ultrasonic testing excels at finding internal flaws, while magnetic particle testing is ideal for surface cracks."
+                  },
+                  {
+                    question: "How often should NDT inspections be performed?",
+                    answer: "Inspection frequency depends on factors like operating conditions, material type, service environment, and regulatory requirements. Typically, critical components may require annual inspections, while others might be inspected every 2-5 years. Risk-based inspection (RBI) programs help determine optimal inspection intervals."
+                  },
+                  {
+                    question: "Can NDT be performed while equipment is in service?",
+                    answer: "Yes, many NDT methods can be performed during operation without shutting down equipment. Visual testing, ultrasonic thickness measurements, and some radiographic techniques can often be done while systems are running, minimizing operational disruption and costs."
+                  },
+                  {
+                    question: "What certifications should NDT inspectors have?",
+                    answer: "NDT inspectors should be certified according to industry standards like SNT-TC-1A, CP-189, or ISO 9712. Specific certifications depend on the method (UT, MT, PT, RT, VT) and level (Level I, II, or III). Many industries also require specialized certifications like ASNT or PCN."
+                  },
+                  {
+                    question: "How accurate are NDT results?",
+                    answer: "NDT accuracy varies by method and application, but modern techniques are highly reliable. Ultrasonic testing can detect flaws as small as 1-2mm, while advanced techniques like phased array UT can provide detailed 3D imaging. Regular calibration and qualified personnel ensure consistent, accurate results."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-xl font-bold text-gray-900">{faq.question}</h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transition-transform duration-200 ${
+                          openFAQ === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

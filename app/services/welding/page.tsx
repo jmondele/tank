@@ -7,6 +7,7 @@ export default function WeldingQualifications() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageErrors, setImageErrors] = useState<boolean[]>(new Array(8).fill(false));
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   // Photo gallery data - replace with your actual images
   const photos = [
@@ -46,6 +47,10 @@ export default function WeldingQualifications() {
 
   const prevPhoto = () => {
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   return (
@@ -405,6 +410,73 @@ export default function WeldingQualifications() {
                   <h3 className="text-xl font-bold text-white mb-4">Quality Assurance</h3>
                   <p className="text-slate-300">Maintains consistent weld quality across all project phases.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">
+                  Common questions about Welder Qualification services
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What is the difference between WPQ and PQR?",
+                    answer: "WPQ (Welder Performance Qualification) tests individual welder skills and competency for specific processes and positions, while PQR (Procedure Qualification Record) documents the mechanical testing results that validate welding procedures. A WPQ qualifies the welder, while a PQR qualifies the welding procedure itself."
+                  },
+                  {
+                    question: "How long are welder qualifications valid?",
+                    answer: "Under ASME Section IX, welder qualifications remain valid indefinitely as long as the welder continues to weld with the qualified process. However, if there's a gap of 6 months or more without welding, or if there's reason to question the welder's ability, requalification may be required. Many companies also require periodic requalification for quality assurance."
+                  },
+                  {
+                    question: "What welding processes can be qualified under ASME Section IX?",
+                    answer: "ASME Section IX covers all major welding processes including SMAW (Stick), GTAW (TIG), GMAW (MIG), FCAW (Flux Core), SAW (Submerged Arc), PAW (Plasma Arc), and others. Each process requires specific qualification testing, and qualifications are process-specific - qualifying in one process doesn't automatically qualify a welder in another."
+                  },
+                  {
+                    question: "What positions can welders be qualified in?",
+                    answer: "ASME Section IX defines specific welding positions: 1G (flat), 2G (horizontal), 3G (vertical), and 4G (overhead) for groove welds, and 1F, 2F, 3F, 4F, and 5F for fillet welds. Qualifying in a higher position typically qualifies the welder for lower positions - for example, passing 6G (pipe) qualifies for all other positions."
+                  },
+                  {
+                    question: "What testing is required for welder qualification?",
+                    answer: "Testing typically includes visual examination of the completed weld, followed by destructive testing such as bend tests (root, face, or side bends), tensile tests, and sometimes impact tests depending on the application. The specific tests required depend on the material thickness, welding process, and intended service conditions of the final weldment."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-xl font-bold text-gray-900">{faq.question}</h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transition-transform duration-200 ${
+                          openFAQ === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

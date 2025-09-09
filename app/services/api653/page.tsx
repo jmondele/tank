@@ -3,12 +3,13 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+///import Link from 'next/link';
 
 export default function API653() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageErrors, setImageErrors] = useState<boolean[]>(new Array(8).fill(false));
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   // Photo gallery data - replace with your actual images
   const photos = [
@@ -50,6 +51,10 @@ export default function API653() {
 
   const prevPhoto = () => {
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
   return (
     <div className="min-h-screen flex flex-col">
@@ -388,56 +393,70 @@ export default function API653() {
           </div>
         </section>
 
-        {/* Related Services */}
-        <section className="py-20 bg-white">
+     
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Complete Inspection Solutions</h2>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Beyond API 653 tank inspections, we offer comprehensive inspection services for all your critical infrastructure
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">
+                  Common questions about API 653 services
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <Link href="/services/api570" className="group bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 border border-blue-200 hover:shadow-xl transition-all duration-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-white font-bold text-xl">570</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-blue-800 mb-4">API 570 Piping</h3>
-                    <p className="text-gray-700">Professional piping system inspections and assessments</p>
-                  </div>
-                </Link>
-
-                <Link href="/services/api510" className="group bg-gradient-to-br from-green-50 to-green-100 rounded-3xl p-8 border border-green-200 hover:shadow-xl transition-all duration-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <span className="text-white font-bold text-xl">510</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-green-800 mb-4">API 510 Pressure Vessels</h3>
-                    <p className="text-gray-700">Comprehensive pressure vessel inspection services</p>
-                  </div>
-                </Link>
-
-                <Link href="/services/NDT" className="group bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 border border-purple-200 hover:shadow-xl transition-all duration-300">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19.5 12.5L12 3L4.5 12.5H7V21h10v-8.5h2.5z"/>
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What tanks are covered under API 653?",
+                    answer: "API 653 applies to aboveground storage tanks (ASTs) that were originally constructed to API 650 or API 12C standards. This includes tanks storing petroleum products, chemicals, and other liquids in refineries, chemical plants, and tank farms. The standard covers tanks with capacities typically ranging from 1,000 to several million gallons."
+                  },
+                  {
+                    question: "How often should API 653 inspections be conducted?",
+                    answer: "External inspections are required at least every 5 years, while internal inspections are typically required every 10 years, though intervals can vary based on corrosion rates, service conditions, and tank risk assessment. In-service inspections should be performed routinely by qualified personnel to monitor tank condition between formal inspections."
+                  },
+                  {
+                    question: "Can tanks remain in service during API 653 repairs?",
+                    answer: "Some repairs can be performed while tanks remain in service, such as external shell repairs, nozzle modifications, and certain welding operations, provided proper safety procedures are followed. However, major repairs like bottom replacements or significant alterations typically require the tank to be taken out of service and properly cleaned."
+                  },
+                  {
+                    question: "What happens if a tank fails API 653 inspection?",
+                    answer: "If a tank fails inspection, it must be repaired, altered, or taken out of service until it meets API 653 requirements. The inspector will document all deficiencies and recommend appropriate corrective actions. Repairs must be performed using approved procedures and materials, and the tank must pass re-inspection before returning to service."
+                  },
+                  {
+                    question: "Who can perform API 653 inspections and certifications?",
+                    answer: "API 653 inspections must be performed by certified API 653 tank inspectors who have passed the API examination and meet experience requirements. These inspectors must maintain their certification through continuing education and recertification every three years. Only authorized inspectors can approve tank repairs, alterations, and fitness-for-service determinations."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-xl font-bold text-gray-900">{faq.question}</h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transition-transform duration-200 ${
+                          openFAQ === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
                     </div>
-                    <h3 className="text-xl font-bold text-purple-800 mb-4">NDT Testing</h3>
-                    <p className="text-gray-700">Advanced non-destructive testing methods</p>
                   </div>
-                </Link>
-              </div>
-
-              <div className="text-center mt-12">
-                <p className="text-gray-600 mb-6">
-                  Learn more about our company&apos;s <Link href="/safety" className="text-blue-600 hover:text-blue-800 font-semibold underline">safety standards</Link> and 
-                  <Link href="/about" className="text-blue-600 hover:text-blue-800 font-semibold underline ml-1">our expert team</Link>
-                </p>
+                ))}
               </div>
             </div>
           </div>

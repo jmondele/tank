@@ -7,10 +7,10 @@ export default function API570() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageErrors, setImageErrors] = useState<boolean[]>(new Array(8).fill(false));
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   // Photo gallery data - replace with your actual images
   const photos = [
-    { src: '/api570-1.jpg', alt: 'In-Service Inspection', fallback: false },
     { src: '/api570-5.jpg', alt: 'In-Service Inspection', fallback: false },
     { src: '/api570-31.jpg', alt: 'Certified Inspector at Work', fallback: false },
     { src: '/api570-41.jpg', alt: 'Weld Repair Operations', fallback: false },
@@ -47,6 +47,10 @@ export default function API570() {
 
   const prevPhoto = () => {
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   return (
@@ -382,6 +386,73 @@ export default function API570() {
                   <h3 className="text-xl font-bold text-white mb-4">Reduced Downtime</h3>
                   <p className="text-slate-300">Reduces downtime and costly repairs through early detection.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">
+                  Common questions about API 570 services
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What piping systems does API 570 cover?",
+                    answer: "API 570 applies to metallic piping systems used in petroleum refineries, chemical plants, and related processing facilities. This includes piping carrying hydrocarbons, chemicals, steam, and other process fluids, but excludes piping systems covered by other codes like ASME B31.1 for power piping."
+                  },
+                  {
+                    question: "How often should API 570 inspections be performed?",
+                    answer: "Inspection intervals depend on the piping class, service conditions, and corrosion rates. Generally, visual external inspections are required every 5 years, while thickness monitoring may be needed every 5-10 years. High-risk piping may require more frequent inspections, while low-risk systems may have extended intervals."
+                  },
+                  {
+                    question: "Can repairs be made without shutting down the entire system?",
+                    answer: "Many API 570 repairs can be performed using hot tapping, freeze plugging, or other techniques that allow localized repairs without full system shutdown. However, the specific repair method depends on the pipe size, pressure, temperature, and fluid being transported. A qualified API 570 inspector must approve the repair method."
+                  },
+                  {
+                    question: "What qualifications are needed for API 570 inspectors?",
+                    answer: "API 570 inspectors must pass the API 570 certification exam and meet experience requirements. They need knowledge of piping systems, materials, corrosion mechanisms, inspection techniques, and relevant codes and standards. Recertification is required every three years to maintain active status."
+                  },
+                  {
+                    question: "When is piping rerating required under API 570?",
+                    answer: "Rerating is required when piping conditions change due to corrosion, mechanical damage, or service changes that affect the maximum allowable working pressure (MAWP). Rerating calculations must consider current wall thickness, operating conditions, and stress levels to ensure continued safe operation."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-xl font-bold text-gray-900">{faq.question}</h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transition-transform duration-200 ${
+                          openFAQ === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

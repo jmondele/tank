@@ -7,6 +7,7 @@ export default function API510() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [imageErrors, setImageErrors] = useState<boolean[]>(new Array(8).fill(false));
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   // Photo gallery data - replace with your actual images
   const photos = [
@@ -48,6 +49,10 @@ export default function API510() {
 
   const prevPhoto = () => {
     setCurrentPhoto((prev) => (prev - 1 + photos.length) % photos.length);
+  };
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
   };
 
   return (
@@ -384,6 +389,73 @@ export default function API510() {
                   <h3 className="text-xl font-bold text-white mb-4">Extended Service Life</h3>
                   <p className="text-slate-300">Extends equipment service life while minimizing downtime.</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p className="text-xl text-gray-600">
+                  Common questions about API 510 services
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    question: "What pressure vessels does API 510 cover?",
+                    answer: "API 510 applies to pressure vessels used in petroleum refineries, chemical plants, and related processing facilities that were originally constructed to ASME Section VIII standards. This includes vessels operating above 15 psig and includes reactors, drums, heat exchangers, and storage vessels containing process fluids."
+                  },
+                  {
+                    question: "How often should API 510 inspections be performed?",
+                    answer: "Inspection intervals depend on the service severity, corrosion rates, and risk assessment. Generally, external inspections are required every 5-10 years, while internal inspections may be required every 10-20 years. High-risk vessels may need more frequent inspections, while low-risk vessels may qualify for extended intervals."
+                  },
+                  {
+                    question: "What qualifications are required for API 510 inspectors?",
+                    answer: "API 510 inspectors must pass the comprehensive API 510 certification exam and meet specific education and experience requirements. They need knowledge of pressure vessel design, materials, corrosion mechanisms, inspection techniques, and relevant codes. Recertification is required every three years through continuing education or re-examination."
+                  },
+                  {
+                    question: "When is pressure vessel rerating necessary?",
+                    answer: "Rerating is required when vessel conditions change due to corrosion, cracking, or service modifications that affect the Maximum Allowable Working Pressure (MAWP). This includes changes in operating temperature, pressure, or service that could impact vessel integrity. All rerating must be performed by qualified API 510 inspectors."
+                  },
+                  {
+                    question: "Can API 510 inspections be performed while vessels are in service?",
+                    answer: "Yes, many API 510 inspection activities can be performed on-stream including external visual inspections, thickness measurements, and non-destructive testing. However, internal inspections typically require the vessel to be taken out of service, cleaned, and properly prepared. Risk-based inspection programs help optimize inspection timing and methods."
+                  }
+                ].map((faq, index) => (
+                  <div key={index} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                    >
+                      <h3 className="text-xl font-bold text-gray-900">{faq.question}</h3>
+                      <svg
+                        className={`w-6 h-6 text-gray-500 transition-transform duration-200 ${
+                          openFAQ === index ? 'rotate-180' : ''
+                        }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                        openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                    >
+                      <div className="px-6 pb-6">
+                        <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
