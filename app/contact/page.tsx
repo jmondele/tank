@@ -367,7 +367,7 @@ export default function Contact() {
                   Our Service Delivery Approach
                 </h2>
                 <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  We understand that every client has unique requirements, operational constraints, and regulatory obligations. Our flexible service delivery approach ensures we can meet your specific needs while maintaining the highest standards of quality and safety.
+                  We understand that every client has unique requirements, operational constraints, and regulatory obligations. Our flexible service delivery approach ensures we can meet your specific needs while maintaining the highest standards of quality and safety. From initial consultation through project completion, we maintain open lines of communication and adapt our methodologies to align with your facility&apos;s operational schedule and safety protocols.
                 </p>
               </div>
 
@@ -379,7 +379,7 @@ export default function Contact() {
                       Our experienced project managers coordinate all aspects of your inspection services, from initial planning through final reporting. We maintain clear communication channels, provide regular progress updates, and ensure all deliverables meet your timeline requirements.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      Whether you need a single tank inspection or a comprehensive facility assessment involving multiple systems, our project management approach ensures efficient execution while minimizing operational disruption to your facility.
+                      Whether you need a single tank inspection or a comprehensive facility assessment involving multiple systems, our project management approach ensures efficient execution while minimizing operational disruption to your facility. Our team coordinates with your maintenance staff, operations personnel, and regulatory compliance officers to ensure seamless integration of inspection activities with your ongoing operations. We provide detailed scheduling, comprehensive safety briefings, and regular status updates throughout the project lifecycle to maintain transparency and accountability at every stage.
                     </p>
                   </div>
                   <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">

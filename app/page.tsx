@@ -28,7 +28,7 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Professional Tank Inspection Services</h2>
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Professional Tank Inspection Services</h1>
             <div className="text-lg text-gray-700 leading-relaxed space-y-6">
               <p>
                 Tank Inspection Services stands as a premier provider of comprehensive industrial inspection solutions throughout Central America and the Caribbean region. With over a decade of specialized experience, we deliver critical inspection services that ensure the safety, compliance, and operational integrity of your most valuable industrial assets.

@@ -374,7 +374,7 @@ export default function Safety() {
                   Our Safety Philosophy: Beyond Compliance
                 </h2>
                 <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                  At Tank Inspection Services, safety isn&apos;t just a requirement—it&apos;s a core value that drives every decision we make. Our commitment to safety excellence extends far beyond regulatory compliance to create a comprehensive safety culture that protects our people, our clients, and the environment.
+                  At Tank Inspection Services, safety isn&apos;t just a requirement—it&apos;s a core value that drives every decision we make. Our commitment to safety excellence extends far beyond regulatory compliance to create a comprehensive safety culture that protects our people, our clients, and the environment. We recognize that the industrial environments where we work present inherent risks, from confined spaces and hazardous atmospheres to elevated work platforms and complex mechanical systems. Our proactive approach to safety management addresses these challenges through systematic risk assessment, comprehensive training programs, and continuous monitoring of safety performance metrics across all our operations.
                 </p>
               </div>
 
@@ -410,7 +410,7 @@ export default function Safety() {
                       We continuously invest in the latest safety technologies and equipment to enhance protection for our personnel and improve the effectiveness of our safety programs. This includes advanced gas detection systems, real-time monitoring equipment, and innovative personal protective equipment.
                     </p>
                     <p className="text-lg text-gray-700 leading-relaxed">
-                      Our commitment to technological innovation extends to digital safety management tools, mobile safety reporting applications, and data analytics systems that help us identify trends and proactively address potential safety concerns before they become incidents.
+                      Our commitment to technological innovation extends to digital safety management tools, mobile safety reporting applications, and data analytics systems that help us identify trends and proactively address potential safety concerns before they become incidents. We utilize advanced gas detection equipment, personal monitoring devices, and real-time communication systems to maintain constant awareness of changing site conditions and ensure immediate response capabilities during all inspection activities.
                     </p>
                   </div>
                 </div>

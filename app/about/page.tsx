@@ -569,10 +569,13 @@ export default function About() {
                 <div className="text-center">
                   <h3 className="text-3xl font-bold text-gray-900 mb-8">Cross-Industry Excellence</h3>
                   <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
-                    Our diverse industry experience allows us to bring best practices and innovative solutions from one sector to another. This cross-pollination of ideas and approaches has consistently delivered superior results for our clients, helping them achieve higher levels of safety, efficiency, and compliance.
+                    Our diverse industry experience allows us to bring best practices and innovative solutions from one sector to another. This cross-pollination of ideas and approaches has consistently delivered superior results for our clients, helping them achieve higher levels of safety, efficiency, and compliance. We understand that each industry faces unique challenges, from the corrosive environments of chemical processing plants to the high-temperature conditions of power generation facilities.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-8">
+                    Our comprehensive approach to asset integrity management encompasses not just the technical aspects of inspection, but also the regulatory landscape, operational constraints, and business objectives that drive decision-making in industrial settings. We work closely with maintenance teams, engineering departments, and management to ensure our inspection programs align with overall facility goals and long-term strategic planning.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-                    Whether you operate a single facility or manage a complex network of industrial assets, our team has the knowledge, experience, and resources to support your inspection and asset integrity needs. We pride ourselves on being more than just service providers—we are trusted partners in your operational success.
+                    Whether you operate a single facility or manage a complex network of industrial assets, our team has the knowledge, experience, and resources to support your inspection and asset integrity needs. We pride ourselves on being more than just service providers—we are trusted partners in your operational success. Our commitment extends beyond individual inspections to include ongoing consultation, training support, and continuous improvement recommendations that help optimize your maintenance programs and extend asset life cycles.
                   </p>
                 </div>
               </div>
