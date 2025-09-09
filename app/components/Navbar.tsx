@@ -4,8 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { getTranslations } from "../../lib/i18n";
-import LanguageSwitcher from "../../components/LanguageSwitcher";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -15,9 +13,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const isServicesActive = pathname?.startsWith("/services");
   
-  // Get translations for current locale (defaulting to English for now)
-  // In a full App Router i18n setup, you'd get locale from params or context
-  const t = getTranslations('en');
 
   // Close dropdown if clicking outside
   useEffect(() => {
@@ -89,7 +84,7 @@ export default function Navbar() {
                 aria-expanded={open}
                 onClick={() => setOpen(prev => !prev)}
               >
-{t.services} <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
+Services <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
               </button>
 
               <div 
@@ -259,38 +254,35 @@ export default function Navbar() {
                     }
                   }}
                 >
-{t.welderQualification}
+Welder Qualification
                 </Link>
               </div>
             </li>
 
             <li>
               <Link className={`navLink ${pathname === "/certificates" ? "active" : ""}`} href="/certificates">
-                {t.certificates}
+                Certificates
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/equipment" ? "active" : ""}`} href="/equipment">
-                {t.equipment}
+                Equipment
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/safety" ? "active" : ""}`} href="/safety">
-                {t.safety}
+                Safety
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/about" ? "active" : ""}`} href="/about">
-                {t.about}
+                About Us
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/contact" ? "active" : ""}`} href="/contact">
-                {t.contact}
+                Contact Us
               </Link>
-            </li>
-            <li>
-              <LanguageSwitcher currentLocale="en" />
             </li>
           </ul>
 
@@ -349,7 +341,7 @@ export default function Navbar() {
                   paddingBottom: '8px',
                   borderBottom: '2px solid #333'
                 }}>
-                  {t.services}
+                  Services
                 </div>
                 
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
@@ -377,44 +369,41 @@ export default function Navbar() {
                 </div>
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
                   <Link href="/services/welding" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-  {t.welderQualification}
+  Welder Qualification
                   </Link>
                 </div>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/certificates" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {t.certificates}
+                  Certificates
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/equipment" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {t.equipment}
+                  Equipment
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/safety" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {t.safety}
+                  Safety
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {t.about}
+                  About Us
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {t.contact}
+                  Contact Us
                 </Link>
               </div>
               
-              <div style={{ display: 'flex', justifyContent: 'center', padding: '20px 0' }}>
-                <LanguageSwitcher currentLocale="en" />
-              </div>
             </div>
           </div>
         </div>
