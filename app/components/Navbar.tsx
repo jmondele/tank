@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 import { getTranslations } from "../../lib/i18n";
 import LanguageSwitcher from "../../components/LanguageSwitcher";
 
@@ -14,11 +13,11 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLLIElement | null>(null);
   const pathname = usePathname();
-  const router = useRouter();
   const isServicesActive = pathname?.startsWith("/services");
   
-  // Get translations for current locale
-  const t = getTranslations(router?.locale as 'en' | 'es' || 'en');
+  // Get translations for current locale (defaulting to English for now)
+  // In a full App Router i18n setup, you'd get locale from params or context
+  const t = getTranslations('en');
 
   // Close dropdown if clicking outside
   useEffect(() => {
@@ -291,7 +290,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <LanguageSwitcher />
+              <LanguageSwitcher currentLocale="en" />
             </li>
           </ul>
 
@@ -414,7 +413,7 @@ export default function Navbar() {
               </div>
               
               <div style={{ display: 'flex', justifyContent: 'center', padding: '20px 0' }}>
-                <LanguageSwitcher />
+                <LanguageSwitcher currentLocale="en" />
               </div>
             </div>
           </div>

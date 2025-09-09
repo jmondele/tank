@@ -1,25 +1,33 @@
 "use client";
 
-import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 
-export default function LanguageSwitcher() {
-  const router = useRouter();
+interface LanguageSwitcherProps {
+  currentLocale?: string;
+}
+
+export default function LanguageSwitcher({ currentLocale = 'en' }: LanguageSwitcherProps) {
   const [isOpen, setIsOpen] = useState(false);
-  
-  const { locale, locales, asPath } = router;
+  const router = useRouter();
+  const pathname = usePathname();
   
   const languages = {
     en: { name: 'English', flag: '🇺🇸' },
     es: { name: 'Español', flag: '🇪🇸' }
   };
   
+  const locales = ['en', 'es'];
+  
   const changeLanguage = (newLocale: string) => {
-    router.push(asPath, asPath, { locale: newLocale });
+    // For now, we'll use a simple redirect approach
+    // In a full i18n setup with app router, you'd typically use middleware
+    const newPath = `/${newLocale}${pathname === '/' ? '' : pathname}`;
+    router.push(newPath);
     setIsOpen(false);
   };
   
-  const currentLanguage = languages[locale as keyof typeof languages] || languages.en;
+  const currentLanguage = languages[currentLocale as keyof typeof languages] || languages.en;
 
   return (
     <div className="language-switcher">
@@ -44,14 +52,14 @@ export default function LanguageSwitcher() {
       
       {isOpen && (
         <div className="language-dropdown">
-          {locales?.map((loc) => {
+          {locales.map((loc) => {
             const lang = languages[loc as keyof typeof languages];
             if (!lang) return null;
             
             return (
               <button
                 key={loc}
-                className={`language-option ${loc === locale ? 'active' : ''}`}
+                className={`language-option ${loc === currentLocale ? 'active' : ''}`}
                 onClick={() => changeLanguage(loc)}
               >
                 <span className="flag">{lang.flag}</span>
