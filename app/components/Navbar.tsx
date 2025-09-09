@@ -4,6 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
+import { getTranslations } from "../../lib/i18n";
+import LanguageSwitcher from "../../components/LanguageSwitcher";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,7 +14,11 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const wrapperRef = useRef<HTMLLIElement | null>(null);
   const pathname = usePathname();
+  const router = useRouter();
   const isServicesActive = pathname?.startsWith("/services");
+  
+  // Get translations for current locale
+  const t = getTranslations(router?.locale as 'en' | 'es' || 'en');
 
   // Close dropdown if clicking outside
   useEffect(() => {
@@ -83,7 +90,7 @@ export default function Navbar() {
                 aria-expanded={open}
                 onClick={() => setOpen(prev => !prev)}
               >
-                Services <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
+{t.services} <span className={`caret ${open ? "up" : ""}`} aria-hidden="true" />
               </button>
 
               <div 
@@ -253,35 +260,38 @@ export default function Navbar() {
                     }
                   }}
                 >
-                  Welder Qualification
+{t.welderQualification}
                 </Link>
               </div>
             </li>
 
             <li>
               <Link className={`navLink ${pathname === "/certificates" ? "active" : ""}`} href="/certificates">
-                Certificates
+                {t.certificates}
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/equipment" ? "active" : ""}`} href="/equipment">
-                Equipment
+                {t.equipment}
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/safety" ? "active" : ""}`} href="/safety">
-                Safety
+                {t.safety}
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/about" ? "active" : ""}`} href="/about">
-                About us
+                {t.about}
               </Link>
             </li>
             <li>
               <Link className={`navLink ${pathname === "/contact" ? "active" : ""}`} href="/contact">
-                Contact us
+                {t.contact}
               </Link>
+            </li>
+            <li>
+              <LanguageSwitcher />
             </li>
           </ul>
 
@@ -340,7 +350,7 @@ export default function Navbar() {
                   paddingBottom: '8px',
                   borderBottom: '2px solid #333'
                 }}>
-                  Services
+                  {t.services}
                 </div>
                 
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
@@ -368,39 +378,43 @@ export default function Navbar() {
                 </div>
                 <div style={{ display: 'block', color: '#ccc', fontSize: '18px', padding: '18px 24px', borderBottom: '1px solid #222' }}>
                   <Link href="/services/welding" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                    Welder Qualification
+  {t.welderQualification}
                   </Link>
                 </div>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/certificates" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  Certificates
+                  {t.certificates}
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/equipment" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  Equipment
+                  {t.equipment}
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/safety" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  Safety
+                  {t.safety}
                 </Link>
               </div>
               
               <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/about" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  About us
+                  {t.about}
                 </Link>
               </div>
               
-              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0' }}>
+              <div style={{ display: 'block', color: 'white', fontSize: '20px', padding: '20px 0', borderBottom: '1px solid #333' }}>
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  Contact us
+                  {t.contact}
                 </Link>
+              </div>
+              
+              <div style={{ display: 'flex', justifyContent: 'center', padding: '20px 0' }}>
+                <LanguageSwitcher />
               </div>
             </div>
           </div>
