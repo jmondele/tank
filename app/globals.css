@@ -26,13 +26,25 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+  font-display: swap;
 }
 
 /* Performance optimizations */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent font loading layout shifts */
+.font-nunito {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure consistent layout during font loading */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-nunito), system-ui, -apple-system, sans-serif;
+  font-weight: 700;
 }
 
 /* Optimize transitions for better performance */

@@ -423,6 +423,7 @@ Welder Qualification
           background: #000000;
           border-bottom: 1px solid #222;
           transition: box-shadow 0.3s ease;
+          min-height: 72px;
         }
         
         .nav.scrolled { 
@@ -553,14 +554,22 @@ Welder Qualification
           border-radius: 8px;
           padding: 4px;
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-          display: none;
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transform: translateY(-10px);
+          transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
           z-index: 1000;
+          display: flex;
           flex-direction: column;
         }
 
         .services.open .dropdown,
         .services:hover .dropdown { 
-          display: flex;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          transform: translateY(0);
         }
 
         .services .dropdown a {
@@ -592,10 +601,6 @@ Welder Qualification
           background-color: #1a1a1a;
         }
 
-        .services:hover .dropdown,
-        .services.open .dropdown { 
-          display: block; 
-        }
 
         /* Mobile hamburger button */
         .mobile-menu-btn {
