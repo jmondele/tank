@@ -290,7 +290,7 @@ export default function HomePage() {
                     Comprehensive aboveground storage tank inspections, repairs, and reconstructions following API 653 standards. We ensure your tanks meet regulatory requirements while maintaining operational integrity throughout their service life.
                   </p>
                   <Link href="/services/api653" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                    Learn More →
+                    API 653 Tank Inspection Services →
                   </Link>
                 </div>
 
@@ -300,7 +300,7 @@ export default function HomePage() {
                     Professional in-service inspection, repair, alteration, and rerating of process piping systems. Our API 570 certified inspectors ensure your piping infrastructure remains safe and compliant with industry standards.
                   </p>
                   <Link href="/services/api570" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                    Learn More →
+                    API 570 Piping System Inspections →
                   </Link>
                 </div>
 
@@ -310,7 +310,7 @@ export default function HomePage() {
                     Expert pressure vessel inspections, evaluations, and certifications. We provide thorough assessments of your pressure vessel systems to ensure they operate safely within design parameters and regulatory compliance.
                   </p>
                   <Link href="/services/api510" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                    Learn More →
+                    API 510 Pressure Vessel Inspections →
                   </Link>
                 </div>
 
@@ -320,7 +320,7 @@ export default function HomePage() {
                     Advanced NDT services including ultrasonic testing, phased array, magnetic particle testing, and liquid penetrant testing. Our certified technicians use cutting-edge equipment to detect defects without compromising asset integrity.
                   </p>
                   <Link href="/services/NDT" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                    Learn More →
+                    Non-Destructive Testing Services →
                   </Link>
                 </div>
 
@@ -330,7 +330,7 @@ export default function HomePage() {
                     Comprehensive ASME Section IX welder qualification and certification services. We test and certify welders to ensure they meet industry standards for critical welding applications across various processes and positions.
                   </p>
                   <Link href="/services/welding" className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                    Learn More →
+                    Welder Qualification Services →
                   </Link>
                 </div>
 
