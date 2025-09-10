@@ -66,6 +66,7 @@ export default function Navbar() {
               width={100}
               height={100}
               priority
+              sizes="100px"
             />
             <span>Tank Inspection Services</span>
           </Link>
@@ -312,6 +313,7 @@ Welder Qualification
                   alt="Tank Inspection Logo"
                   width={40}
                   height={40}
+                  sizes="40px"
                 />
                 <span>Tank Inspection Services</span>
               </Link>

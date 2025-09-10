@@ -212,7 +212,7 @@ export default function Contact() {
 
                     <button
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl will-change-transform translate3d(0,0,0)"
                     >
                       Send Message
                     </button>
@@ -345,7 +345,7 @@ export default function Contact() {
                   </div>
 
                   <div className="mt-12">
-                    <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl mr-4">
+                    <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl will-change-transform translate3d(0,0,0) mr-4">
                       Request Quote Now
                     </button>
                     <button className="bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 backdrop-blur-sm">
@@ -477,7 +477,7 @@ export default function Contact() {
                 <p className="text-red-700 mb-6">
                   Need urgent tank inspection services? We provide emergency response for critical situations.
                 </p>
-                <a href="tel:+50766163164" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-block">
+                <a href="tel:+50766163164" className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl will-change-transform translate3d(0,0,0) inline-block">
                   Call Emergency Line: +507 6616 3164
                 </a>
               </div>

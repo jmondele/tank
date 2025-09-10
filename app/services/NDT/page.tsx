@@ -60,7 +60,7 @@ export default function NDT() {
     <div className="min-h-screen flex flex-col">
       <main className="flex-1">
         {/* Photo Gallery Section */}
-        <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden">
+        <section className="relative h-[400px] md:h-[600px] bg-gray-900 overflow-hidden" style={{ minHeight: '400px' }}>
 
           
           <div 
@@ -108,6 +108,8 @@ export default function NDT() {
                       className="object-contain bg-gray-900"
                       onError={() => handleImageError(index)}
                       priority={index === 0}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                     />
                   )}
                 </div>

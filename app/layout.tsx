@@ -6,7 +6,13 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
 import { Analytics } from "@vercel/analytics/next"
 
-const nunito = Nunito({ subsets: ["latin"], weight: ["500","700"], variable: "--font-nunito" });
+const nunito = Nunito({ 
+  subsets: ["latin"], 
+  weight: ["500","700"], 
+  variable: "--font-nunito",
+  display: 'swap',
+  preload: true
+});
 
 export const metadata: Metadata = { 
   title: {
@@ -59,6 +65,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/tank_isoblue.png" as="image" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
       <body className={nunito.variable}>
         <Navbar />
         {children}
